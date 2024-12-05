@@ -1,6 +1,17 @@
-library(httr2)
-library(jsonlite)
 
+#' Builds URL for ENSEMBL REST API Endpoints
+#'
+#' @description
+#' This internal function constructs a complete URL for API requests to the Ensembl REST API.
+#' It combines the server URL, endpoint, mandatory parameters, and a string of optional parameters if it's not empty.
+#'
+#' @param endpoint A character string specifying the API endpoint (e.g., "/lookup/symbol/").
+#' @param mandatory_params A list of required parameters to be included in the URL path.
+#' @param string_optional_params A character string containing optional parameters in "key=value" format, separated by semicolons.
+#'
+#' @return A complete URL as a character string to be used for API requests.
+#' @keywords internal
+#' @import  httr2 jsonlite
 build_url <- function(endpoint, mandatory_params, string_optional_params) {
 
   server <- "https://rest.ensembl.org"
@@ -18,14 +29,22 @@ build_url <- function(endpoint, mandatory_params, string_optional_params) {
   return(full_url)
 }
 
+#' Creates a string containing optional parameters
+#'
+#' @description
+#' Creates a query string containing optional parameters in "key=value" format, separated by semicolons.
+#' Removes any NULL values from the optional parameters before constructing the string.
+#'
+#' @param optional_params A named list of optional parameters.
+#'
+#' @return A character string containing the formatted query parameters or an empty string if no parameter is provided.
+#' @keywords internal
 query_string_optional_params <- function(optional_params) {
 
-  # Remove any NULL values from the optional parameters
   optional_params <- optional_params[!sapply(optional_params, is.null)]
 
   if (length(optional_params) == 0) return("")
 
-  # Create key-value pairs for URL
   query_string <- paste(
     paste(names(optional_params), "=", optional_params, sep=""),
     collapse = ";"
@@ -33,6 +52,22 @@ query_string_optional_params <- function(optional_params) {
   return(query_string)
 }
 
+#' Perform POST Request to Ensembl REST API for Symbol Lookup
+#'
+#' @description
+#' Sends a POST request to the Ensembl REST API to look up information for a set of symbols.
+#' Separates the optional parameters from the whole parameters list.
+#' Right now, no optional parameter is used in this function.
+#' Constructs a query URL based on the mandatory and optional parameters and includes the symbols in the request body.
+#'
+#' @param species A character string of species name
+#' @param symbols A character vector of one or multiple symbols
+#'
+#' @param species A character string specifying the species (e.g., "homo_sapiens"). This is a required parameter.
+#' @param symbols A character vector of gene symbols to look up. This is passed as the body of the POST request.
+#'
+#' @return A parsed JSON response containing the lookup results for the specified symbols.
+#' @keywords internal
 post_lookup_symbol <- function(species = NULL, symbols = NULL) {
 
   all_params_list <- as.list(environment())
@@ -79,8 +114,25 @@ post_lookup_symbol <- function(species = NULL, symbols = NULL) {
   return(result)
 }
 
+#' Find the species and database for a set of symbols in a linked external database.
+#'
+#' @description
+#' The function expects the species and symbol(s) as input.
+#' It constructs the API request, validates the input parameters, and returns the retrieved information as a list.
+#'
+#' @param species A character string of species name
+#' @param symbols A character vector of one or multiple symbols
+#'
+#' @return A list containing the lookup result from the Ensembl REST API
+#' @export
+#'
+#' @examples
+#' #Example for a single symbol
+#' lookup_symbol("homo_sapiens","BRCA2")
+#'
+#' #Example for multiple symbols
+#' lookup_symbol("homo_sapiens", c("BRCA2", "BRAF"))
 lookup_symbol <- function(species = NULL, symbols = NULL) {
-
   if (length(species) == 0) {
     stop("Species is missing!")}
   else if (length(symbols) == 0) {
