@@ -1,4 +1,3 @@
-
 #' Builds URL for ENSEMBL REST API Endpoints
 #'
 #' @description
@@ -103,7 +102,7 @@ post_lookup_symbol <- function(species = NULL, symbols = NULL) {
     req_headers("Accept" = "application/json") |>
     req_body_json(body, auto_unbox = FALSE)
 
-  #req_dry_run(req)
+  req_dry_run(req)
 
   resp <- req |> req_perform()
 
@@ -132,12 +131,19 @@ post_lookup_symbol <- function(species = NULL, symbols = NULL) {
 #'
 #' #Example for multiple symbols
 #' lookup_symbol("homo_sapiens", c("BRCA2", "BRAF"))
+
 lookup_symbol <- function(species = NULL, symbols = NULL) {
+  # Create or load the BiocFileCache object
+  path <- file.path(getwd(), "Cache")
+  bfc <- BiocFileCache("Cache", ask = FALSE)
+
   if (length(species) == 0) {
     stop("Species is missing!")}
   else if (length(symbols) == 0) {
     stop("Symbol is missing!")}
   else{
+    # Validate the species
+    validate_species(species, bfc)
+
     return(post_lookup_symbol(species, symbols))}
 }
-
