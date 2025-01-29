@@ -1,11 +1,6 @@
-# Initialize the BiocFileCache
-
-path <- rappdirs::user_cache_dir(appname = "EnsemblRestApiCache")
-bfc <- BiocFileCache(path, ask = FALSE)
-
-# Species list endpoint
-endpoint <- "/info/species/"
-url <- build_url(endpoint, list(), "")
+# Initialize BiocFileCache
+#path <- rappdirs::user_cache_dir(appname = "EnsemblRestApiCache")
+#bfc <- BiocFileCache(path, ask = FALSE)
 
 create_hash <- function(endpoint, ...){
 
@@ -36,24 +31,9 @@ create_hash <- function(endpoint, ...){
   return(hash_key)
   }
 
-create_cache <- function(bfc, url, hash, method = "GET", body = NULL, headers = list("Accept" = "application/json")) {
-  # Fetch data from the API
-  req <- request(url) |> req_headers(.headers = headers)
+create_cache <- function(path, bfc, hash, result_data) {
 
-  # Add body for POST requests
-  if (method == "POST" && !is.null(body)) {
-    req <- req_body_json(req, body, auto_unbox = TRUE)
-    # Testing request
-    req_dry_run(req)
-  }
-
-  # Perform the request
-  resp <- req |> req_perform()
-
-  # Parse the response into JSON
-  content <- resp_body_json(resp)
-
-  api_data <- head(fromJSON(toJSON(content)))
+  api_data <- result_data
 
   # Save the data to the cache
   cache_file <- tempfile(tmpdir = path)
@@ -71,14 +51,14 @@ check_cache <- function(bfc, hash, time_mins = 5) {
   # If no cache entry exists, return FALSE
   if (nrow(cached_entry) == 0) {
     message("No cache found.")
-    return(FALSE)
+    return(list(cache_exists = FALSE, is_up_to_date = FALSE))
   }
 
   # If multiple cache entries exist, clear all
   if (nrow(cached_entry) > 1) {
     message("Multiple cache entries found. Removing all the entries...")
     clear_cache(bfc, hash)
-    return(FALSE)
+    return(list(cache_exists = FALSE, is_up_to_date = FALSE))
   }
 
   # Get cache info
@@ -91,28 +71,18 @@ check_cache <- function(bfc, hash, time_mins = 5) {
   # Check if cache is outdated
   if (difftime(current_time, access_time, units = "mins") > time_mins) {
     message("Cache is outdated.")
-    return(FALSE)
+    return(list(cache_exists = TRUE, is_up_to_date = FALSE))
   } else {
     message("Cache is valid and up to date.")
-    return(TRUE)
+    return(list(cache_exists = TRUE, is_up_to_date = TRUE))
   }
+
 }
 
-update_cache <- function(bfc, url, hash, method = "GET", body = NULL, headers = list("Accept" = "application/json")) {
+update_cache <- function(path, bfc, hash, result_data) {
   message("Updating cache...")
 
-  # Fetch fresh data from the API
-  req <- request(url) |> req_headers(.headers = headers)
-
-  if (method == "POST" && !is.null(body)) {
-    req <- req_body_json(req, body, auto_unbox = TRUE)
-    req_dry_run(req)  # Dry run for testing
-  }
-
-  # Perform the API request
-  resp <- req |> req_perform()
-  content <- resp_body_json(resp)
-  api_data <- head(fromJSON(toJSON(content)))
+  api_data <- result_data
 
   # Get existing cache entry
   cached_entry <- bfcquery(bfc, query = hash, field = "rname", exact = TRUE)
@@ -120,6 +90,8 @@ update_cache <- function(bfc, url, hash, method = "GET", body = NULL, headers = 
   if (nrow(cached_entry) > 0) {
     # Save new data to a file in the cache directory
     cache_file <- tempfile(tmpdir = path)
+
+    #for permanent file
     #cache_file <- file.path(get_cache_location(), paste0(hash, ".rds"))
     saveRDS(api_data, file = cache_file)
 
@@ -131,9 +103,6 @@ update_cache <- function(bfc, url, hash, method = "GET", body = NULL, headers = 
     # Overwrite existing cache entry
     bfc[[cached_entry$rid]] <- cache_file
     message("Cache successfully updated.")
-  } else {
-    message("No existing cache found. Creating new cache entry...")
-    create_cache(bfc, url, hash, method, body, headers)
   }
 }
 
@@ -143,6 +112,11 @@ read_cache <- function(bfc, hash) {
 
   # Retrieve local file path from cache
   cache_file <- cached_entry$rpath
+
+  if (!file.exists(cache_file)) {
+    message("Cache file not found. Returning NULL.")
+    return(NULL)
+  }
 
   # Read and return cached data
   message("Loading data from cache...")

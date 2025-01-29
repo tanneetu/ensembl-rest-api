@@ -59,11 +59,8 @@ query_string_optional_params <- function(optional_params) {
 #' Right now, no optional parameter is used in this function.
 #' Constructs a query URL based on the mandatory and optional parameters and includes the symbols in the request body.
 #'
-#' @param species A character string of species name
-#' @param symbols A character vector of one or multiple symbols
-#'
 #' @param species A character string specifying the species (e.g., "homo_sapiens"). This is a required parameter.
-#' @param symbols A character vector of gene symbols to look up. This is passed as the body of the POST request.
+#' @param symbols A character vector of one or multiple gene symbols to look up. This is passed as the body of the POST request.
 #'
 #' @return A parsed JSON response containing the lookup results for the specified symbols.
 #' @keywords internal
@@ -102,7 +99,7 @@ post_lookup_symbol <- function(species = NULL, symbols = NULL) {
     req_headers("Accept" = "application/json") |>
     req_body_json(body, auto_unbox = FALSE)
 
-  req_dry_run(req)
+  #req_dry_run(req)
 
   resp <- req |> req_perform()
 
@@ -131,19 +128,43 @@ post_lookup_symbol <- function(species = NULL, symbols = NULL) {
 #'
 #' #Example for multiple symbols
 #' lookup_symbol("homo_sapiens", c("BRCA2", "BRAF"))
-
 lookup_symbol <- function(species = NULL, symbols = NULL) {
-  # Create or load the BiocFileCache object
-  path <- file.path(getwd(), "Cache")
-  bfc <- BiocFileCache("Cache", ask = FALSE)
 
+  # Initialize BiocFileCache inside the function
+  path <- rappdirs::user_cache_dir(appname = "EnsemblRestApiCache")
+  bfc <- BiocFileCache(path, ask = FALSE)
+
+  # Error handling for mandatory parameters
   if (length(species) == 0) {
-    stop("Species is missing!")}
-  else if (length(symbols) == 0) {
-    stop("Symbol is missing!")}
-  else{
-    # Validate the species
-    validate_species(species, bfc)
+    stop("Species is missing!")
+  }
+  if (length(symbols) == 0) {
+    stop("Symbols are missing!")
+  }
 
-    return(post_lookup_symbol(species, symbols))}
+  endpoint <- "/lookup/symbol/"
+
+  # Create unique hash for caching
+  hash <- create_hash(endpoint, species = species, symbols = symbols)
+
+  # Check cache status (TRUE or FALSE)
+  cache_status <- check_cache(bfc, hash)
+
+  if (cache_status$cache_exists && cache_status$is_up_to_date) {
+    return(read_cache(bfc, hash))  # Load cached data
+  }
+
+  # Call post_lookup_symbol() to get both result and URL
+
+  message("Fetching new data from API...")
+  result_data <- post_lookup_symbol(species, symbols)
+
+  # Cache decision based on status
+  if (cache_status$cache_exists && !cache_status$is_up_to_date) {
+    update_cache(path, bfc, hash, result_data)  # Update existing cache
+  } else if (!cache_status$cache_exists && !cache_status$is_up_to_date) {
+    create_cache(path, bfc, hash, result_data)  # Create new cache
+  }
+
+  return(result_data)  # Return fetched data
 }
