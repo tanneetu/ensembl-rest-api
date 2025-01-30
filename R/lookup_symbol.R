@@ -11,11 +11,17 @@
 #' @return A complete URL as a character string to be used for API requests.
 #' @keywords internal
 #' @import  httr2 jsonlite
-build_url <- function(endpoint, mandatory_params, string_optional_params) {
+build_url <- function(endpoint, mandatory_params = NULL, string_optional_params) {
 
   server <- "https://rest.ensembl.org"
 
-  query_string <- paste(unlist(mandatory_params), collapse = "/")
+  # Handle missing mandatory parameters
+  if(is.null(mandatory_params) || all(mandatory_params == "")){
+    query_string <-""
+  } else {
+    # Construct query string from mandatory parameters
+    query_string <- paste(unlist(mandatory_params), collapse = "/")
+  }
 
   base_url <- paste(server, endpoint, query_string,"?", sep = "")
 
@@ -25,6 +31,10 @@ build_url <- function(endpoint, mandatory_params, string_optional_params) {
   } else {
     full_url <- base_url
   }
+
+  # Force immediate print
+  #cat("Final URL:", full_url, "\n")
+  print(full_url)
   return(full_url)
 }
 
@@ -48,6 +58,7 @@ query_string_optional_params <- function(optional_params) {
     paste(names(optional_params), "=", optional_params, sep=""),
     collapse = ";"
   )
+
   return(query_string)
 }
 
