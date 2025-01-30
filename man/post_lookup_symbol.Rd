@@ -9,7 +9,7 @@ post_lookup_symbol(species = NULL, symbols = NULL)
 \arguments{
 \item{species}{A character string specifying the species (e.g., "homo_sapiens"). This is a required parameter.}
 
-\item{symbols}{A character vector of gene symbols to look up. This is passed as the body of the POST request.}
+\item{symbols}{A character vector of one or multiple gene symbols to look up. This is passed as the body of the POST request.}
 }
 \value{
 A parsed JSON response containing the lookup results for the specified symbols.

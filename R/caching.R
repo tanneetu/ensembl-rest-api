@@ -1,7 +1,20 @@
-# Initialize BiocFileCache
+# Initialize BiocFileCache inside the calling endpoint function
 #path <- rappdirs::user_cache_dir(appname = "EnsemblRestApiCache")
 #bfc <- BiocFileCache(path, ask = FALSE)
 
+#' Generate a Unique Hash for API Caching
+#'
+#' @description
+#' This function generates a unique MD5 hash based on the API endpoint and
+#' provided arguments. It ensures consistent hashing by sorting the arguments
+#' before constructing the hash string.
+#'
+#' @param endpoint A character string specifying the API endpoint (e.g., `"/lookup/symbol/"`).
+#' @param ... Additional arguments that are passed to the API endpoint function.
+#'
+#' @return A character string representing the unique MD5 hash.
+#' @import digest
+#' @keywords internal
 create_hash <- function(endpoint, ...){
 
   args <- list(...)
@@ -31,6 +44,21 @@ create_hash <- function(endpoint, ...){
   return(hash_key)
   }
 
+#' Create a Cache Entry for API Data
+#'
+#' @description
+#' This function stores API response data in a cache directory using `BiocFileCache`.
+#' A temporary file is created in the specified cache location, and the data is saved in `.rds` format.
+#' The cache entry is then registered in the `BiocFileCache` system to allow for easy retrieval later.
+#'
+#' @param path A character string specifying the directory where the cache should be stored.
+#' @param bfc A `BiocFileCache` object used to manage cached data.
+#' @param hash A character string representing the unique hash for the cached data.
+#' @param result_data The API response data to be saved in the cache.
+#'
+#' @return None. The function saves the data in the cache and prints a message.
+#' @import BiocFileCache
+#' @keywords internal
 create_cache <- function(path, bfc, hash, result_data) {
 
   api_data <- result_data
@@ -44,7 +72,25 @@ create_cache <- function(path, bfc, hash, result_data) {
   message("Data fetched from API and cached successfully.")
 }
 
-check_cache <- function(bfc, hash, time_mins = 5) {
+#' Check Cache Status
+#'
+#' @description
+#' This function checks if a cached entry exists for a given hash in the BiocFileCache.
+#' It determines whether the cache is valid, up-to-date, or needs to be refreshed.
+#'
+#' @param bfc A `BiocFileCache` object used to manage cached data.
+#' @param hash A character string representing the unique hash for the cached data.
+#' @param time_days An integer specifying the maximum time (in days) for cache validity.
+#'                  Default is 7 days.
+#'
+#' @return A named list with two logical values:
+#' \itemize{
+#'   \item `cache_exists` - `TRUE` if the cache entry exists, `FALSE` otherwise.
+#'   \item `is_up_to_date` - `TRUE` if the cache is still valid, `FALSE` if it is outdated.
+#' }
+#' @import BiocFileCache lubridate
+#' @keywords internal
+check_cache <- function(bfc, hash, time_days = 7) {
   # Query the cache for the given hash
   cached_entry <- bfcquery(bfc, query = hash, field = "rname", exact = TRUE)
 
@@ -69,7 +115,7 @@ check_cache <- function(bfc, hash, time_mins = 5) {
   current_time <- now()
 
   # Check if cache is outdated
-  if (difftime(current_time, access_time, units = "mins") > time_mins) {
+  if (difftime(current_time, access_time, units = "days") > time_days) {
     message("Cache is outdated.")
     return(list(cache_exists = TRUE, is_up_to_date = FALSE))
   } else {
@@ -79,6 +125,21 @@ check_cache <- function(bfc, hash, time_mins = 5) {
 
 }
 
+#' Update the cache entry for API data
+#'
+#' @description
+#' Updates an existing cache entry in BiocFileCache by replacing outdated data with newly fetched data.
+#' It first saves the new data to a temporary file, deletes the old cached file if it exists,
+#' and then updates the cache entry with the new file.
+#'
+#' @param path A character string specifying the directory where the cache should be stored.
+#' @param bfc A `BiocFileCache` object used to manage cached data.
+#' @param hash A character string representing the unique hash for the cached data.
+#' @param result_data The API response data to be updated in the cache.
+#'
+#' @return None. The function updates the data in the cache and prints a message.
+#' @import BiocFileCache
+#' @keywords internal
 update_cache <- function(path, bfc, hash, result_data) {
   message("Updating cache...")
 
@@ -106,6 +167,18 @@ update_cache <- function(path, bfc, hash, result_data) {
   }
 }
 
+#' Read cached data
+#'
+#' @description
+#' Retrieves and loads cached data from the BiocFileCache system using a unique hash.
+#' If the cache entry exists, it reads the stored `.rds` file and returns the data.
+#'
+#' @param bfc A `BiocFileCache` object used to manage cached data.
+#' @param hash A character string representing the unique hash for the cached data.
+#'
+#' @return The cached data if available; otherwise, `NULL` if no valid cache exists.
+#' @import BiocFileCache
+#' @keywords internal
 read_cache <- function(bfc, hash) {
   # Query the cache for the given hash
   cached_entry <- bfcquery(bfc, query = hash, field = "rname", exact = TRUE)
@@ -123,6 +196,18 @@ read_cache <- function(bfc, hash) {
   return(readRDS(cache_file))
 }
 
+#' Clear cached data
+#'
+#' @description
+#' Removes all cached entries associated with a specific hash from the BiocFileCache system.
+#' Deletes the corresponding local cache files and removes their entries from the cache database.
+#'
+#' @param bfc A `BiocFileCache` object used to manage cached data.
+#' @param hash A character string representing the unique hash for the cached data.
+#'
+#' @return Logical `TRUE` if cache entries were successfully removed.
+#' @import BiocFileCache
+#' @keywords internal
 clear_cache <- function(bfc, hash) {
   # Query the cache for the given hash
   cached_entry <- bfcquery(bfc, query = hash, field = "rname", exact = TRUE)
@@ -144,4 +229,3 @@ clear_cache <- function(bfc, hash) {
   message("Cache cleared successfully.")
   return(TRUE)
 }
-

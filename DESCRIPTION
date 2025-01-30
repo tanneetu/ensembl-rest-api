@@ -10,4 +10,4 @@ License: What license is it under?
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.2
-Import: httr2, jsonlite
+Imports: httr2, jsonlite
