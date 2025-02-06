@@ -23,12 +23,11 @@ create_hash <- function(endpoint, ...){
   if (length(args) == 0) {
     stop("At least one argument must be provided.")
   }
-
   # Check if named arguments are given
-  if (is.null(names(args)) || any(names(args) == "")) {
+  else if (is.null(names(args)) || any(names(args) == "")) {
     stop("All arguments must be named.")
   }
-
+  else {
   # Sort named arguments alphabetically by their names
   sorted_args <- args[order(names(args))]
 
@@ -53,6 +52,8 @@ create_hash <- function(endpoint, ...){
 
   return(hash_key)
   }
+
+}
 
 #' Create a Cache Entry for API Data
 #'
