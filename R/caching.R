@@ -19,6 +19,16 @@ create_hash <- function(endpoint, ...){
 
   args <- list(...)
 
+  # Check if at least one argument is provided
+  if (length(args) == 0) {
+    stop("At least one argument must be provided.")
+  }
+
+  # Check if named arguments are given
+  if (is.null(names(args)) || any(names(args) == "")) {
+    stop("All arguments must be named.")
+  }
+
   # Sort named arguments alphabetically by their names
   sorted_args <- args[order(names(args))]
 
