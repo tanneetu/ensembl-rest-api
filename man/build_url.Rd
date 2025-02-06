@@ -4,7 +4,7 @@
 \alias{build_url}
 \title{Builds URL for ENSEMBL REST API Endpoints}
 \usage{
-build_url(endpoint, mandatory_params, string_optional_params)
+build_url(endpoint, mandatory_params = NULL, string_optional_params)
 }
 \arguments{
 \item{endpoint}{A character string specifying the API endpoint (e.g., "/lookup/symbol/").}
