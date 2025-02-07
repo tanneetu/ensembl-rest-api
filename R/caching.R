@@ -99,7 +99,8 @@ create_cache <- function(path, bfc, hash, result_data) {
 #'   \item `cache_exists` - `TRUE` if the cache entry exists, `FALSE` otherwise.
 #'   \item `is_up_to_date` - `TRUE` if the cache is still valid, `FALSE` if it is outdated.
 #' }
-#' @import BiocFileCache lubridate
+#' @import BiocFileCache
+#' @importFrom lubridate ymd_hms now
 #' @keywords internal
 check_cache <- function(bfc, hash, time_days = 7) {
   # Query the cache for the given hash
