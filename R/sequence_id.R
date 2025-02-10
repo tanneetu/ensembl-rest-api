@@ -57,7 +57,7 @@ post_sequence_id <- function(...) {
     query <- as.character(df$query)
 
     # Determine molecule type and create the appropriate Biostring object
-    if (("dna" %in% molecule)) {
+    if ("dna" %in% molecule) {
       seq_obj <- DNAStringSet(sequence, use.names = TRUE)
     } else if ("protein" %in% molecule) {
       seq_obj <- AAStringSet(sequence, use.names = TRUE)
