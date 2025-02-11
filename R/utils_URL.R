@@ -24,17 +24,12 @@ build_url <- function(endpoint, mandatory_params = NULL, string_optional_params 
 
   base_url <- paste(server, endpoint, query_string, sep = "")
 
-  cat("Base URL:", base_url, "\n")
-
   # Append optional parameters only if they exist
   if (!is.null(string_optional_params) && nzchar(string_optional_params)) {
     full_url <- paste(base_url, "?", string_optional_params, sep="")
   } else {
     full_url <- base_url
   }
-
-  cat("Final URL:", full_url, "\n")
-  print(full_url)
   return(full_url)
 }
 
