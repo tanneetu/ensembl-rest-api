@@ -46,8 +46,6 @@ post_lookup_symbol <- function(species = NULL, symbols = NULL) {
     req_headers("Accept" = "application/json") |>
     req_body_json(body, auto_unbox = FALSE)
 
-  #req_dry_run(req)
-
   resp <- req |> req_perform()
 
   content <- resp_body_json(resp)
@@ -107,7 +105,7 @@ lookup_symbol <- function(species = NULL, symbols = NULL) {
     return(read_cache(bfc, hash))  # Load cached data
   }
 
-  # Call post_lookup_symbol() to get both result and URL
+  # Call post_lookup_symbol() to get both result
 
   message("Fetching new data from API...")
   result_data <- post_lookup_symbol(species, symbols)

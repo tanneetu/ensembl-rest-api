@@ -11,7 +11,7 @@
 #' @return A complete URL as a character string to be used for API requests.
 #' @keywords internal
 #' @import  httr2 jsonlite
-build_url <- function(endpoint, mandatory_params = NULL, string_optional_params = NULL) {
+build_url <- function(endpoint, mandatory_params = NULL, optional_params = NULL) {
 
   server <- "https://rest.ensembl.org"
 
@@ -23,6 +23,8 @@ build_url <- function(endpoint, mandatory_params = NULL, string_optional_params 
   }
 
   base_url <- paste(server, endpoint, query_string, sep = "")
+
+  string_optional_params <- query_string_optional_params(optional_params)
 
   # Append optional parameters only if they exist
   if (!is.null(string_optional_params) && nzchar(string_optional_params)) {
@@ -55,4 +57,34 @@ query_string_optional_params <- function(optional_params) {
   )
 
   return(query_string)
+}
+
+
+post_request <- function(url, body) {
+
+  req <- request(url) |>
+    req_headers("Accept" = "application/json") |>
+    req_body_json(body, auto_unbox = FALSE)
+
+  resp <- req |> req_perform()
+
+  content <- resp_body_json(resp, auto_unbox = FALSE)  # Parse response
+
+  result <- fromJSON(toJSON(content, auto_unbox = TRUE))  # Convert JSON
+
+  return(result)
+}
+
+get_request <-function(url){
+
+  req <- request(url) |>
+    req_headers("Accept" = "application/json")
+
+  resp <- req |> req_perform()
+
+  content <- resp_body_json(resp, auto_unbox = FALSE) # Parse response
+
+  result<- fromJSON(toJSON(content, auto_unbox = TRUE)) # Convert JSON
+
+  return (result)
 }
