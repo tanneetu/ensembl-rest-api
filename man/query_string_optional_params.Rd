@@ -14,6 +14,5 @@ A character string containing the formatted query parameters or an empty string 
 }
 \description{
 Creates a query string containing optional parameters in "key=value" format, separated by semicolons.
-Removes any NULL values from the optional parameters before constructing the string.
 }
 \keyword{internal}

@@ -4,24 +4,25 @@
 \alias{sequence_id}
 \title{Request multiple types of sequence by stable identifier.}
 \usage{
-sequence_id(...)
+sequence_id(id = NULL, ...)
 }
 \arguments{
-\item{...}{Named arguments representing optional parameters for the API request, including `id`, which is required for retrieving sequences.}
+\item{id}{A character vector representing the Ensembl stable ID, which is required for retrieving sequences.}
+
+\item{...}{Named arguments representing optional parameters for the API request.}
 }
 \value{
 A named list containing Biostrings objects (`DNAStringSet`, `AAStringSet`) for each requested sequence ID.
-If caching is enabled, it may return previously stored results instead of making an API request.
 }
 \description{
-This function sends a POST request to the Ensembl REST API to retrieve sequence data for given IDs.
+This function sends a request to the Ensembl REST API to retrieve sequence data for given IDs.
 It first checks if the requested data is available in the cache.
 If a valid cached entry exists, it returns the cached data.
 If the cache is outdated or missing, it fetches new data, updates the cache, and returns the latest results.
 }
 \examples{
 # Retrieve a DNA sequence
-sequence_id(id = "ENSG00000157764")
+sequence_id(id = "ENSG00000157764",type = "genomic")
 
 # Retrieve multiple sequences
 sequence_id(id = c("ENSG00000157764", "ENSP00000288602"))

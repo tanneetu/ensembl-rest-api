@@ -7,13 +7,13 @@
 archive_id(id = NULL)
 }
 \arguments{
-\item{id}{A character vector representing the ID(s) to be queried.}
+\item{id}{A character vector representing the Ensembl stable ID(s) to be queried.}
 }
 \value{
-A parsed JSON response containing the API response with archive details.
+A data frame containing the archive details from Ensembl REST API.
 }
 \description{
-This function sends a POST request to the Ensembl REST API to retrieve information for given IDs.
+This function sends a request to the Ensembl REST API to retrieve information for given IDs.
 It first checks if the requested data is available in the cache.
 If a valid cached entry exists, it returns the cached data.
 If the cache is outdated or missing, it fetches new data, updates the cache, and returns the latest results.
@@ -24,4 +24,6 @@ archive_id( id = "ENSG00000157764")
 
 #Example for multiple IDs
 archive_id(id = c("ENSG00000157764","ENSG00000248378"))
+
+More details at \url{https://rest.ensembl.org/documentation/info/archive_id_get}
 }

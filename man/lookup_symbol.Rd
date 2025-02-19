@@ -13,19 +13,20 @@ lookup_symbol(species = NULL, symbols = NULL)
 }
 \value{
 A list containing the lookup result from the Ensembl REST API.
-If caching is enabled, it may return previously stored results instead of making an API request.
 }
 \description{
-The function expects the species and symbol(s) as input.
-It constructs the API request, validates the input parameters, and returns the retrieved information as a list.
+The function constructs the API request, validates the input parameters, and returns the retrieved information as a list.
+It expects the species and symbol(s) as input.
 It first checks if the requested data is available in the cache.
 If a valid cached entry exists, it returns the cached data.
 If the cache is outdated or missing, it fetches new data, updates the cache, and returns the latest results.
 }
 \examples{
 #Example for a single symbol
-lookup_symbol("homo_sapiens","BRCA2")
+lookup_symbol(species = "homo_sapiens", symbols = "BRCA2")
 
 #Example for multiple symbols
-lookup_symbol("homo_sapiens", c("BRCA2", "BRAF"))
+lookup_symbol(species = "homo_sapiens", symbols = c("BRCA2", "BRAF"))
+
+More details at \url{https://rest.ensembl.org/documentation/info/symbol_lookup}
 }

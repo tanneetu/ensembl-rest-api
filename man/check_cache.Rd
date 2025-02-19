@@ -4,7 +4,7 @@
 \alias{check_cache}
 \title{Check Cache Status}
 \usage{
-check_cache(bfc, hash, time_days = 7)
+check_cache(bfc, hash, time_mins = 1)
 }
 \arguments{
 \item{bfc}{A `BiocFileCache` object used to manage cached data.}

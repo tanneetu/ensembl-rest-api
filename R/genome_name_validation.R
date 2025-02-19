@@ -1,3 +1,21 @@
+#' Validate Genome Name Against Ensembl Species List Names
+#'
+#' @description
+#' This function validates a given genome name against the available species names in the Ensembl database.
+#' If the genome name is found, it is returned in lowercase. Otherwise, the function computes the
+#' Damerau-Levenshtein distance to suggest the closest matching species names.
+#' Species names are fetched from the cache if available; otherwise, they are retrieved from the API
+#' and cached for future use.
+#'
+#' @param genome_name A character string representing the genome name to validate.
+#'
+#' @return If the genome name is valid, it is returned as a lowercase string. If not found, an error
+#' is raised, suggesting the closest possible matches.
+#'
+#' @keywords internal
+#'
+#' @import BiocFileCache rappdirs stringdist
+#' @importFrom stringdist stringdist
 validate_genome_name <- function(genome_name) {
 
   # Initialize BiocFileCache inside the function
@@ -31,9 +49,9 @@ validate_genome_name <- function(genome_name) {
 
     # Cache decision
     if (cache_status$cache_exists && !cache_status$is_up_to_date) {
-      update_cache(path, bfc, hash, species_names)  # Update existing cache
+      update_cache(path, bfc, hash, species_names)
     } else {
-      create_cache(path, bfc, hash, species_names)  # Create new cache
+      create_cache(path, bfc, hash, species_names)
     }
   }
 

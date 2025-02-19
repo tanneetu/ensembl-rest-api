@@ -6,12 +6,12 @@ Author: Who wrote it
 Maintainer: The package maintainer <yourself@somewhere.net>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.2
 Imports: httr2, jsonlite, rappdirs, lubridate, BiocFileCache, digest,
-          Biostrings
+          Biostrings, stringdist
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3

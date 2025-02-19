@@ -102,7 +102,7 @@ create_cache <- function(path, bfc, hash, result_data) {
 #' @import BiocFileCache
 #' @importFrom lubridate ymd_hms now
 #' @keywords internal
-check_cache <- function(bfc, hash, time_days = 7) {
+check_cache <- function(bfc, hash, time_mins = 1) {
   # Query the cache for the given hash
   cached_entry <- bfcquery(bfc, query = hash, field = "rname", exact = TRUE)
 
@@ -127,7 +127,7 @@ check_cache <- function(bfc, hash, time_days = 7) {
   current_time <- now()
 
   # Check if cache is outdated
-  if (difftime(current_time, access_time, units = "days") > time_days) {
+  if (difftime(current_time, access_time, units = "mins") > time_mins) {
     message("Cache is outdated.")
     return(list(cache_exists = TRUE, is_up_to_date = FALSE))
   } else {

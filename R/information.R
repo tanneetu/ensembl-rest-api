@@ -4,26 +4,15 @@
 
 get_info_species <- function(division = NULL, ...){
 
-  optional_params_list<- list(division = division, ...)
-
-  string_optional_params <- query_string_optional_params(optional_params_list)
+  optional_params<- list(division = division, ...)
 
   endpoint <- "/info/species/"
 
-  url <- build_url(endpoint, string_optional_params = string_optional_params)
+  url <- build_url(endpoint, optional_params = optional_params)
 
-  req <- request(url) |>
-    req_headers("Accept" = "application/json")
-
-  resp <- req |> req_perform()
-
-  content <- resp_body_json(resp, auto_unbox = FALSE)
-
-  result<- fromJSON(toJSON(content, auto_unbox = TRUE))
+  result<- get_request(url)
 
   species_data <- result$species
-
-  assign("Check_Species", species_data, envir = .GlobalEnv)
 
   return(species_data)
 }
@@ -37,8 +26,6 @@ info_species<-function(division = NULL, ...){
   # Initialize BiocFileCache inside the function
   path <- rappdirs::user_cache_dir(appname = "EnsemblRestApiCache")
   bfc <- BiocFileCache(path, ask = FALSE)
-
-  all_params_list<- list(...)
 
   # Mapping from usual division names to Ensembl division names
   ensembl_division <- switch(
@@ -55,7 +42,7 @@ info_species<-function(division = NULL, ...){
   endpoint <- "/info/species/"
 
   # Create unique hash for caching
-  hash <- create_hash(endpoint, division = ensembl_division, params = all_params_list)
+  hash <- create_hash(endpoint, division = ensembl_division, ...)
 
   # Check cache status (TRUE or FALSE)
   cache_status <- check_cache(bfc, hash)
@@ -63,8 +50,6 @@ info_species<-function(division = NULL, ...){
   if (cache_status$cache_exists && cache_status$is_up_to_date) {
     return(read_cache(bfc, hash))  # Load cached data
   }
-
-  # Call get_info_species() to get result
 
   message("Fetching new data from API...")
   result_data <- get_info_species(division = ensembl_division, ...)
@@ -76,34 +61,24 @@ info_species<-function(division = NULL, ...){
     create_cache(path, bfc, hash, result_data)  # Create new cache
   }
 
-  return(result_data)  # Return fetched data
+  return(result_data)
 }
 
-get_info_genomes_genome_name <- function(name = NULL, ...){
+get_info_genomes_genome_name <- function(name = NULL){
 
   mandatory_params <- name
 
-  optional_params <- list(...)
-
-  string_optional_params <- query_string_optional_params(optional_params)
-
   endpoint<-"/info/genomes/"
 
-  url<- build_url(endpoint, mandatory_params, string_optional_params)
+  url<- build_url(endpoint, mandatory_params)
 
-  req <- request(url) |>
-    req_headers("Accept" = "application/json")
-
-  resp <- req |> req_perform()
-
-  content <- resp_body_json(resp, auto_unbox = FALSE)
-
-  result<- fromJSON(toJSON(content, auto_unbox = TRUE))
+  result<- get_request(url)
 
   return(result)
 }
 
-info_genomes_genome_name <- function(name= NULL, ...){
+
+info_genomes_genome_name <- function(name= NULL){
 
   if (is.null(name) || length(name) == 0) {
     stop("Genome name is missing! Please provide a valid genome name.")
@@ -119,7 +94,7 @@ info_genomes_genome_name <- function(name= NULL, ...){
   endpoint <- "/info/genomes/"
 
   # Create unique hash for caching
-  hash <- create_hash(endpoint, name = name, ...)
+  hash <- create_hash(endpoint, name = name)
 
   # Check cache status (TRUE or FALSE)
   cache_status <- check_cache(bfc, hash)
@@ -133,9 +108,9 @@ info_genomes_genome_name <- function(name= NULL, ...){
 
   #Cache decision based on status
   if (cache_status$cache_exists && !cache_status$is_up_to_date) {
-    update_cache(path, bfc, hash, result_data)  # Update existing cache
+    update_cache(path, bfc, hash, result_data)
   } else if (!cache_status$cache_exists && !cache_status$is_up_to_date) {
-    create_cache(path, bfc, hash, result_data)  # Create new cache
+    create_cache(path, bfc, hash, result_data)
   }
 
   return(result_data)

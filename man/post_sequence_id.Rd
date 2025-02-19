@@ -4,10 +4,12 @@
 \alias{post_sequence_id}
 \title{Request multiple types of sequence by stable identifier.}
 \usage{
-post_sequence_id(...)
+post_sequence_id(id = NULL, ...)
 }
 \arguments{
-\item{...}{Named arguments representing optional parameters for the API request, including `id`, which is required for retrieving sequences.}
+\item{id}{A character vector representing the Ensembl stable ID, which is required for retrieving sequences.}
+
+\item{...}{Named arguments representing optional parameters for the API request.}
 }
 \value{
 A named list containing Biostrings objects (`DNAStringSet`, `AAStringSet`) for each requested ID.

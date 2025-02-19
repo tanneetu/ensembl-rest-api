@@ -7,10 +7,10 @@
 post_archive_id(id = NULL)
 }
 \arguments{
-\item{id}{A character vector representing the ID(s) to be queried.}
+\item{id}{A character vector representing the Ensembl stable ID(s) to be queried.}
 }
 \value{
-A parsed JSON response containing the API response with archive details.
+A data frame containing the archive details from Ensembl REST API.
 }
 \description{
 This function sends a POST request to the Ensembl REST API to retrieve information for given ID(s).

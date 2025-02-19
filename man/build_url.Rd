@@ -4,20 +4,20 @@
 \alias{build_url}
 \title{Builds URL for ENSEMBL REST API Endpoints}
 \usage{
-build_url(endpoint, mandatory_params = NULL, string_optional_params = NULL)
+build_url(endpoint, mandatory_params = NULL, optional_params = NULL)
 }
 \arguments{
 \item{endpoint}{A character string specifying the API endpoint (e.g., "/lookup/symbol/").}
 
 \item{mandatory_params}{A list of required parameters to be included in the URL path.}
 
-\item{string_optional_params}{A character string containing optional parameters in "key=value" format, separated by semicolons.}
+\item{optional_params}{A named list of optional parameters.}
 }
 \value{
 A complete URL as a character string to be used for API requests.
 }
 \description{
 This internal function constructs a complete URL for API requests to the Ensembl REST API.
-It combines the server URL, endpoint, mandatory parameters, and a string of optional parameters if it's not empty.
+It combines the server URL, endpoint, mandatory parameters, and optional parameters if it's not empty.
 }
 \keyword{internal}
