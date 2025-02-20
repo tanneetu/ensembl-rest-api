@@ -45,6 +45,8 @@ post_lookup_symbol <- function(species = NULL, symbols = NULL) {
 #'
 #' @import BiocFileCache rappdirs
 #' @export
+#' @details
+#' More details at \url{https://rest.ensembl.org/documentation/info/symbol_lookup}
 #'
 #' @examples
 #' #Example for a single symbol
@@ -52,8 +54,6 @@ post_lookup_symbol <- function(species = NULL, symbols = NULL) {
 #'
 #' #Example for multiple symbols
 #' lookup_symbol(species = "homo_sapiens", symbols = c("BRCA2", "BRAF"))
-#'
-#' More details at \url{https://rest.ensembl.org/documentation/info/symbol_lookup}
 lookup_symbol <- function(species = NULL, symbols = NULL) {
 
   if (is.null(species) || !nzchar(as.character(species))) {

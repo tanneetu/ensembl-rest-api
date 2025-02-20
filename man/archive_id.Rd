@@ -16,12 +16,13 @@ A data frame containing the archive details from Ensembl REST API.
 This function sends a request to the Ensembl REST API to retrieve information for given IDs.
 The function supports caching to avoid redundant API calls and improve performance.
 }
+\details{
+More details at \url{https://rest.ensembl.org/documentation/info/archive_id_get}
+}
 \examples{
 #Example for a single ID
 archive_id( id = "ENSG00000157764")
 
 #Example for multiple IDs
 archive_id(id = c("ENSG00000157764","ENSG00000248378"))
-
-More details at \url{https://rest.ensembl.org/documentation/info/archive_id_get}
 }

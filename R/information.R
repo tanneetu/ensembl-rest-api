@@ -41,14 +41,14 @@ get_info_species <- function(division = NULL, ...){
 #'
 #' @import BiocFileCache rappdirs
 #' @export
-#'
+#' @details
+#' More details at \url{https://rest.ensembl.org/documentation/info/species}
 #' @examples
 #' # Retrieve species data for Ensembl Plants
 #' info_species(division = "Plants")
 #'
 #' # Retrieve species data with additional parameters
 #' info_species(division = "Vertebrates", strain_collection = "mouse")
-#' More details at \url{https://rest.ensembl.org/documentation/info/species}
 info_species<-function(division = NULL, ...){
 
   if (is.null(division) || length(division) == 0 ) {
@@ -115,12 +115,11 @@ get_info_genomes_genome_name <- function(name = NULL){
 #'
 #' @import BiocFileCache rappdirs
 #' @export
-#'
+#' @details
+#' More details at \url{https://rest.ensembl.org/documentation/info/info_genome}
 #' @examples
 #' # Retrieve genome information for Arabidopsis thaliana
 #' info_genomes_genome_name(name = "arabidopsis_thaliana")
-#'
-#' More details at \url{https://rest.ensembl.org/documentation/info/info_genome}
 info_genomes_genome_name <- function(name= NULL){
 
   if (is.null(name) || length(name) == 0 || name == "") {

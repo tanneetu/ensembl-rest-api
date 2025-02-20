@@ -69,14 +69,14 @@ post_sequence_id <- function(id = NULL, ...) {
 #'
 #' @import BiocFileCache rappdirs
 #' @export
-#'
+#' @details
+#' More details at \url{https://rest.ensembl.org/documentation/info/sequence_id}
 #' @examples
 #' # Retrieve a DNA sequence
 #' sequence_id(id = "ENSG00000157764",type = "genomic")
 #'
 #' # Retrieve multiple sequences
 #' sequence_id(id = c("ENSG00000157764", "ENSP00000288602"))
-#' More details at \url{https://rest.ensembl.org/documentation/info/sequence_id}
 sequence_id <- function(id = NULL, ...) {
 
   if (is.null(id) || length(id) == 0 || all(id == "")) {

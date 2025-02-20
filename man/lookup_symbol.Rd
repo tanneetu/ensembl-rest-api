@@ -18,12 +18,13 @@ A list containing the lookup result from the Ensembl REST API.
 The function constructs the API request, validates the input parameters, and returns the retrieved information as a list.
 The function supports caching to avoid redundant API calls and improve performance.
 }
+\details{
+More details at \url{https://rest.ensembl.org/documentation/info/symbol_lookup}
+}
 \examples{
 #Example for a single symbol
 lookup_symbol(species = "homo_sapiens", symbols = "BRCA2")
 
 #Example for multiple symbols
 lookup_symbol(species = "homo_sapiens", symbols = c("BRCA2", "BRAF"))
-
-More details at \url{https://rest.ensembl.org/documentation/info/symbol_lookup}
 }

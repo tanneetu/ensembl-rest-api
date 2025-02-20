@@ -33,6 +33,8 @@ post_archive_id <-function(id = NULL){
 #'
 #' @import BiocFileCache rappdirs
 #' @export
+#' @details
+#' More details at \url{https://rest.ensembl.org/documentation/info/archive_id_get}
 #'
 #' @examples
 #' #Example for a single ID
@@ -40,8 +42,6 @@ post_archive_id <-function(id = NULL){
 #'
 #' #Example for multiple IDs
 #' archive_id(id = c("ENSG00000157764","ENSG00000248378"))
-#'
-#' More details at \url{https://rest.ensembl.org/documentation/info/archive_id_get}
 archive_id <- function(id = NULL){
 
   if (is.null(id) || length(id) == 0 || all(id == "")) {

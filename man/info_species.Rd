@@ -19,11 +19,13 @@ A list containing species data from the Ensembl REST API.
 Fetches species information from the Ensembl REST API for a given division.
 The function supports caching to avoid redundant API calls and improve performance.
 }
+\details{
+More details at \url{https://rest.ensembl.org/documentation/info/species}
+}
 \examples{
 # Retrieve species data for Ensembl Plants
 info_species(division = "Plants")
 
 # Retrieve species data with additional parameters
 info_species(division = "Vertebrates", strain_collection = "mouse")
-More details at \url{https://rest.ensembl.org/documentation/info/species}
 }

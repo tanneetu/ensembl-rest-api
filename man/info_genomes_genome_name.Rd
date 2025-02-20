@@ -16,9 +16,10 @@ A list containing genome-related information retrieved from the Ensembl REST API
 Fetches genome-related information for a given genome name using the Ensembl REST API.
 The function supports caching to avoid redundant API calls and improve performance.
 }
+\details{
+More details at \url{https://rest.ensembl.org/documentation/info/info_genome}
+}
 \examples{
 # Retrieve genome information for Arabidopsis thaliana
 info_genomes_genome_name(name = "arabidopsis_thaliana")
-
-More details at \url{https://rest.ensembl.org/documentation/info/info_genome}
 }
