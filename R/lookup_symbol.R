@@ -36,10 +36,7 @@ post_lookup_symbol <- function(species = NULL, symbols = NULL) {
 #'
 #' @description
 #' The function constructs the API request, validates the input parameters, and returns the retrieved information as a list.
-#' It expects the species and symbol(s) as input.
-#' It first checks if the requested data is available in the cache.
-#' If a valid cached entry exists, it returns the cached data.
-#' If the cache is outdated or missing, it fetches new data, updates the cache, and returns the latest results.
+#' The function supports caching to avoid redundant API calls and improve performance.
 #'
 #' @param species A character string of species name
 #' @param symbols A character vector of one or multiple symbols
@@ -63,7 +60,7 @@ lookup_symbol <- function(species = NULL, symbols = NULL) {
     stop("Species is missing!")
   }
 
-  if (is.null(symbols) || !nzchar(as.character(symbols))) {
+  if (is.null(symbols) || length(symbols) == 0 || all(symbols == "")) {
     stop("Symbol is missing!")
   }
 
@@ -76,22 +73,7 @@ lookup_symbol <- function(species = NULL, symbols = NULL) {
   # Create unique hash for caching
   hash <- create_hash(endpoint, species = species, symbols = symbols)
 
-  # Check cache status (TRUE or FALSE)
-  cache_status <- check_cache(bfc, hash)
-
-  if (cache_status$cache_exists && cache_status$is_up_to_date) {
-    return(read_cache(bfc, hash))  # Load cached data
-  }
-
-  message("Fetching new data from API...")
-  result_data <- post_lookup_symbol(species, symbols)
-
-  # Cache decision based on status
-  if (cache_status$cache_exists && !cache_status$is_up_to_date) {
-    update_cache(path, bfc, hash, result_data)
-  } else if (!cache_status$cache_exists && !cache_status$is_up_to_date) {
-    create_cache(path, bfc, hash, result_data)
-  }
+  result_data <- fetch_data_with_cache(hash, post_lookup_symbol, species = species, symbols = symbols)
 
   return(result_data)
 }

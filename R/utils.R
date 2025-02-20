@@ -66,8 +66,8 @@ query_string_optional_params <- function(optional_params) {
 #' @param body A list containing the data to be sent in the request body.
 #'
 #' @return A structured response object parsed from JSON.
-#' @keywords internal
 #' @import  httr2 jsonlite
+#' @keywords internal
 post_request <- function(url, body) {
 
   req <- request(url) |>
@@ -91,8 +91,8 @@ post_request <- function(url, body) {
 #' @param url A character string specifying the API endpoint.
 #'
 #' @return A structured response object parsed from JSON.
-#' @keywords internal
 #' @import  httr2 jsonlite
+#' @keywords internal
 get_request <-function(url){
 
   req <- request(url) |>
@@ -105,4 +105,46 @@ get_request <-function(url){
   result<- fromJSON(toJSON(content, auto_unbox = TRUE)) # Convert JSON
 
   return (result)
+}
+
+#' Fetch Data with Caching Mechanism
+#'
+#' @description
+#' This internal function handles fetching data from an API while implementing caching.
+#' It first checks if the requested data is available in the cache.
+#' If cached data is up to date, it returns the cached data; otherwise, it fetches new data,
+#' updates the cache, and returns the latest results.
+#'
+#' @param hash A unique identifier for caching the fetched data.
+#' @param fetch_function A function that retrieves the required data when the cache is outdated or missing.
+#' @param ... Additional arguments to be passed to the fetch function.
+#'
+#' @return The fetched data, either from cache or a fresh API request.
+#' @import BiocFileCache rappdirs
+#' @keywords internal
+fetch_data_with_cache <- function(hash, fetch_function, ...) {
+
+  # Initialize BiocFileCache
+  path <- rappdirs::user_cache_dir(appname = "EnsemblRestApiCache")
+  bfc <- BiocFileCache(path, ask = FALSE)
+
+  # Check cache status
+  cache_status <- check_cache(bfc, hash)
+
+  # If data exists and is up to date, return cached data
+  if (cache_status$cache_exists && cache_status$is_up_to_date) {
+    return(read_cache(bfc, hash))
+  }
+
+  message("Fetching new data from API...")
+  result_data <- fetch_function(...)
+
+  # Cache decision based on status
+  if (cache_status$cache_exists && !cache_status$is_up_to_date) {
+    update_cache(path, bfc, hash, result_data)
+  } else if (!cache_status$cache_exists) {
+    create_cache(path, bfc, hash, result_data)
+  }
+
+  return(result_data)
 }

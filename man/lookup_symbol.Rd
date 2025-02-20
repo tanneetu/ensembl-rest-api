@@ -16,10 +16,7 @@ A list containing the lookup result from the Ensembl REST API.
 }
 \description{
 The function constructs the API request, validates the input parameters, and returns the retrieved information as a list.
-It expects the species and symbol(s) as input.
-It first checks if the requested data is available in the cache.
-If a valid cached entry exists, it returns the cached data.
-If the cache is outdated or missing, it fetches new data, updates the cache, and returns the latest results.
+The function supports caching to avoid redundant API calls and improve performance.
 }
 \examples{
 #Example for a single symbol

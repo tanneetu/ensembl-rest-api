@@ -7,7 +7,6 @@
 #'
 #' @return A data frame containing the archive details from Ensembl REST API.
 #'
-#' @import httr2 jsonlite
 #' @keywords internal
 post_archive_id <-function(id = NULL){
 
@@ -26,9 +25,7 @@ post_archive_id <-function(id = NULL){
 #'
 #' @description
 #' This function sends a request to the Ensembl REST API to retrieve information for given IDs.
-#' It first checks if the requested data is available in the cache.
-#' If a valid cached entry exists, it returns the cached data.
-#' If the cache is outdated or missing, it fetches new data, updates the cache, and returns the latest results.
+#' The function supports caching to avoid redundant API calls and improve performance.
 #'
 #' @param id A character vector representing the Ensembl stable ID(s) to be queried.
 #'
@@ -47,7 +44,7 @@ post_archive_id <-function(id = NULL){
 #' More details at \url{https://rest.ensembl.org/documentation/info/archive_id_get}
 archive_id <- function(id = NULL){
 
-  if (is.null(id) || length(id) == 0) {
+  if (is.null(id) || length(id) == 0 || all(id == "")) {
     stop("ID is missing! Please provide a valid ID.")
   }
 
@@ -60,22 +57,7 @@ archive_id <- function(id = NULL){
   # Create unique hash for caching
   hash <- create_hash(endpoint, id = id)
 
-  # Check cache status (TRUE or FALSE)
-  cache_status <- check_cache(bfc, hash)
-
-  if (cache_status$cache_exists && cache_status$is_up_to_date) {
-    return(read_cache(bfc, hash))  # Load cached data
-  }
-
-  message("Fetching new data from API...")
-  result_data <- post_archive_id(id)
-
-  # Cache decision based on status
-  if (cache_status$cache_exists && !cache_status$is_up_to_date) {
-    update_cache(path, bfc, hash, result_data)
-  } else if (!cache_status$cache_exists && !cache_status$is_up_to_date) {
-    create_cache(path, bfc, hash, result_data)
-  }
+  result_data <- fetch_data_with_cache(hash, post_archive_id, id=id)
 
   return(result_data)
 

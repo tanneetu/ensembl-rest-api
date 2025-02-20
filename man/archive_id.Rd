@@ -14,9 +14,7 @@ A data frame containing the archive details from Ensembl REST API.
 }
 \description{
 This function sends a request to the Ensembl REST API to retrieve information for given IDs.
-It first checks if the requested data is available in the cache.
-If a valid cached entry exists, it returns the cached data.
-If the cache is outdated or missing, it fetches new data, updates the cache, and returns the latest results.
+The function supports caching to avoid redundant API calls and improve performance.
 }
 \examples{
 #Example for a single ID

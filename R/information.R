@@ -2,6 +2,16 @@
 # info/species
 # info/genomes/genome_name
 
+#' Retrieve Species Information from Ensembl REST API
+#'
+#' @description
+#' Sends a GET request to the Ensembl REST API to retrieve species-related information for speciefic division.
+#'
+#' @param division A character string specifying the Ensembl or Ensembl Genomes division (e.g., `"EnsemblVertebrates"`).
+#' @param ... Named arguments representing optional parameters for the API request.
+#'
+#' @return A list of species data retrieved from the Ensembl REST API.
+#' @keywords internal
 get_info_species <- function(division = NULL, ...){
 
   optional_params<- list(division = division, ...)
@@ -17,9 +27,31 @@ get_info_species <- function(division = NULL, ...){
   return(species_data)
 }
 
+#' Lists all available species, their aliases, available adaptor groups and data release.
+#'
+#' @description
+#' Fetches species information from the Ensembl REST API for a given division.
+#' The function supports caching to avoid redundant API calls and improve performance.
+#'
+#' @param division A character string specifying the division. Accepted values:
+#' `"Metazoa"`, `"Fungi"`, `"Plants"`, `"Protists"`, `"Vertebrates"`, or `"Bacteria"`.
+#' @param ... Named arguments representing optional parameters for the API request.
+#'
+#' @return A list containing species data from the Ensembl REST API.
+#'
+#' @import BiocFileCache rappdirs
+#' @export
+#'
+#' @examples
+#' # Retrieve species data for Ensembl Plants
+#' info_species(division = "Plants")
+#'
+#' # Retrieve species data with additional parameters
+#' info_species(division = "Vertebrates", strain_collection = "mouse")
+#' More details at \url{https://rest.ensembl.org/documentation/info/species}
 info_species<-function(division = NULL, ...){
 
-  if (is.null(division) || length(division) == 0) {
+  if (is.null(division) || length(division) == 0 ) {
     stop("Division is missing! Please provide a valid division name.")
   }
 
@@ -44,26 +76,20 @@ info_species<-function(division = NULL, ...){
   # Create unique hash for caching
   hash <- create_hash(endpoint, division = ensembl_division, ...)
 
-  # Check cache status (TRUE or FALSE)
-  cache_status <- check_cache(bfc, hash)
-
-  if (cache_status$cache_exists && cache_status$is_up_to_date) {
-    return(read_cache(bfc, hash))  # Load cached data
-  }
-
-  message("Fetching new data from API...")
-  result_data <- get_info_species(division = ensembl_division, ...)
-
-  # Cache decision based on status
-  if (cache_status$cache_exists && !cache_status$is_up_to_date) {
-    update_cache(path, bfc, hash, result_data)  # Update existing cache
-  } else if (!cache_status$cache_exists && !cache_status$is_up_to_date) {
-    create_cache(path, bfc, hash, result_data)  # Create new cache
-  }
+  result_data <- fetch_data_with_cache(hash, get_info_species, division= ensembl_division, ...)
 
   return(result_data)
 }
 
+#' Retrieve Genome Information from Ensembl REST API
+#'
+#' @description
+#' Sends a GET request to the Ensembl REST API to retrieve specific genome information.
+#'
+#' @param name A character string specifying the name of the genome.
+#'
+#' @return A list containing genome-related information retrieved from the Ensembl REST API.
+#' @keywords internal
 get_info_genomes_genome_name <- function(name = NULL){
 
   mandatory_params <- name
@@ -77,10 +103,27 @@ get_info_genomes_genome_name <- function(name = NULL){
   return(result)
 }
 
-
+#' Retrieve genome information for given genome name.
+#'
+#' @description
+#' Fetches genome-related information for a given genome name using the Ensembl REST API.
+#' The function supports caching to avoid redundant API calls and improve performance.
+#'
+#' @param name A character string specifying the name of the genome.
+#'
+#' @return A list containing genome-related information retrieved from the Ensembl REST API.
+#'
+#' @import BiocFileCache rappdirs
+#' @export
+#'
+#' @examples
+#' # Retrieve genome information for Arabidopsis thaliana
+#' info_genomes_genome_name(name = "arabidopsis_thaliana")
+#'
+#' More details at \url{https://rest.ensembl.org/documentation/info/info_genome}
 info_genomes_genome_name <- function(name= NULL){
 
-  if (is.null(name) || length(name) == 0) {
+  if (is.null(name) || length(name) == 0 || name == "") {
     stop("Genome name is missing! Please provide a valid genome name.")
   }
 
@@ -96,22 +139,7 @@ info_genomes_genome_name <- function(name= NULL){
   # Create unique hash for caching
   hash <- create_hash(endpoint, name = name)
 
-  # Check cache status (TRUE or FALSE)
-  cache_status <- check_cache(bfc, hash)
-
-  if (cache_status$cache_exists && cache_status$is_up_to_date) {
-    return(read_cache(bfc, hash))  # Load cached data
-  }
-
-  message("Fetching new data from API...")
-  result_data <- get_info_genomes_genome_name(name)
-
-  #Cache decision based on status
-  if (cache_status$cache_exists && !cache_status$is_up_to_date) {
-    update_cache(path, bfc, hash, result_data)
-  } else if (!cache_status$cache_exists && !cache_status$is_up_to_date) {
-    create_cache(path, bfc, hash, result_data)
-  }
+  result_data <- fetch_data_with_cache(hash, get_info_genomes_genome_name, name= name)
 
   return(result_data)
 }

@@ -12,10 +12,9 @@
 #' @return If the genome name is valid, it is returned as a lowercase string. If not found, an error
 #' is raised, suggesting the closest possible matches.
 #'
-#' @keywords internal
-#'
-#' @import BiocFileCache rappdirs stringdist
+#' @import BiocFileCache rappdirs
 #' @importFrom stringdist stringdist
+#' @keywords internal
 validate_genome_name <- function(genome_name) {
 
   # Initialize BiocFileCache inside the function
@@ -24,6 +23,7 @@ validate_genome_name <- function(genome_name) {
 
   endpoint <- "/info/species/"
   cache_key <- "name"
+
   # Create unique hash for caching
   hash <- create_hash(endpoint, cache_key = cache_key)
 
@@ -47,7 +47,6 @@ validate_genome_name <- function(genome_name) {
     # Combine all species names into a single vector
     species_names <- do.call(c, species_list)
 
-    # Cache decision
     if (cache_status$cache_exists && !cache_status$is_up_to_date) {
       update_cache(path, bfc, hash, species_names)
     } else {
@@ -55,6 +54,7 @@ validate_genome_name <- function(genome_name) {
     }
   }
 
+  # Convert genome_name to lowercase to ensure case-insensitive matching
   genome_name <- tolower(genome_name)
 
   # Validate genome_name

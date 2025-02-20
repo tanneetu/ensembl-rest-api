@@ -9,9 +9,8 @@
 #'
 #' @return A named list containing Biostrings objects (`DNAStringSet`, `AAStringSet`) for each requested ID.
 #'
+#' @import Biostrings
 #' @keywords internal
-#' @import httr2 jsonlite Biostrings
-#'
 post_sequence_id <- function(id = NULL, ...) {
 
   optional_params<- list(...)
@@ -61,16 +60,14 @@ post_sequence_id <- function(id = NULL, ...) {
 #'
 #' @description
 #' This function sends a request to the Ensembl REST API to retrieve sequence data for given IDs.
-#' It first checks if the requested data is available in the cache.
-#' If a valid cached entry exists, it returns the cached data.
-#' If the cache is outdated or missing, it fetches new data, updates the cache, and returns the latest results.
+#' The function supports caching to avoid redundant API calls and improve performance.
 #'
 #' @param id A character vector representing the Ensembl stable ID, which is required for retrieving sequences.
 #' @param ... Named arguments representing optional parameters for the API request.
 #'
 #' @return A named list containing Biostrings objects (`DNAStringSet`, `AAStringSet`) for each requested sequence ID.
 #'
-#' @import httr2 jsonlite Biostrings BiocFileCache
+#' @import BiocFileCache rappdirs
 #' @export
 #'
 #' @examples
@@ -79,9 +76,10 @@ post_sequence_id <- function(id = NULL, ...) {
 #'
 #' # Retrieve multiple sequences
 #' sequence_id(id = c("ENSG00000157764", "ENSP00000288602"))
+#' More details at \url{https://rest.ensembl.org/documentation/info/sequence_id}
 sequence_id <- function(id = NULL, ...) {
 
-  if (is.null(id) || length(id) == 0) {
+  if (is.null(id) || length(id) == 0 || all(id == "")) {
     stop("ID is missing! Please provide a valid ID.")
   }
 
@@ -94,22 +92,7 @@ sequence_id <- function(id = NULL, ...) {
   # Create unique hash for caching
   hash <- create_hash(endpoint, id = id, ...)
 
-  # Check cache status (TRUE or FALSE)
-  cache_status <- check_cache(bfc, hash)
+  result_data <- fetch_data_with_cache(hash, post_sequence_id, id = id, ...)
 
-  if (cache_status$cache_exists && cache_status$is_up_to_date) {
-    message("Loading data from cache...")
-    return(read_cache(bfc, hash))  # Load cached data
-  }
-
-  message("Fetching new data from API...")
-  result_data <- post_sequence_id(id, ...)
-
-  # Cache decision based on status
-  if (cache_status$cache_exists && !cache_status$is_up_to_date) {
-    update_cache(path, bfc, hash, result_data)
-  } else if (!cache_status$cache_exists) {
-    create_cache(path, bfc, hash, result_data)
-  }
   return(result_data)
 }
