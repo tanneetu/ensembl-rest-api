@@ -120,7 +120,7 @@ check_cache <- function(bfc, hash, time_mins = 1) {
   }
 
   # Get cache info
-  cache_info <- bfcinfo(bfc, rid = cached_entry$rid)
+  cache_info <- bfcinfo(bfc, rids = cached_entry$rid)
 
   # Convert access_time to POSIXct
   access_time <- ymd_hms(cache_info$access_time)

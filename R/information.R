@@ -142,3 +142,47 @@ info_genomes_genome_name <- function(name= NULL){
 
   return(result_data)
 }
+
+get_info_genomes_division_division_name<- function(division =NULL){
+
+  endpoint <- "/info/genomes/division/"
+
+  url <- build_url(endpoint, mandatory_params = division)
+
+  result<- get_request(url)
+
+  return(result)
+}
+
+info_genomes_division_division_name<- function(division =NULL){
+
+  if (is.null(division) || length(division) == 0 ) {
+    stop("Division is missing! Please provide a valid division name.")
+  }
+
+  # Initialize BiocFileCache inside the function
+  path <- rappdirs::user_cache_dir(appname = "EnsemblRestApiCache")
+  bfc <- BiocFileCache(path, ask = FALSE)
+
+  # Mapping from usual division names to Ensembl division names
+  ensembl_division <- switch(
+    division,
+    "Metazoa" = "EnsemblMetazoa",
+    "Fungi" = "EnsemblFungi",
+    "Plants" = "EnsemblPlants",
+    "Protists" = "EnsemblProtists",
+    "Vertebrates" = "EnsemblVertebrates",
+    "Bacteria" = "EnsemblBacteria",
+    stop("Invalid division name! Choose from: Metazoa, Fungi, Plants, Protists, Vertebrates, Bacteria")
+  )
+
+  endpoint <- "/info/genomes/division/"
+
+  # Create unique hash for caching
+  hash <- create_hash(endpoint, division = ensembl_division)
+
+  result_data <- fetch_data_with_cache(hash, get_info_genomes_division_division_name, division= ensembl_division)
+
+  return(result_data)
+
+}
