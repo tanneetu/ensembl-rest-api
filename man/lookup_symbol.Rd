@@ -7,9 +7,9 @@
 lookup_symbol(species = NULL, symbols = NULL)
 }
 \arguments{
-\item{species}{A character string of species name}
+\item{species}{A character string of species name.}
 
-\item{symbols}{A character vector of one or multiple symbols}
+\item{symbols}{A character vector of one or multiple symbols.}
 }
 \value{
 A list containing the lookup result from the Ensembl REST API.

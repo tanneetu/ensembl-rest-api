@@ -20,7 +20,9 @@ get_info_species <- function(division = NULL, ...){
 
   url <- build_url(endpoint, optional_params = optional_params)
 
-  result<- get_request(url)
+  response<- get_request(url)
+
+  result <- response$result
 
   species_data <- result$species
 
@@ -98,9 +100,21 @@ get_info_genomes_genome_name <- function(name = NULL){
 
   url<- build_url(endpoint, mandatory_params)
 
-  result<- get_request(url)
+  response<- get_request(url)
 
-  return(result)
+  # If error occurred
+  if (!is.null(response$error_code)) {
+
+    if (response$error_code == 400) {
+      # Suggest valid genome names
+      return(validate_genome_name(name))
+    } else {
+      message("Error: HTTP ", response$error_code, " - ", response$message)
+      return(NULL)
+    }
+  }
+
+  return(response$result)
 }
 
 #' Retrieve genome information for given genome name.
@@ -126,9 +140,6 @@ info_genomes_genome_name <- function(name= NULL){
     stop("Genome name is missing! Please provide a valid genome name.")
   }
 
-  # Validate the genome name
-  name <- validate_genome_name(name)
-
   # Initialize BiocFileCache inside the function
   path <- rappdirs::user_cache_dir(appname = "EnsemblRestApiCache")
   bfc <- BiocFileCache(path, ask = FALSE)
@@ -149,7 +160,11 @@ get_info_genomes_division_division_name<- function(division =NULL){
 
   url <- build_url(endpoint, mandatory_params = division)
 
-  result<- get_request(url)
+  #result<- get_request(url)
+
+  response<- get_request(url)
+
+  result <- response$result
 
   return(result)
 }

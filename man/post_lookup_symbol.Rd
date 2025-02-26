@@ -15,9 +15,6 @@ post_lookup_symbol(species = NULL, symbols = NULL)
 A parsed JSON response containing the lookup results for the specified symbols.
 }
 \description{
-Sends a POST request to the Ensembl REST API to look up information for a set of symbols.
-Separates the optional parameters from the whole parameters list.
-Right now, no optional parameter is used in this function.
-Constructs a query URL based on the mandatory and optional parameters and includes the symbols in the request body.
+Sends a POST request to the Ensembl REST API to look up information for a set of symbols of specific species.
 }
 \keyword{internal}

@@ -9,6 +9,7 @@
 #' @param optional_params A named list of optional parameters.
 #'
 #' @return A complete URL as a character string to be used for API requests.
+#' @import  httr2
 #' @keywords internal
 build_url <- function(endpoint, mandatory_params = NULL, optional_params = NULL) {
 
@@ -34,8 +35,12 @@ build_url <- function(endpoint, mandatory_params = NULL, optional_params = NULL)
   } else {
     full_url <- base_url
   }
-  print(full_url)
-  return(full_url)
+
+  clean_url <- gsub(" ", "%20",full_url)
+
+  return(clean_url)
+
+  #"https://rest.ensembl.org/info/assembly/silver fox?"
 }
 
 #' Creates a string containing optional parameters
@@ -98,13 +103,26 @@ get_request <-function(url){
   req <- request(url) |>
     req_headers("Accept" = "application/json")
 
-  resp <- req |> req_perform()
+  # Suppress the error and continue to execute
+  resp <- req |>
+    req_error(is_error = \(resp) FALSE) |>
+    req_perform()
+
+  print(resp)
+
+  status_code <- resp_status(resp)
+
+  if (status_code != 200) {
+    return(list(error_code = status_code, message = resp_body_string(resp)))
+  }
 
   content <- resp_body_json(resp, auto_unbox = FALSE) # Parse response
 
   result<- fromJSON(toJSON(content, auto_unbox = TRUE)) # Convert JSON
 
-  return (result)
+  return(list(error_code = NULL, result = result))
+
+  #"https://rest.ensembl.org/lookup/symbol/homo_sapiens/BRCA2?"
 }
 
 #' Fetch Data with Caching Mechanism

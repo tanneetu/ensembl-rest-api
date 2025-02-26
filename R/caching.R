@@ -102,7 +102,7 @@ create_cache <- function(path, bfc, hash, result_data) {
 #' @import BiocFileCache
 #' @importFrom lubridate ymd_hms now
 #' @keywords internal
-check_cache <- function(bfc, hash, time_mins = 1) {
+check_cache <- function(bfc, hash, time_mins = 5) {
   # Query the cache for the given hash
   cached_entry <- bfcquery(bfc, query = hash, field = "rname", exact = TRUE)
 
