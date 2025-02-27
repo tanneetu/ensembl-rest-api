@@ -2,7 +2,7 @@
 % Please edit documentation in R/genome_name_validation.R
 \name{validate_genome_name}
 \alias{validate_genome_name}
-\title{Validate Genome Name Against Ensembl Species List Names}
+\title{Validate Genome Name Against Ensembl Genome Names List}
 \usage{
 validate_genome_name(genome_name)
 }
@@ -10,14 +10,14 @@ validate_genome_name(genome_name)
 \item{genome_name}{A character string representing the genome name to validate.}
 }
 \value{
-If the genome name is valid, it is returned as a lowercase string. If not found, an error
-is raised, suggesting the closest possible matches.
+If the genome name is valid, logical `TRUE` is returned. If not, an error is thrown with suggested
+closest matching genome names.
 }
 \description{
-This function validates a given genome name against the available species names in the Ensembl database.
-If the genome name is found, it is returned in lowercase. Otherwise, the function computes the
-Damerau-Levenshtein distance to suggest the closest matching species names.
-Species names are fetched from the cache if available; otherwise, they are retrieved from the API
+This function validates a given genome name by checking its existence in the Ensembl database.
+Ensembl genome names are fetched from the cache if available. Otherwise, they are retrieved from the API
 and cached for future use.
+If the genome name is found, the function returns `TRUE`. If not, it suggests the closest matches
+based on the Damerau-Levenshtein distance and stops execution with an error message.
 }
 \keyword{internal}

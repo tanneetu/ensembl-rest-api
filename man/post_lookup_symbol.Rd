@@ -4,17 +4,19 @@
 \alias{post_lookup_symbol}
 \title{Perform POST Request to Ensembl REST API for Symbol Lookup}
 \usage{
-post_lookup_symbol(species = NULL, symbols = NULL)
+post_lookup_symbol(species, symbols)
 }
 \arguments{
-\item{species}{A character string specifying the species. This is a required parameter.}
+\item{species}{A character string specifying the species.}
 
-\item{symbols}{A character vector of one or multiple gene symbols to look up. This is passed as the body of the POST request.}
+\item{symbols}{A character vector of one or multiple gene symbols to look up.}
 }
 \value{
 A parsed JSON response containing the lookup results for the specified symbols.
+If the response is empty, the function returns an empty list.
 }
 \description{
 Sends a POST request to the Ensembl REST API to look up information for a set of symbols of specific species.
+It constructs the request URL, sends the query, and returns the parsed response.
 }
 \keyword{internal}

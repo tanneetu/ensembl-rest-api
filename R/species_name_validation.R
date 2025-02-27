@@ -1,5 +1,20 @@
-# Function to validate the species
-
+#' @title Validate Species Name Against Ensembl Species List
+#'
+#' @description
+#' This function validates a given species name by checking its existence in the Ensembl database.
+#' Ensembl species names and aliases are fetched from the cache if available. Otherwise, they are retrieved from the API
+#' and cached for future use.
+#' If the species name is found, the function returns `TRUE`. If not, it suggests the closest matches
+#' based on the Damerau-Levenshtein distance and stops execution with an error message.
+#'
+#' @param species_name A character string representing the species name to validate.
+#'
+#' @return If the species name is valid, logical `TRUE` is returned. If not, an error is thrown with suggested
+#'         closest matching species names.
+#'
+#' @import BiocFileCache rappdirs
+#' @importFrom stringdist stringdist
+#' @keywords internal
 validate_species_name <- function(species_name) {
 
   # Initialize BiocFileCache inside the function
@@ -69,9 +84,8 @@ validate_species_name <- function(species_name) {
 
     string_best_matches <- paste(best_matches, collapse = ", ")
 
-    message("Species name not found! Did you mean any of these: ", string_best_matches, "?")
+    stop("Species name not found! Did you mean any of these: ", string_best_matches, "?")
 
-    return(FALSE)
   }
 
 }

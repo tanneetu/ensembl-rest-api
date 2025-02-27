@@ -7,7 +7,7 @@
 post_archive_id(id = NULL)
 }
 \arguments{
-\item{id}{A character vector representing the Ensembl stable ID(s) to be queried.}
+\item{id}{A character vector representing one or more Ensembl stable ID to be queried.}
 }
 \value{
 A data frame containing the archive details from Ensembl REST API.

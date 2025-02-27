@@ -1,9 +1,9 @@
-#' Retrieve the latest version for a set of identifiers
+#' @title Retrieve the latest version for a set of identifiers
 #'
 #' @description
 #' This function sends a POST request to the Ensembl REST API to retrieve information for given ID(s).
 #'
-#' @param id A character vector representing the Ensembl stable ID(s) to be queried.
+#' @param id A character vector representing one or more Ensembl stable ID to be queried.
 #'
 #' @return A data frame containing the archive details from Ensembl REST API.
 #'
@@ -21,20 +21,19 @@ post_archive_id <-function(id = NULL){
 }
 
 
-#' Retrieve the latest version for a set of identifiers
+#' @title Retrieve the latest version for a set of identifiers
 #'
 #' @description
 #' This function sends a request to the Ensembl REST API to retrieve information for given IDs.
-#' The function supports caching to avoid redundant API calls and improve performance.
 #'
-#' @param id A character vector representing the Ensembl stable ID(s) to be queried.
+#' @param id A character vector representing one or more Ensembl stable ID to be queried.
 #'
-#' @return A data frame containing the archive details from Ensembl REST API.
+#' @return A list containing the archive details from Ensembl REST API.
+#'
+#' @seealso \url{https://rest.ensembl.org/documentation/info/archive_id_get}
 #'
 #' @import BiocFileCache rappdirs
 #' @export
-#' @details
-#' More details at \url{https://rest.ensembl.org/documentation/info/archive_id_get}
 #'
 #' @examples
 #' #Example for a single ID

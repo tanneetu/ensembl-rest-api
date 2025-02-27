@@ -10,9 +10,10 @@ get_request(url)
 \item{url}{A character string specifying the API endpoint.}
 }
 \value{
-A structured response object parsed from JSON.
+A list containing either the parsed JSON response or an error message with an HTTP status code.
 }
 \description{
-Sends a GET request to the specified URL and retrieves data in JSON format.
+Sends a GET request to the specified URL and retrieves data in JSON format and returns a structured response.
+If the request fails, an error code and message are returned instead.
 }
 \keyword{internal}

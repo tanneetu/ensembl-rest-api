@@ -2,15 +2,16 @@
 % Please edit documentation in R/information.R
 \name{get_info_genomes_genome_name}
 \alias{get_info_genomes_genome_name}
-\title{Retrieve Genome Information from Ensembl REST API}
+\title{Find genome information for given genome name.}
 \usage{
-get_info_genomes_genome_name(name = NULL)
+get_info_genomes_genome_name(name)
 }
 \arguments{
 \item{name}{A character string specifying the name of the genome.}
 }
 \value{
-A list containing genome-related information retrieved from the Ensembl REST API.
+A list containing either genome-related information retrieved from the Ensembl REST API
+or an error message with a status code if the request fails.
 }
 \description{
 Sends a GET request to the Ensembl REST API to retrieve specific genome information.

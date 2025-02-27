@@ -1,8 +1,9 @@
-#' Builds URL for ENSEMBL REST API Endpoints
+#' @title Builds URL for ENSEMBL REST API Endpoints
 #'
 #' @description
 #' This internal function constructs a complete URL for API requests to the Ensembl REST API.
 #' It combines the server URL, endpoint, mandatory parameters, and optional parameters if it's not empty.
+#' It also rectifies a malformed URL that contains spaces.
 #'
 #' @param endpoint A character string specifying the API endpoint (e.g., "/lookup/symbol/").
 #' @param mandatory_params A list of required parameters to be included in the URL path.
@@ -36,14 +37,14 @@ build_url <- function(endpoint, mandatory_params = NULL, optional_params = NULL)
     full_url <- base_url
   }
 
+  #"https://rest.ensembl.org/info/assembly/silver fox?"
+
   clean_url <- gsub(" ", "%20",full_url)
 
   return(clean_url)
-
-  #"https://rest.ensembl.org/info/assembly/silver fox?"
 }
 
-#' Creates a string containing optional parameters
+#' @title Creates a query string containing optional parameters
 #'
 #' @description
 #' Creates a query string containing optional parameters in "key=value" format, separated by semicolons.
@@ -61,7 +62,7 @@ query_string_optional_params <- function(optional_params) {
   return(query_string)
 }
 
-#' Perform a POST Request to an API
+#' @title Perform a POST Request to an API
 #'
 #' @description
 #' Sends a POST request to the specified URL with a JSON-formatted body.
@@ -88,14 +89,16 @@ post_request <- function(url, body) {
   return(result)
 }
 
-#' Perform a GET Request to an API
+#' @title Perform a GET Request to an API
 #'
 #' @description
-#' Sends a GET request to the specified URL and retrieves data in JSON format.
+#' Sends a GET request to the specified URL and retrieves data in JSON format and returns a structured response.
+#' If the request fails, an error code and message are returned instead.
 #'
 #' @param url A character string specifying the API endpoint.
 #'
-#' @return A structured response object parsed from JSON.
+#' @return A list containing either the parsed JSON response or an error message with an HTTP status code.
+#'
 #' @import  httr2 jsonlite
 #' @keywords internal
 get_request <-function(url){
@@ -108,7 +111,7 @@ get_request <-function(url){
     req_error(is_error = \(resp) FALSE) |>
     req_perform()
 
-  print(resp)
+  #print(resp)
 
   status_code <- resp_status(resp)
 
@@ -125,7 +128,7 @@ get_request <-function(url){
   #"https://rest.ensembl.org/lookup/symbol/homo_sapiens/BRCA2?"
 }
 
-#' Fetch Data with Caching Mechanism
+#' @title Fetch Data with Caching Mechanism
 #'
 #' @description
 #' This internal function handles fetching data from an API while implementing caching.

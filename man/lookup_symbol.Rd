@@ -2,29 +2,30 @@
 % Please edit documentation in R/lookup_symbol.R
 \name{lookup_symbol}
 \alias{lookup_symbol}
-\title{Find the species and database for a set of symbols in a linked external database.}
+\title{Find species-specific database information for given gene symbols from an external linked database.}
 \usage{
-lookup_symbol(species = NULL, symbols = NULL)
+lookup_symbol(species, symbols)
 }
 \arguments{
-\item{species}{A character string of species name.}
+\item{species}{A character string of species name or alias.}
 
-\item{symbols}{A character vector of one or multiple symbols.}
+\item{symbols}{A character vector of one or multiple symbols.
+A name or symbol from an annotation source has been linked to a genetic feature.}
 }
 \value{
-A list containing the lookup result from the Ensembl REST API.
+A list containing the lookup results from the Ensembl REST API.
+For partially valid symbols, a message is issued, and results are returned for the valid ones.
 }
 \description{
-The function constructs the API request, validates the input parameters, and returns the retrieved information as a list.
-The function supports caching to avoid redundant API calls and improve performance.
-}
-\details{
-More details at \url{https://rest.ensembl.org/documentation/info/symbol_lookup}
+Looks up gene symbols in the Ensembl REST API for a specified species.
 }
 \examples{
-#Example for a single symbol
-lookup_symbol(species = "homo_sapiens", symbols = "BRCA2")
+# Example for an alias and single symbol
+lookup_symbol(species = "human", symbols = "BRCA2")
 
-#Example for multiple symbols
+# Example for a species name and multiple symbols
 lookup_symbol(species = "homo_sapiens", symbols = c("BRCA2", "BRAF"))
+}
+\seealso{
+\url{https://rest.ensembl.org/documentation/info/symbol_lookup}
 }

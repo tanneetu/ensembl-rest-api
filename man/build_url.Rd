@@ -19,5 +19,6 @@ A complete URL as a character string to be used for API requests.
 \description{
 This internal function constructs a complete URL for API requests to the Ensembl REST API.
 It combines the server URL, endpoint, mandatory parameters, and optional parameters if it's not empty.
+It also rectifies a malformed URL that contains spaces.
 }
 \keyword{internal}

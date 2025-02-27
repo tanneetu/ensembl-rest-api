@@ -2,7 +2,7 @@
 % Please edit documentation in R/utils.R
 \name{query_string_optional_params}
 \alias{query_string_optional_params}
-\title{Creates a string containing optional parameters}
+\title{Creates a query string containing optional parameters}
 \usage{
 query_string_optional_params(optional_params)
 }

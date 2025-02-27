@@ -1,16 +1,16 @@
-#' Validate Genome Name Against Ensembl Genome List Names
+#' @title Validate Genome Name Against Ensembl Genome Names List
 #'
 #' @description
-#' This function validates a given genome name against the available genome names in the Ensembl database.
-#' If the genome name is found, it is returned in lowercase. Otherwise, the function computes the
-#' Damerau-Levenshtein distance to suggest the closest matching genome names.
-#' Genome names are fetched from the cache if available; otherwise, they are retrieved from the API
+#' This function validates a given genome name by checking its existence in the Ensembl database.
+#' Ensembl genome names are fetched from the cache if available. Otherwise, they are retrieved from the API
 #' and cached for future use.
+#' If the genome name is found, the function returns `TRUE`. If not, it suggests the closest matches
+#' based on the Damerau-Levenshtein distance and stops execution with an error message.
 #'
 #' @param genome_name A character string representing the genome name to validate.
 #'
-#' @return If the genome name is valid, logical `TRUE` is returned. If not valid, logical `FALSE` is returned
-#' along with a message suggesting the closest possible matches.
+#' @return If the genome name is valid, logical `TRUE` is returned. If not, an error is thrown with suggested
+#' closest matching genome names.
 #'
 #' @import BiocFileCache rappdirs
 #' @importFrom stringdist stringdist
@@ -37,9 +37,8 @@ validate_genome_name <- function(genome_name) {
   } else {
     message(" Fetching genome information from API and caching names...")
 
-    #"Bacteria"
     divisions <- c("Metazoa", "Fungi", "Plants","Protists",
-                   "Vertebrates")
+                   "Vertebrates","Bacteria")
 
     genome_list <- lapply(divisions, function(div) {
       genome_data <- suppressMessages(info_genomes_division_division_name(division = div))
@@ -59,7 +58,7 @@ validate_genome_name <- function(genome_name) {
 
   # Convert genome_name to lowercase to ensure case-insensitive matching
   genome_name <- tolower(genome_name)
-  all_genome_names <- tolower(all_genome_names)
+  all_genome_names <- unique(tolower(all_genome_names))
 
   # Validate genome_name
   if (genome_name %in% all_genome_names) {
@@ -82,9 +81,8 @@ validate_genome_name <- function(genome_name) {
 
     string_best_matches <- paste(best_matches, collapse = ", ")
 
-    message("Genome name not found! Did you mean any of these: ", string_best_matches, "?")
+    stop("Genome name not found! Did you mean any of these: ", string_best_matches, "?")
 
-    return(FALSE)
   }
 
 }

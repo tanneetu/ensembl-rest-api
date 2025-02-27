@@ -2,24 +2,24 @@
 % Please edit documentation in R/information.R
 \name{info_genomes_genome_name}
 \alias{info_genomes_genome_name}
-\title{Retrieve genome information for given genome name.}
+\title{Find genome information for given genome name.}
 \usage{
-info_genomes_genome_name(name = NULL)
+info_genomes_genome_name(name)
 }
 \arguments{
-\item{name}{A character string specifying the name of the genome.}
+\item{name}{A character string of the genome name.}
 }
 \value{
-A list containing genome-related information retrieved from the Ensembl REST API.
+A list containing genome-related information from the Ensembl REST API.
+If the API request fails, an error message with an HTTP status code is returned.
 }
 \description{
 Fetches genome-related information for a given genome name using the Ensembl REST API.
-The function supports caching to avoid redundant API calls and improve performance.
-}
-\details{
-More details at \url{https://rest.ensembl.org/documentation/info/info_genome}
 }
 \examples{
-# Retrieve genome information for Arabidopsis thaliana
+# Retrieve genome information for arabidopsis_thaliana
 info_genomes_genome_name(name = "arabidopsis_thaliana")
+}
+\seealso{
+\url{https://rest.ensembl.org/documentation/info/info_genome}
 }

@@ -1,10 +1,10 @@
-#' Request multiple types of sequence by stable identifier.
+#' @title Request multiple types of sequence by stable identifier.
 #'
 #' @description
 #' This function sends a POST request to the Ensembl REST API to retrieve sequence data for given IDs.
 #' It processes the API response, converts sequences into appropriate Biostrings objects.
 #'
-#' @param id A character vector representing the Ensembl stable ID, which is required for retrieving sequences.
+#' @param id A character vector representing the Ensembl stable ID.
 #' @param ... Named arguments representing optional parameters for the API request.
 #'
 #' @return A named list containing Biostrings objects (`DNAStringSet`, `AAStringSet`) for each requested ID.
@@ -56,21 +56,20 @@ post_sequence_id <- function(id = NULL, ...) {
   return(biostring_objects)
 }
 
-#' Request multiple types of sequence by stable identifier.
+#' @title Request multiple types of sequence by stable identifier.
 #'
 #' @description
 #' This function sends a request to the Ensembl REST API to retrieve sequence data for given IDs.
-#' The function supports caching to avoid redundant API calls and improve performance.
 #'
-#' @param id A character vector representing the Ensembl stable ID, which is required for retrieving sequences.
+#' @param id A character vector representing the Ensembl stable ID.
 #' @param ... Named arguments representing optional parameters for the API request.
 #'
 #' @return A named list containing Biostrings objects (`DNAStringSet`, `AAStringSet`) for each requested sequence ID.
 #'
+#' @seealso \url{https://rest.ensembl.org/documentation/info/sequence_id}
+#'
 #' @import BiocFileCache rappdirs
 #' @export
-#' @details
-#' More details at \url{https://rest.ensembl.org/documentation/info/sequence_id}
 #' @examples
 #' # Retrieve a DNA sequence
 #' sequence_id(id = "ENSG00000157764",type = "genomic")

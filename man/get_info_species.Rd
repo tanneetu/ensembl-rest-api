@@ -4,10 +4,10 @@
 \alias{get_info_species}
 \title{Retrieve Species Information from Ensembl REST API}
 \usage{
-get_info_species(division = NULL, ...)
+get_info_species(division, ...)
 }
 \arguments{
-\item{division}{A character string specifying the Ensembl or Ensembl Genomes division (e.g., `"EnsemblVertebrates"`).}
+\item{division}{A character string specifying the Ensembl division (e.g., `"EnsemblVertebrates"`).}
 
 \item{...}{Named arguments representing optional parameters for the API request.}
 }

@@ -7,7 +7,7 @@
 post_sequence_id(id = NULL, ...)
 }
 \arguments{
-\item{id}{A character vector representing the Ensembl stable ID, which is required for retrieving sequences.}
+\item{id}{A character vector representing the Ensembl stable ID.}
 
 \item{...}{Named arguments representing optional parameters for the API request.}
 }
