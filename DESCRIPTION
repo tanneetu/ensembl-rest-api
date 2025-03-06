@@ -13,5 +13,6 @@ RoxygenNote: 7.3.2
 Imports: httr2, jsonlite, rappdirs, lubridate, BiocFileCache, digest,
           Biostrings, stringdist
 Suggests: 
+    httptest2,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
