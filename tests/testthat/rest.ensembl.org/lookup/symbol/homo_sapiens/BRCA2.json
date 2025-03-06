@@ -1,0 +1,18 @@
+{
+    "end": 32400268,
+    "display_name": "BRCA2",
+    "strand": 1,
+    "start": 32315086,
+    "source": "ensembl_havana",
+    "assembly_name": "GRCh38",
+    "canonical_transcript": "ENST00000380152.8",
+    "object_type": "Gene",
+    "version": 19,
+    "db_type": "core",
+    "logic_name": "ensembl_havana_gene_homo_sapiens",
+    "biotype": "protein_coding",
+    "species": "homo_sapiens",
+    "description": "BRCA2 DNA repair associated [Source:HGNC Symbol;Acc:HGNC:1101]",
+    "seq_region_name": "13",
+    "id": "ENSG00000139618"
+}

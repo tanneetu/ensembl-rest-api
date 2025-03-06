@@ -76,6 +76,10 @@ query_string_optional_params <- function(optional_params) {
 #' @keywords internal
 post_request <- function(url, body) {
 
+  if(length(unlist(body)) > 1000){
+    stop("Request body exceeds the maximum allowed size of 1000 elements. Please reduce the input size")
+  }
+
   req <- request(url) |>
     req_headers("Accept" = "application/json") |>
     req_body_json(body, auto_unbox = FALSE)
@@ -159,6 +163,22 @@ fetch_data_with_cache <- function(hash, fetch_function, ...) {
 
   message("Fetching new data from API...")
   result_data <- fetch_function(...)
+
+  # # For valid get request response, cache only the result
+  # if(is.null(result_data$error_code)){
+  #
+  #   result<-result_data$result
+  #
+  #   # Cache decision based on status
+  #   if (cache_status$cache_exists && !cache_status$is_up_to_date) {
+  #     update_cache(path, bfc, hash, result)
+  #   } else if (!cache_status$cache_exists) {
+  #     create_cache(path, bfc, hash, result)
+  #   }
+  #
+  #   # Return the original get request response
+  #   return(result_data)
+  # }
 
   # Cache decision based on status
   if (cache_status$cache_exists && !cache_status$is_up_to_date) {

@@ -11,7 +11,7 @@
 #'
 #' @import Biostrings
 #' @keywords internal
-post_sequence_id <- function(id = NULL, ...) {
+post_sequence_id <- function(id, ...) {
 
   optional_params<- list(...)
 
@@ -76,9 +76,9 @@ post_sequence_id <- function(id = NULL, ...) {
 #'
 #' # Retrieve multiple sequences
 #' sequence_id(id = c("ENSG00000157764", "ENSP00000288602"))
-sequence_id <- function(id = NULL, ...) {
+sequence_id <- function(id, ...) {
 
-  if (is.null(id) || length(id) == 0 || all(id == "")) {
+  if (missing(id) || length(id) == 0 || all(id == "")) {
     stop("ID is missing! Please provide a valid ID.")
   }
 

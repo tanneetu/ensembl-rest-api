@@ -4,7 +4,7 @@
 \alias{sequence_id}
 \title{Request multiple types of sequence by stable identifier.}
 \usage{
-sequence_id(id = NULL, ...)
+sequence_id(id, ...)
 }
 \arguments{
 \item{id}{A character vector representing the Ensembl stable ID.}
