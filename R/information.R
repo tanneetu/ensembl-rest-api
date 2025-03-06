@@ -1,6 +1,7 @@
 # Implemented Ensembl API Endpoints
 # info/species
 # info/genomes/genome_name
+# info/assembly/species
 
 #' @title Retrieve Species Information from Ensembl REST API
 #'
@@ -238,3 +239,99 @@ info_genomes_division_division_name<- function(division){
   return(result_data)
 
 }
+
+
+
+#' @title List the currently available assemblies for a species, along with toplevel sequences, chromosomes and cytogenetic bands.
+#'
+#' @description
+#' Sends a GET request to the Ensembl REST API to retrieve assembly-related information for speciefic species.
+#'
+#' @param species A character string of species name or alias.
+#' @param bands An optional boolean (`0` or `1`). If set to `1`, include cytogenetic band information.
+#' Only display if band information is available.
+#'
+#' @return A list containing assembly-related information retrieved from the Ensembl REST API.
+#' If the API request fails, an error message with an HTTP status code is returned.
+#' @keywords internal
+get_info_assembly_species <- function(species, bands = NULL){
+
+  mandatory_params <- species
+
+  optional_params <- list(bands = bands)
+
+  endpoint<-"/info/assembly/"
+
+  url<- build_url(endpoint, mandatory_params, optional_params)
+
+  result<- get_request(url)
+
+  return(result)
+}
+
+
+#' @title List the currently available assemblies for a species, along with toplevel sequences, chromosomes and cytogenetic bands.
+#'
+#' @description
+#' Fetches assembly-related information for a specified species using the Ensembl REST API.
+#' The function retrieves available genome assemblies, including toplevel sequences, chromosomes,
+#' and optional cytogenetic band information.
+#'
+#' @param species A character string of species name or alias.
+#' @param bands An optional boolean (`0` or `1`). If set to `1`, include cytogenetic band information.
+#' Only display if band information is available.
+#'
+#' @return A list containing assembly-related information retrieved from the Ensembl REST API.
+#' If the API request fails, an error message with an HTTP status code is returned.
+#'
+#' @seealso \url{https://rest.ensembl.org/documentation/info/assembly_info}
+#'
+#' @import BiocFileCache rappdirs
+#'
+#' @export
+#'
+#' @examples
+#' # Retrieve assembly information for anopheles_melas
+#' info_assembly_species(species = "anopheles_melas")
+#'
+#' # Retrieve assembly information for homo_sapiens including cytogenetic band information
+#' info_assembly_species(species = "human", bands = 1)
+info_assembly_species <- function(species, bands = NULL) {
+
+  if(missing(species) || length(species) == 0 ){
+    stop("Species is missing! Please provide a valid species name. ")
+  }
+
+  # Initialize BiocFileCache inside the function
+  path<- rappdirs::user_cache_dir(appname = "EnsemblRestApiCache")
+  bfc<- BiocFileCache(path, ask = FALSE)
+
+  endpoint<-"/info/assembly/"
+
+  hash <- create_hash(endpoint, species = species, bands = bands)
+
+  result_data <- fetch_data_with_cache(hash, get_info_assembly_species, species = species, bands = bands)
+
+  # If error occurred
+  if(!is.null(result_data$error_code)) {
+
+    # Suggest valid species names for status code 400
+    if(result_data$error_code == 400){
+
+      validate_species_name(species)
+
+    } else{
+
+      # Provide status code and error message
+      message("Error: HTTP ", result_data$error_code, " - ", result_data$message)
+    }
+
+  } else{
+
+    result <- result_data$result
+
+    return(result)
+  }
+
+}
+
