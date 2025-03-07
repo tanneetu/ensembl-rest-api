@@ -41,6 +41,8 @@ build_url <- function(endpoint, mandatory_params = NULL, optional_params = NULL)
 
   clean_url <- gsub(" ", "%20",full_url)
 
+  print(clean_url)
+
   return(clean_url)
 }
 
@@ -79,6 +81,8 @@ post_request <- function(url, body) {
   if(length(unlist(body)) > 1000){
     stop("Request body exceeds the maximum allowed size of 1000 elements. Please reduce the input size")
   }
+
+  print(body)
 
   req <- request(url) |>
     req_headers("Accept" = "application/json") |>
