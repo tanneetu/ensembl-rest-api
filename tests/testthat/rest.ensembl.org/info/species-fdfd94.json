@@ -1,0 +1,3050 @@
+{
+    "species": [
+        {
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "assembly": "ASM411807v1",
+            "accession": "GCA_004118075.1",
+            "display_name": "Vigna unguiculata",
+            "groups": [
+                "core"
+            ],
+            "common_name": "cowpea",
+            "strain": "IT97K-499-35",
+            "strain_collection": null,
+            "taxon_id": "3917",
+            "release": 113,
+            "name": "vigna_unguiculata"
+        },
+        {
+            "name": "glycine_max",
+            "release": 113,
+            "strain": "Williams 82",
+            "taxon_id": "3847",
+            "strain_collection": null,
+            "common_name": "soybeans",
+            "groups": [
+                "funcgen",
+                "core"
+            ],
+            "display_name": "Glycine max",
+            "accession": "GCA_000004515.4",
+            "assembly": "Glycine_max_v2.1",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "glycine max"
+            ]
+        },
+        {
+            "aliases": [
+                "camelina_sativa_str_dh55",
+                "camelina sativa"
+            ],
+            "division": "EnsemblPlants",
+            "accession": "GCA_000633955.1",
+            "assembly": "Cs",
+            "common_name": null,
+            "display_name": "Camelina sativa",
+            "groups": [
+                "core"
+            ],
+            "strain_collection": null,
+            "taxon_id": "90675",
+            "strain": "dh55",
+            "release": 113,
+            "name": "camelina_sativa"
+        },
+        {
+            "strain_collection": null,
+            "taxon_id": "3494",
+            "strain": "Dottato",
+            "common_name": "common fig",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Ficus carica",
+            "accession": "GCA_009761775.1",
+            "assembly": "UNIPI_FiCari_1.0",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "name": "ficus_carica",
+            "release": 113
+        },
+        {
+            "release": 113,
+            "name": "aegilops_tauschii",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "aegilops_tauschii_subsp_strangulata",
+                "aegilops tauschii subsp. strangulata"
+            ],
+            "accession": "GCA_002575655.1",
+            "assembly": "Aet_v4.0",
+            "display_name": "Aegilops tauschii",
+            "groups": [
+                "funcgen",
+                "otherfeatures",
+                "core"
+            ],
+            "common_name": "Tausch's goatgrass",
+            "strain": "AL8/78",
+            "taxon_id": "200361",
+            "strain_collection": null
+        },
+        {
+            "release": 113,
+            "name": "zea_mays",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "accession": "GCA_902167145.1",
+            "assembly": "Zm-B73-REFERENCE-NAM-5.0",
+            "common_name": "maize",
+            "groups": [
+                "funcgen",
+                "variation",
+                "core",
+                "otherfeatures"
+            ],
+            "display_name": "Zea mays",
+            "strain": "B73",
+            "taxon_id": "4577",
+            "strain_collection": null
+        },
+        {
+            "groups": [
+                "core",
+                "variation",
+                "funcgen"
+            ],
+            "display_name": "Solanum lycopersicum",
+            "common_name": "tomato",
+            "strain": "Heinz 1706",
+            "strain_collection": null,
+            "taxon_id": "4081",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "solanum lycopersicum"
+            ],
+            "assembly": "SL3.0",
+            "accession": "GCA_000188115.3",
+            "name": "solanum_lycopersicum",
+            "release": 113
+        },
+        {
+            "strain_collection": null,
+            "taxon_id": "3916",
+            "strain": "VC1973A",
+            "common_name": "mung bean",
+            "display_name": "Vigna radiata",
+            "groups": [
+                "core",
+                "funcgen"
+            ],
+            "assembly": "Vradiata_ver6",
+            "accession": "GCA_000741045.2",
+            "aliases": [
+                "vigna radiata var. radiata",
+                "vigna_radiata_var_radiata"
+            ],
+            "division": "EnsemblPlants",
+            "name": "vigna_radiata",
+            "release": 113
+        },
+        {
+            "release": 113,
+            "name": "oryza_sativa_liuxu",
+            "assembly": "Os125827RS1",
+            "accession": "GCA_009829375.1",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "strain_collection": null,
+            "taxon_id": "39946",
+            "strain": "Liu Xu",
+            "groups": [
+                "core"
+            ],
+            "common_name": "Indica rice",
+            "display_name": "Oryza sativa (Xian/Indica-3B2 var. Liu Xu)"
+        },
+        {
+            "release": 113,
+            "name": "triticum_aestivum_robigus",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "assembly": "EIv1.1",
+            "accession": "GCA_902810685.1",
+            "common_name": "bread wheat",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Triticum aestivum Robigus",
+            "strain_collection": null,
+            "taxon_id": "4565",
+            "strain": "Robigus"
+        },
+        {
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "assembly": "Oat_OT3098_v2",
+            "accession": "GCA_022788535.1",
+            "common_name": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Avena sativa OT3098",
+            "strain": "OT3098",
+            "taxon_id": "4498",
+            "strain_collection": null,
+            "release": 113,
+            "name": "avena_sativa_ot3098"
+        },
+        {
+            "display_name": "Olea europaea var. sylvestris",
+            "common_name": "olive",
+            "groups": [
+                "core"
+            ],
+            "strain": null,
+            "taxon_id": "158386",
+            "strain_collection": null,
+            "division": "EnsemblPlants",
+            "aliases": [
+                "olea_europaea_var_sylvestris",
+                "olea europaea var. sylvestris"
+            ],
+            "assembly": "O_europaea_v1",
+            "accession": "GCA_002742605.1",
+            "name": "olea_europaea_sylvestris",
+            "release": 113
+        },
+        {
+            "strain": "RH89-039-16",
+            "strain_collection": null,
+            "taxon_id": "4113",
+            "common_name": "potato",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Solanum tuberosum RH89-039-16",
+            "assembly": "ASM1418947v1",
+            "accession": "GCA_014189475.1",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "name": "solanum_tuberosum_rh8903916",
+            "release": 113
+        },
+        {
+            "name": "trifolium_pratense",
+            "release": 113,
+            "common_name": "purple clover",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Trifolium pratense",
+            "strain": "Milvus B",
+            "strain_collection": null,
+            "taxon_id": "57577",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "peavine clover",
+                "purple clover",
+                "trifolium pratense",
+                "red clover",
+                "trifolium pratense l.",
+                "triflorum pratense",
+                "rotklee"
+            ],
+            "accession": "GCA_900079335.1",
+            "assembly": "Trpr"
+        },
+        {
+            "release": 113,
+            "name": "cajanus_cajan",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "pigeon pea"
+            ],
+            "accession": "GCA_000340665.1",
+            "assembly": "C.cajan_V1.0",
+            "display_name": "Cajanus cajan (pigeon pea) - GCA_000340665.1",
+            "common_name": "pigeon pea",
+            "groups": [
+                "core"
+            ],
+            "strain": null,
+            "strain_collection": null,
+            "taxon_id": "3821"
+        },
+        {
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "assembly": "ZS97RS3",
+            "accession": "GCA_001618795.1",
+            "common_name": "Indica rice",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Oryza sativa (Xian/Indica-1A var. Zhenshan 97)",
+            "strain": "Zhenshan 97",
+            "strain_collection": null,
+            "taxon_id": "39946",
+            "release": 113,
+            "name": "oryza_sativa_zs97"
+        },
+        {
+            "release": 113,
+            "name": "theobroma_cacao_criollo",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "theobroma cacao",
+                "theobroma_cacao cv belizian criollo b97-61/b2"
+            ],
+            "accession": "GCA_000208745.2",
+            "assembly": "Criollo_cocoa_genome_V2",
+            "display_name": "Theobroma cacao Belizian Criollo B97-61/B2",
+            "groups": [
+                "core"
+            ],
+            "common_name": "cocoa",
+            "strain": "Criollo B97-61/B2",
+            "taxon_id": "3641",
+            "strain_collection": null
+        },
+        {
+            "release": 113,
+            "name": "galdieria_sulphuraria",
+            "aliases": [
+                "galdieria sulphuraria str. 074w",
+                "sag 17.91",
+                "galdieria sulphuraria"
+            ],
+            "division": "EnsemblPlants",
+            "assembly": "ASM34128v1",
+            "accession": "GCA_000341285.1",
+            "display_name": "Galdieria sulphuraria",
+            "groups": [
+                "core"
+            ],
+            "common_name": "red algae",
+            "strain_collection": null,
+            "taxon_id": "130081",
+            "strain": "074W"
+        },
+        {
+            "assembly": "Morex_V2_scaf",
+            "accession": "GCA_903813605.1",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "strain_collection": null,
+            "taxon_id": "112509",
+            "strain": "Morex (TRITEX)",
+            "common_name": "domesticated barley",
+            "display_name": "Hordeum vulgare TRITEX",
+            "groups": [
+                "core"
+            ],
+            "release": 113,
+            "name": "hordeum_vulgare_tritex"
+        },
+        {
+            "groups": [
+                "core"
+            ],
+            "common_name": "monocots",
+            "display_name": "Echinochloa crus-galli",
+            "taxon_id": "90397",
+            "strain_collection": null,
+            "strain": "reference",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "assembly": "ec_v3",
+            "accession": "GCA_020466025.1",
+            "name": "echinochloa_crusgalli",
+            "release": 113
+        },
+        {
+            "name": "asparagus_officinalis",
+            "release": 113,
+            "strain": "DH00/086",
+            "strain_collection": null,
+            "taxon_id": "4686",
+            "groups": [
+                "core"
+            ],
+            "common_name": null,
+            "display_name": "Asparagus officinalis",
+            "accession": "GCA_001876935.1",
+            "assembly": "Aspof.V1",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "garden asparagus",
+                "asparagus"
+            ]
+        },
+        {
+            "taxon_id": "97700",
+            "strain_collection": null,
+            "strain": null,
+            "common_name": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Quercus lobata",
+            "assembly": "ValleyOak3.0",
+            "accession": "GCA_001633185.2",
+            "aliases": [
+                "quercus lobata"
+            ],
+            "division": "EnsemblPlants",
+            "name": "quercus_lobata",
+            "release": 113
+        },
+        {
+            "release": 113,
+            "name": "manihot_esculenta",
+            "accession": "GCA_001659605.2",
+            "assembly": "M.esculenta_v8",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "strain": null,
+            "strain_collection": null,
+            "taxon_id": "3983",
+            "common_name": "Cassava",
+            "display_name": "Manihot esculenta",
+            "groups": [
+                "core"
+            ]
+        },
+        {
+            "release": 113,
+            "name": "secale_cereale",
+            "assembly": "Rye_Lo7_2018_v1p1p1",
+            "accession": "GCA_902687465.1",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "strain": null,
+            "taxon_id": "4550",
+            "strain_collection": null,
+            "groups": [
+                "core"
+            ],
+            "common_name": "rye",
+            "display_name": "Secale cereale"
+        },
+        {
+            "common_name": "carrots",
+            "display_name": "Daucus carota",
+            "groups": [
+                "core"
+            ],
+            "strain": "DH1",
+            "taxon_id": "79200",
+            "strain_collection": null,
+            "division": "EnsemblPlants",
+            "aliases": [
+                "daucus carota subsp. sativus",
+                "daucus_carota_subsp_sativus"
+            ],
+            "accession": "GCA_001625215.1",
+            "assembly": "ASM162521v1",
+            "name": "daucus_carota",
+            "release": 113
+        },
+        {
+            "release": 113,
+            "name": "oryza_nivara",
+            "assembly": "Oryza_nivara_v1.0",
+            "accession": "GCA_000576065.1",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "oryza nivara"
+            ],
+            "strain": "IRGC:100897",
+            "taxon_id": "4536",
+            "strain_collection": null,
+            "groups": [
+                "core",
+                "funcgen"
+            ],
+            "common_name": "weedy rice",
+            "display_name": "Oryza nivara"
+        },
+        {
+            "name": "vigna_angularis",
+            "release": 113,
+            "groups": [
+                "funcgen",
+                "core"
+            ],
+            "display_name": "Vigna angularis",
+            "common_name": "adzuki bean",
+            "strain": "Jingnong 6",
+            "strain_collection": null,
+            "taxon_id": "3914",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "vigna angularis"
+            ],
+            "accession": "GCA_001190045.1",
+            "assembly": "Vigan1.1"
+        },
+        {
+            "release": 113,
+            "name": "oryza_sativa_gobolsailbalam",
+            "assembly": "Os132424RS1",
+            "accession": "GCA_009831025.1",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "strain": "Gobol Sail Balam",
+            "strain_collection": null,
+            "taxon_id": "39946",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Oryza sativa (Xian/Indica-2A var. Gobol Sail)",
+            "common_name": "Indica rice"
+        },
+        {
+            "name": "eragrostis_tef",
+            "release": 113,
+            "strain_collection": null,
+            "taxon_id": "110835",
+            "strain": "Dabbi",
+            "groups": [
+                "core",
+                "variation"
+            ],
+            "display_name": "Eragrostis tef",
+            "common_name": "tef",
+            "accession": "GCA_024500355.1",
+            "assembly": "Salk_teff_dabbi_3.0",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants"
+        },
+        {
+            "common_name": null,
+            "display_name": "Rosa chinensis",
+            "groups": [
+                "core"
+            ],
+            "strain": null,
+            "taxon_id": "74649",
+            "strain_collection": null,
+            "division": "EnsemblPlants",
+            "aliases": [
+                "rosa chinensis"
+            ],
+            "assembly": "RchiOBHm-V2",
+            "accession": "GCA_002994745.2",
+            "name": "rosa_chinensis",
+            "release": 113
+        },
+        {
+            "name": "corchorus_capsularis",
+            "release": 113,
+            "common_name": "jute",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Corchorus capsularis",
+            "strain": "CVL-1",
+            "strain_collection": null,
+            "taxon_id": "210143",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "corchorus capsularis l.",
+                "corchorus capsularis",
+                "jute"
+            ],
+            "accession": "GCA_001974805.1",
+            "assembly": "CCACVL1_1.0"
+        },
+        {
+            "taxon_id": "29730",
+            "strain_collection": null,
+            "strain": null,
+            "common_name": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Gossypium raimondii",
+            "accession": "GCA_000327365.1",
+            "assembly": "Graimondii2_0_v6",
+            "aliases": [
+                "gossypium raimondii"
+            ],
+            "division": "EnsemblPlants",
+            "name": "gossypium_raimondii",
+            "release": 113
+        },
+        {
+            "release": 113,
+            "name": "amborella_trichopoda",
+            "accession": "GCA_000471905.1",
+            "assembly": "AMTR1.0",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "amborella trichopoda",
+                "amborella trichopoda baill."
+            ],
+            "strain": null,
+            "strain_collection": null,
+            "taxon_id": "13333",
+            "groups": [
+                "core"
+            ],
+            "common_name": "Amborella",
+            "display_name": "Amborella trichopoda"
+        },
+        {
+            "name": "chondrus_crispus",
+            "release": 113,
+            "taxon_id": "2769",
+            "strain_collection": null,
+            "strain": "Stackhouse",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Chondrus crispus",
+            "common_name": "Irish moss",
+            "assembly": "ASM35022v2",
+            "accession": "GCA_000350225.2",
+            "aliases": [
+                "chondrus crispus str. stackhouse str. pcg",
+                "chondrus crispus",
+                "carageen",
+                "carrageen",
+                "carragheen",
+                "irish moss"
+            ],
+            "division": "EnsemblPlants"
+        },
+        {
+            "assembly": "TAIR10",
+            "accession": "GCA_000001735.1",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "athaliana",
+                "at",
+                "arabidopsis thaliana",
+                "thale cress",
+                "arabidopsis"
+            ],
+            "strain": "Columbia",
+            "taxon_id": "3702",
+            "strain_collection": null,
+            "groups": [
+                "funcgen",
+                "variation",
+                "core"
+            ],
+            "common_name": "thale-cress",
+            "display_name": "Arabidopsis thaliana",
+            "release": 113,
+            "name": "arabidopsis_thaliana"
+        },
+        {
+            "name": "triticum_aestivum_arinalrfor",
+            "release": 113,
+            "groups": [
+                "core",
+                "otherfeatures",
+                "variation"
+            ],
+            "display_name": "Triticum aestivum Arinalrfor",
+            "common_name": "bread wheat",
+            "strain": "Arinalrfor",
+            "strain_collection": null,
+            "taxon_id": "4565",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "accession": "GCA_903993985.1",
+            "assembly": "PGSBv2.1"
+        },
+        {
+            "accession": "GCA_007726485.1",
+            "assembly": "CERZOS_E.curvula1.0",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "eragrostis curvula"
+            ],
+            "strain": "Tanganyika",
+            "taxon_id": "38414",
+            "strain_collection": null,
+            "common_name": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Eragrostis curvula",
+            "release": 113,
+            "name": "eragrostis_curvula"
+        },
+        {
+            "name": "digitaria_exilis",
+            "release": 113,
+            "display_name": "Digitaria exilis",
+            "common_name": "monocots",
+            "groups": [
+                "core"
+            ],
+            "strain": "digitaria_exilis",
+            "strain_collection": null,
+            "taxon_id": "1010633",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "assembly": "Fonio_CM05836",
+            "accession": "GCA_902859565.1"
+        },
+        {
+            "release": 113,
+            "name": "panicum_hallii_fil2",
+            "aliases": [
+                "panicum hallii str. fil2",
+                "panicum_hallii_str_fil2"
+            ],
+            "division": "EnsemblPlants",
+            "accession": "GCA_002211085.2",
+            "assembly": "PHallii_v3.1",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Panicum hallii FIL2",
+            "common_name": "Panicgrass",
+            "strain_collection": null,
+            "taxon_id": "206008",
+            "strain": "FIL2"
+        },
+        {
+            "common_name": "bread wheat",
+            "display_name": "Triticum aestivum Sy Mattis",
+            "groups": [
+                "variation",
+                "otherfeatures",
+                "core"
+            ],
+            "strain": "Mattis",
+            "strain_collection": null,
+            "taxon_id": "4565",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "assembly": "PGSBv2.1",
+            "accession": "GCA_903994185.1",
+            "name": "triticum_aestivum_mattis",
+            "release": 113
+        },
+        {
+            "strain": "Z1",
+            "strain_collection": null,
+            "taxon_id": "3711",
+            "common_name": "field mustard",
+            "display_name": "Brassica rapa Z1",
+            "groups": [
+                "core"
+            ],
+            "accession": "GCA_900412535.3",
+            "assembly": "brapa_z1_v2",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "name": "brassica_rapa_z1",
+            "release": 113
+        },
+        {
+            "name": "ananas_comosus",
+            "release": 113,
+            "strain": "F153",
+            "taxon_id": "4615",
+            "strain_collection": null,
+            "display_name": "Ananas comosus",
+            "groups": [
+                "core"
+            ],
+            "common_name": null,
+            "assembly": "F153",
+            "accession": "GCA_902162155.1",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "ananas comosus"
+            ]
+        },
+        {
+            "accession": "GCA_002312845.1",
+            "assembly": "K_fedtschenkoi_M2_v1",
+            "aliases": [
+                "kalanchoe fedtschenkoi"
+            ],
+            "division": "EnsemblPlants",
+            "taxon_id": "63787",
+            "strain_collection": null,
+            "strain": null,
+            "display_name": "Kalanchoe fedtschenkoi",
+            "common_name": null,
+            "groups": [
+                "core"
+            ],
+            "release": 113,
+            "name": "kalanchoe_fedtschenkoi"
+        },
+        {
+            "assembly": "IWGSC",
+            "accession": "GCA_900519105.1",
+            "aliases": [
+                "wheat",
+                "common wheat",
+                "bread wheat"
+            ],
+            "division": "EnsemblPlants",
+            "strain_collection": null,
+            "taxon_id": "4565",
+            "strain": "reference (Chinese spring)",
+            "common_name": "bread wheat",
+            "groups": [
+                "core",
+                "otherfeatures",
+                "funcgen",
+                "variation"
+            ],
+            "display_name": "Triticum aestivum",
+            "release": 113,
+            "name": "triticum_aestivum"
+        },
+        {
+            "name": "corymbia_citriodora",
+            "release": 113,
+            "common_name": "lemon-scented gum",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Corymbia citriodora",
+            "strain": "CCV2-018",
+            "taxon_id": "360336",
+            "strain_collection": null,
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "accession": "GCA_014858505.1",
+            "assembly": "Ccitriodora_v2_1"
+        },
+        {
+            "release": 113,
+            "name": "helianthus_annuus",
+            "assembly": "HanXRQr2.0-SUNRISE",
+            "accession": "GCA_002127325.2",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "strain": "XRQ/B",
+            "strain_collection": null,
+            "taxon_id": "4232",
+            "groups": [
+                "core",
+                "variation"
+            ],
+            "display_name": "Helianthus annuus",
+            "common_name": "common sunflower"
+        },
+        {
+            "accession": "GCA_001952365.2",
+            "assembly": "OsN22RS2",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "strain": "N22",
+            "taxon_id": "1736659",
+            "strain_collection": null,
+            "common_name": "Aus rice",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Oryza sativa (circum-Aus1 var. N22)",
+            "release": 113,
+            "name": "oryza_sativa_n22"
+        },
+        {
+            "display_name": "Brassica rapa R-o-18",
+            "common_name": "field mustard",
+            "groups": [
+                "core"
+            ],
+            "strain": "R-o-18",
+            "taxon_id": "1813537",
+            "strain_collection": null,
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "accession": "GCA_017639395.1",
+            "assembly": "SCU_BraROA_2.3",
+            "name": "brassica_rapa_ro18",
+            "release": 113
+        },
+        {
+            "name": "vitis_vinifera",
+            "release": 113,
+            "common_name": "wine grape",
+            "display_name": "Vitis vinifera",
+            "groups": [
+                "core",
+                "funcgen",
+                "variation"
+            ],
+            "strain_collection": null,
+            "taxon_id": "29760",
+            "strain": "PN40024",
+            "aliases": [
+                "grape"
+            ],
+            "division": "EnsemblPlants",
+            "assembly": "PN40024.v4",
+            "accession": "GCA_910591555.1"
+        },
+        {
+            "accession": "GCA_005286985.1",
+            "assembly": "Setaria_viridis_v2.0",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "setaria viridis"
+            ],
+            "strain": "A10",
+            "taxon_id": "4556",
+            "strain_collection": null,
+            "display_name": "Setaria viridis",
+            "common_name": null,
+            "groups": [
+                "core"
+            ],
+            "release": 113,
+            "name": "setaria_viridis"
+        },
+        {
+            "display_name": "Marchantia polymorpha",
+            "groups": [
+                "core"
+            ],
+            "common_name": "common liverwort",
+            "strain": null,
+            "taxon_id": "3197",
+            "strain_collection": null,
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "assembly": "MpTak1_v7.1",
+            "accession": "GCA_039105155.1",
+            "name": "marchantia_polymorpha",
+            "release": 113
+        },
+        {
+            "assembly": "Walnut_2.0",
+            "accession": "GCA_001411555.2",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "taxon_id": "51240",
+            "strain_collection": null,
+            "strain": "Chandler",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Juglans regia",
+            "common_name": "English walnut",
+            "release": 113,
+            "name": "juglans_regia"
+        },
+        {
+            "release": 113,
+            "name": "papaver_somniferum",
+            "accession": "GCA_003573695.1",
+            "assembly": "ASM357369v1",
+            "aliases": [
+                "papaver somniferum"
+            ],
+            "division": "EnsemblPlants",
+            "strain_collection": null,
+            "taxon_id": "3469",
+            "strain": "High Noscapine 1 (HN1)",
+            "display_name": "Papaver somniferum",
+            "groups": [
+                "core"
+            ],
+            "common_name": null
+        },
+        {
+            "release": 113,
+            "name": "arabidopsis_halleri",
+            "aliases": [
+                "arabidopsis_halleri_subsp_gemmifera",
+                "arabidopsis halleri subsp. gemmifera"
+            ],
+            "division": "EnsemblPlants",
+            "accession": "GCA_900078215.1",
+            "assembly": "Ahal2.2",
+            "common_name": null,
+            "groups": [
+                "core",
+                "funcgen"
+            ],
+            "display_name": "Arabidopsis halleri",
+            "taxon_id": "63677",
+            "strain_collection": null,
+            "strain": "W302"
+        },
+        {
+            "accession": "GCA_000091205.1",
+            "assembly": "ASM9120v1",
+            "aliases": [
+                "red algae",
+                "45157",
+                "cyanidioschyzon merolae",
+                "cyanidioschyzon merolae strain 10d"
+            ],
+            "division": "EnsemblPlants",
+            "taxon_id": "280699",
+            "strain_collection": null,
+            "strain": "10D",
+            "groups": [
+                "core"
+            ],
+            "common_name": "haploid red algae",
+            "display_name": "Cyanidioschyzon merolae",
+            "release": 113,
+            "name": "cyanidioschyzon_merolae"
+        },
+        {
+            "release": 113,
+            "name": "citrus_clementina",
+            "aliases": [
+                "citrus clementina"
+            ],
+            "division": "EnsemblPlants",
+            "accession": "GCA_000493195.1",
+            "assembly": "Citrus_clementina_v1.0",
+            "groups": [
+                "core"
+            ],
+            "common_name": null,
+            "display_name": "Citrus clementina",
+            "strain_collection": null,
+            "taxon_id": "85681",
+            "strain": "Clemenules"
+        },
+        {
+            "name": "aegilops_umbellulata",
+            "release": 113,
+            "strain_collection": null,
+            "taxon_id": "4491",
+            "strain": null,
+            "display_name": "Aegilops umbellulata",
+            "common_name": "aegilops_umbellulata",
+            "groups": [
+                "core"
+            ],
+            "assembly": "TA1851",
+            "accession": "GCA_032464435.1",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants"
+        },
+        {
+            "release": 113,
+            "name": "oryza_glumipatula",
+            "aliases": [
+                "oryza glumipatula"
+            ],
+            "division": "EnsemblPlants",
+            "accession": "GCA_000576495.1",
+            "assembly": "Oryza_glumaepatula_v1.5",
+            "display_name": "Oryza glumipatula",
+            "groups": [
+                "core",
+                "variation",
+                "funcgen"
+            ],
+            "common_name": "South American wild rice",
+            "taxon_id": "40148",
+            "strain_collection": null,
+            "strain": null
+        },
+        {
+            "name": "pisum_sativum",
+            "release": 113,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Pisum sativum",
+            "common_name": "pea",
+            "strain": "Cameor",
+            "taxon_id": "3888",
+            "strain_collection": null,
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "assembly": "Pisum_sativum_v1a",
+            "accession": "GCA_900700895.2"
+        },
+        {
+            "release": 113,
+            "name": "oryza_brachyantha",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "oryza brachyantha"
+            ],
+            "assembly": "Oryza_brachyantha.v1.4b",
+            "accession": "GCA_000231095.2",
+            "groups": [
+                "otherfeatures",
+                "core"
+            ],
+            "display_name": "Oryza brachyantha",
+            "common_name": "malo sina",
+            "strain": "IRGC:101232",
+            "taxon_id": "4533",
+            "strain_collection": null
+        },
+        {
+            "name": "beta_vulgaris",
+            "release": 113,
+            "groups": [
+                "core"
+            ],
+            "common_name": "sugar beet",
+            "display_name": "Beta vulgaris",
+            "strain": "KWS2320 DH",
+            "taxon_id": "3555",
+            "strain_collection": null,
+            "division": "EnsemblPlants",
+            "aliases": [
+                "beta vulgaris cv. saccharifera alef.",
+                "beta vulgaris cv. saccharifera",
+                "table beet",
+                "beta vulgaris sugar beet group",
+                "swiss chard",
+                "beta vulgaris subsp. vulgaris var. altissima",
+                "sugar beet",
+                "beta vulgaris subsp. vulgaris",
+                "spinach chard",
+                "161933",
+                "field beet",
+                "beta vulgaris var. altissima",
+                "beta vulgaris var. altissima doell.",
+                "garden beet",
+                "3556",
+                "beta vulgaris var. saccharifera"
+            ],
+            "accession": "GCA_000511025.2",
+            "assembly": "RefBeet-1.2.2"
+        },
+        {
+            "groups": [
+                "core"
+            ],
+            "common_name": null,
+            "display_name": "Capsicum annuum",
+            "strain_collection": null,
+            "taxon_id": "4072",
+            "strain": "Criollo de Morelos 334",
+            "aliases": [
+                "capsicum annuum"
+            ],
+            "division": "EnsemblPlants",
+            "accession": "GCA_000512255.2",
+            "assembly": "ASM51225v2",
+            "name": "capsicum_annuum",
+            "release": 113
+        },
+        {
+            "accession": "GCA_001683475.1",
+            "assembly": "ASM168347v1",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "chenopodium quinoa"
+            ],
+            "strain": "PI614886",
+            "strain_collection": null,
+            "taxon_id": "63459",
+            "common_name": null,
+            "display_name": "Chenopodium quinoa",
+            "groups": [
+                "core"
+            ],
+            "release": 113,
+            "name": "chenopodium_quinoa"
+        },
+        {
+            "common_name": "barrel medic",
+            "groups": [
+                "core",
+                "otherfeatures",
+                "funcgen"
+            ],
+            "display_name": "Medicago truncatula",
+            "strain": null,
+            "strain_collection": null,
+            "taxon_id": "3880",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "assembly": "MtrunA17r5.0_ANR",
+            "accession": "GCA_003473485.2",
+            "name": "medicago_truncatula",
+            "release": 113
+        },
+        {
+            "release": 113,
+            "name": "oryza_sativa_ir64",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "assembly": "OsIR64RS1",
+            "accession": "GCA_009914875.1",
+            "common_name": "Indica rice",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Oryza sativa (Xian/Indica-1B1 var. IR64)",
+            "strain": "IR64",
+            "strain_collection": null,
+            "taxon_id": "39946"
+        },
+        {
+            "strain": "Morex",
+            "strain_collection": null,
+            "taxon_id": "112509",
+            "groups": [
+                "funcgen",
+                "variation",
+                "core",
+                "otherfeatures"
+            ],
+            "common_name": "domesticated barley",
+            "display_name": "Hordeum vulgare",
+            "accession": "GCA_904849725.1",
+            "assembly": "MorexV3_pseudomolecules_assembly",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "name": "hordeum_vulgare",
+            "release": 113
+        },
+        {
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "accession": "GCA_009831315.1",
+            "assembly": "Os132278RS1",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Oryza sativa (Geng/Japonica-sbtrp var. Chao Meo)",
+            "common_name": "Japonica rice",
+            "taxon_id": "1736656",
+            "strain_collection": null,
+            "strain": "Chao Meo",
+            "release": 113,
+            "name": "oryza_sativa_chaomeo"
+        },
+        {
+            "name": "triticum_aestivum_julius",
+            "release": 113,
+            "common_name": "bread wheat",
+            "groups": [
+                "variation",
+                "core",
+                "otherfeatures"
+            ],
+            "display_name": "Triticum aestivum Julius",
+            "strain": "Julius",
+            "strain_collection": null,
+            "taxon_id": "4565",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "accession": "GCA_903994195.1",
+            "assembly": "PGSBv2.1"
+        },
+        {
+            "release": 113,
+            "name": "oryza_punctata",
+            "assembly": "Oryza_punctata_v1.2",
+            "accession": "GCA_000573905.1",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "oryza punctata"
+            ],
+            "strain": "IRGC:105690",
+            "strain_collection": null,
+            "taxon_id": "4537",
+            "common_name": "red rice",
+            "groups": [
+                "core",
+                "funcgen"
+            ],
+            "display_name": "Oryza punctata"
+        },
+        {
+            "name": "prunus_persica",
+            "release": 113,
+            "strain": "Lovell",
+            "taxon_id": "3760",
+            "strain_collection": null,
+            "common_name": "peach",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Prunus persica",
+            "accession": "GCA_000346465.2",
+            "assembly": "Prunus_persica_NCBIv2",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "prunus persica var densa",
+                "amygdalus persica",
+                "prunus persica var. densa",
+                "203801",
+                "persica vulgaris",
+                "prunus persica",
+                "prunus persica var. densa makino",
+                "peach",
+                "prunus persica (l.) batsch",
+                "persica vulgaris mill."
+            ]
+        },
+        {
+            "release": 113,
+            "name": "arabidopsis_lyrata",
+            "aliases": [
+                "al",
+                "arabidopsis lyrata",
+                "arabidopsis lyrata subsp. lyrata",
+                "alyrata",
+                "lyrate rockcress"
+            ],
+            "division": "EnsemblPlants",
+            "accession": "GCA_000004255.1",
+            "assembly": "v.1.0",
+            "display_name": "Arabidopsis lyrata",
+            "groups": [
+                "core"
+            ],
+            "common_name": "lyrate rockcress",
+            "strain_collection": null,
+            "taxon_id": "81972",
+            "strain": "MN47"
+        },
+        {
+            "assembly": "ALMONDv2",
+            "accession": "GCA_902201215.1",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "almond"
+            ],
+            "strain": "Texas",
+            "strain_collection": null,
+            "taxon_id": "3755",
+            "common_name": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Prunus dulcis",
+            "release": 113,
+            "name": "prunus_dulcis"
+        },
+        {
+            "release": 113,
+            "name": "glycine_soja",
+            "aliases": [
+                "g.soj",
+                "gsoj",
+                "g. soja"
+            ],
+            "division": "EnsemblPlants",
+            "accession": "GCA_004193775.2",
+            "assembly": "ASM419377v2",
+            "groups": [
+                "core"
+            ],
+            "common_name": "Wild soybean",
+            "display_name": "Glycine soja (Wild soybean)",
+            "taxon_id": "3848",
+            "strain_collection": null,
+            "strain": null
+        },
+        {
+            "common_name": "coyote tobacco",
+            "groups": [
+                "core",
+                "funcgen"
+            ],
+            "display_name": "Nicotiana attenuata",
+            "strain": "UT",
+            "taxon_id": "49451",
+            "strain_collection": null,
+            "division": "EnsemblPlants",
+            "aliases": [
+                "nicotiana attenuata str. ut"
+            ],
+            "assembly": "NIATTr2",
+            "accession": "GCA_001879085.1",
+            "name": "nicotiana_attenuata",
+            "release": 113
+        },
+        {
+            "assembly": "O.barthii_v1",
+            "accession": "GCA_000182155.2",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "oryza barthii"
+            ],
+            "strain": "IRGC:105608",
+            "strain_collection": null,
+            "taxon_id": "65489",
+            "display_name": "Oryza barthii",
+            "groups": [
+                "core",
+                "funcgen"
+            ],
+            "common_name": "African wild rice",
+            "release": 113,
+            "name": "oryza_barthii"
+        },
+        {
+            "release": 113,
+            "name": "triticum_aestivum_mace",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "assembly": "PGSBv2.1",
+            "accession": "GCA_903994175.1",
+            "display_name": "Triticum aestivum Mace",
+            "common_name": "bread wheat",
+            "groups": [
+                "variation",
+                "core",
+                "otherfeatures"
+            ],
+            "taxon_id": "4565",
+            "strain_collection": null,
+            "strain": "Mace"
+        },
+        {
+            "groups": [
+                "core"
+            ],
+            "common_name": "wild Malaysian banana",
+            "display_name": "Musa acuminata",
+            "taxon_id": "214687",
+            "strain_collection": null,
+            "strain": "Doubled-haploid Pahang (DH-Pahang)",
+            "aliases": [
+                "banana"
+            ],
+            "division": "EnsemblPlants",
+            "assembly": "Musa_acuminata_v2",
+            "accession": "GCA_904845865.1",
+            "name": "musa_acuminata",
+            "release": 113
+        },
+        {
+            "strain": "DH200-94",
+            "taxon_id": "49390",
+            "strain_collection": null,
+            "common_name": null,
+            "display_name": "Coffea canephora",
+            "groups": [
+                "core"
+            ],
+            "assembly": "AUK_PRJEB4211_v1",
+            "accession": "GCA_900059795.1",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "coffea_canephora_str_dh200_94",
+                "coffea canephora str. dh200-94"
+            ],
+            "name": "coffea_canephora",
+            "release": 113
+        },
+        {
+            "common_name": "Panicgrass",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Panicum hallii HAL2",
+            "strain": "reference (HAL2)",
+            "taxon_id": "1504633",
+            "strain_collection": null,
+            "division": "EnsemblPlants",
+            "aliases": [
+                "panicum_hallii_var_hallii_str_hal2",
+                "panicum hallii var. hallii str. hal2"
+            ],
+            "assembly": "PhalliiHAL_v2.1",
+            "accession": "GCA_003061485.1",
+            "name": "panicum_hallii",
+            "release": 113
+        },
+        {
+            "assembly": "Pop_tri_v4",
+            "accession": "GCA_000002775.4",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "strain_collection": null,
+            "taxon_id": "3694",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "common_name": "Populus trichocarpa",
+            "display_name": "Populus trichocarpa",
+            "release": 113,
+            "name": "populus_trichocarpa"
+        },
+        {
+            "assembly": "ASM883128v1",
+            "accession": "GCA_008831285.1",
+            "aliases": [
+                "nymphaea colorata"
+            ],
+            "division": "EnsemblPlants",
+            "strain_collection": null,
+            "taxon_id": "210225",
+            "strain": "Beijing-Zhang1983",
+            "groups": [
+                "core"
+            ],
+            "common_name": null,
+            "display_name": "Nymphaea colorata",
+            "release": 113,
+            "name": "nymphaea_colorata"
+        },
+        {
+            "taxon_id": "39946",
+            "strain_collection": null,
+            "strain": "Khao Yai Guang",
+            "display_name": "Oryza sativa (Xian/Indica-3B1 var. Khao Yai Guang)",
+            "groups": [
+                "core"
+            ],
+            "common_name": "Indica rice",
+            "accession": "GCA_009831295.1",
+            "assembly": "Os127518RS1",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "name": "oryza_sativa_khaoyaiguang",
+            "release": 113
+        },
+        {
+            "accession": "GCA_001531365.1",
+            "assembly": "CcrdV1",
+            "aliases": [
+                "cynara cardunculus var. scolymus",
+                "cynara_cardunculus_var_scolymus"
+            ],
+            "division": "EnsemblPlants",
+            "strain_collection": null,
+            "taxon_id": "59895",
+            "strain": null,
+            "common_name": null,
+            "display_name": "Cynara cardunculus",
+            "groups": [
+                "core"
+            ],
+            "release": 113,
+            "name": "cynara_cardunculus"
+        },
+        {
+            "release": 113,
+            "name": "triticum_aestivum_norin61",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "accession": "GCA_904066035.1",
+            "assembly": "PGSBv2.1",
+            "groups": [
+                "otherfeatures",
+                "core",
+                "variation"
+            ],
+            "common_name": "bread wheat",
+            "display_name": "Triticum aestivum Norin61",
+            "strain": "Norin61",
+            "taxon_id": "4565",
+            "strain_collection": null
+        },
+        {
+            "division": "EnsemblPlants",
+            "aliases": [
+                "lupinus angustifolius"
+            ],
+            "assembly": "LupAngTanjil_v1.0",
+            "accession": "GCA_001865875.1",
+            "display_name": "Lupinus angustifolius",
+            "groups": [
+                "core"
+            ],
+            "common_name": "blue lupin",
+            "strain": "Tanjil",
+            "taxon_id": "3871",
+            "strain_collection": null,
+            "release": 113,
+            "name": "lupinus_angustifolius"
+        },
+        {
+            "release": 113,
+            "name": "triticum_aestivum_landmark",
+            "accession": "GCA_903995565.1",
+            "assembly": "PGSBv2.1",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "strain_collection": null,
+            "taxon_id": "4565",
+            "strain": "Landmark",
+            "groups": [
+                "otherfeatures",
+                "core"
+            ],
+            "common_name": "bread wheat",
+            "display_name": "Triticum aestivum Landmark"
+        },
+        {
+            "name": "chara_braunii",
+            "release": 113,
+            "strain": "S276",
+            "taxon_id": "69332",
+            "strain_collection": null,
+            "display_name": "Chara braunii",
+            "common_name": null,
+            "groups": [
+                "core"
+            ],
+            "accession": "GCA_003427395.1",
+            "assembly": "Cbr_1.0",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "chara braunii"
+            ]
+        },
+        {
+            "aliases": [
+                "potato",
+                "s_tuberosum",
+                "solanum tuberosum"
+            ],
+            "division": "EnsemblPlants",
+            "accession": "GCA_000226075.1",
+            "assembly": "SolTub_3.0",
+            "common_name": "potato",
+            "display_name": "Solanum tuberosum",
+            "groups": [
+                "core",
+                "otherfeatures"
+            ],
+            "taxon_id": "4113",
+            "strain_collection": null,
+            "strain": "DM 1-3 516 R44",
+            "release": 113,
+            "name": "solanum_tuberosum"
+        },
+        {
+            "name": "lathyrus_sativus",
+            "release": 113,
+            "common_name": "grass pea",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Lathyrus sativus",
+            "strain": null,
+            "strain_collection": null,
+            "taxon_id": "3860",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "accession": "GCA_963859935.3",
+            "assembly": "JIC_Lsat_v2.1.1"
+        },
+        {
+            "groups": [
+                "core",
+                "funcgen"
+            ],
+            "common_name": "Australian wild rice",
+            "display_name": "Oryza meridionalis",
+            "strain_collection": null,
+            "taxon_id": "40149",
+            "strain": "OR44 (W2112)",
+            "aliases": [
+                "oryza meridionalis"
+            ],
+            "division": "EnsemblPlants",
+            "accession": "GCA_000338895.2",
+            "assembly": "Oryza_meridionalis_v1.3",
+            "name": "oryza_meridionalis",
+            "release": 113
+        },
+        {
+            "name": "citrullus_lanatus",
+            "release": 113,
+            "groups": [
+                "core"
+            ],
+            "common_name": null,
+            "display_name": "Citrullus lanatus",
+            "strain_collection": null,
+            "taxon_id": "3654",
+            "strain": "97103",
+            "aliases": [
+                "citrullus lanatus"
+            ],
+            "division": "EnsemblPlants",
+            "assembly": "Cla97_v1",
+            "accession": "GCA_000238415.2"
+        },
+        {
+            "release": 113,
+            "name": "oryza_sativa_lima",
+            "assembly": "Os127564RS1",
+            "accession": "GCA_009829395.1",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "taxon_id": "39946",
+            "strain_collection": null,
+            "strain": "Lima",
+            "display_name": "Oryza sativa (Xian/Indica-3A var. Lima)",
+            "common_name": "Indica rice",
+            "groups": [
+                "core"
+            ]
+        },
+        {
+            "name": "lactuca_sativa",
+            "release": 113,
+            "strain_collection": null,
+            "taxon_id": "4236",
+            "strain": "Salinas",
+            "common_name": "eudicots",
+            "groups": [
+                "core",
+                "variation"
+            ],
+            "display_name": "Lactuca sativa",
+            "accession": "GCA_002870075.2",
+            "assembly": "Lsat_Salinas_v7",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants"
+        },
+        {
+            "release": 113,
+            "name": "oryza_glaberrima",
+            "accession": "GCA_000147395.1",
+            "assembly": "Oryza_glaberrima_V1",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "oryza glaberrima",
+                "oryza glaberrima steud."
+            ],
+            "strain": "CG14",
+            "taxon_id": "4538",
+            "strain_collection": null,
+            "display_name": "Oryza glaberrima",
+            "common_name": "African rice",
+            "groups": [
+                "core",
+                "funcgen",
+                "variation"
+            ]
+        },
+        {
+            "release": 113,
+            "name": "triticum_aestivum_refseqv2",
+            "assembly": "IWGSC_RefSeq_v2.1",
+            "accession": "GCA_018294505.1",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "strain": "Chinese spring",
+            "strain_collection": null,
+            "taxon_id": "4565",
+            "display_name": "Triticum aestivum Refseqv2",
+            "groups": [
+                "core",
+                "otherfeatures"
+            ],
+            "common_name": "bread wheat"
+        },
+        {
+            "release": 113,
+            "name": "quercus_suber",
+            "assembly": "CorkOak1.0",
+            "accession": "GCA_002906115.4",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "strain": "reference",
+            "strain_collection": null,
+            "taxon_id": "58331",
+            "display_name": "Quercus suber",
+            "groups": [
+                "core"
+            ],
+            "common_name": "cork oak"
+        },
+        {
+            "assembly": "Melonv4",
+            "accession": "GCA_902497455.1",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "cucumis melo"
+            ],
+            "strain": null,
+            "taxon_id": "3656",
+            "strain_collection": null,
+            "common_name": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Cucumis melo",
+            "release": 113,
+            "name": "cucumis_melo"
+        },
+        {
+            "name": "theobroma_cacao",
+            "release": 113,
+            "groups": [
+                "variation",
+                "core"
+            ],
+            "display_name": "Theobroma cacao Matina 1-6",
+            "common_name": "cocoa",
+            "strain": "reference (Matina)",
+            "taxon_id": "3641",
+            "strain_collection": null,
+            "division": "EnsemblPlants",
+            "aliases": [
+                "cocoa",
+                "chocolate",
+                "theobroma cacao cv matina 1-6",
+                "cacao"
+            ],
+            "accession": "GCA_000403535.1",
+            "assembly": "Theobroma_cacao_20110822"
+        },
+        {
+            "strain": "Chiifu-401-42",
+            "taxon_id": "3711",
+            "strain_collection": null,
+            "common_name": "field mustard",
+            "display_name": "Brassica rapa",
+            "groups": [
+                "funcgen",
+                "core",
+                "otherfeatures"
+            ],
+            "accession": "GCA_000309985.1",
+            "assembly": "Brapa_1.0",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "brassica rapa",
+                "br",
+                "51351",
+                "chinese cabbage"
+            ],
+            "name": "brassica_rapa",
+            "release": 113
+        },
+        {
+            "accession": "GCA_903994155.1",
+            "assembly": "PGSBv2.2",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "strain_collection": null,
+            "taxon_id": "4565",
+            "strain": "Stanley",
+            "groups": [
+                "core",
+                "otherfeatures",
+                "variation"
+            ],
+            "common_name": "bread wheat",
+            "display_name": "Triticum aestivum Stanley",
+            "release": 113,
+            "name": "triticum_aestivum_stanley"
+        },
+        {
+            "release": 113,
+            "name": "triticum_aestivum_kariega",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "accession": "GCA_910594105.1",
+            "assembly": "Tae_Kariega_v1",
+            "common_name": "bread wheat",
+            "display_name": "Triticum aestivum Kariega",
+            "groups": [
+                "otherfeatures",
+                "core"
+            ],
+            "strain": "Kariega",
+            "strain_collection": null,
+            "taxon_id": "4565"
+        },
+        {
+            "groups": [
+                "core"
+            ],
+            "common_name": null,
+            "display_name": "Triticum spelta",
+            "taxon_id": "58933",
+            "strain_collection": "triticum aestivum",
+            "strain": "Spelta",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "assembly": "PGSBv2.0",
+            "accession": "GCA_903994165.1",
+            "name": "triticum_spelta",
+            "release": 113
+        },
+        {
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "accession": "GCA_001618785.1",
+            "assembly": "MH63RS2",
+            "groups": [
+                "core"
+            ],
+            "common_name": "Indica rice",
+            "display_name": "Oryza sativa (Xian/Indica-adm var. Minghui 63)",
+            "strain": "Minghui 63",
+            "taxon_id": "39946",
+            "strain_collection": null,
+            "release": 113,
+            "name": "oryza_sativa_mh63"
+        },
+        {
+            "strain_collection": null,
+            "taxon_id": "3708",
+            "strain": "Darmor-bzh",
+            "display_name": "Brassica napus",
+            "groups": [
+                "funcgen",
+                "core"
+            ],
+            "common_name": "oilseed rape",
+            "assembly": "AST_PRJEB5043_v1",
+            "accession": "GCA_000751015.1",
+            "aliases": [
+                "oilseed rape",
+                "rapeseeds",
+                "brassica napus l.",
+                "brassica napus",
+                "rape",
+                "36503"
+            ],
+            "division": "EnsemblPlants",
+            "name": "brassica_napus",
+            "release": 113
+        },
+        {
+            "release": 113,
+            "name": "leersia_perrieri",
+            "accession": "GCA_000325765.3",
+            "assembly": "Lperr_V1.4",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "leersia perrieri"
+            ],
+            "strain": "IRGC:105164",
+            "strain_collection": null,
+            "taxon_id": "77586",
+            "display_name": "Leersia perrieri",
+            "common_name": "Leersia",
+            "groups": [
+                "core"
+            ]
+        },
+        {
+            "release": 113,
+            "name": "prunus_avium",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "prunus avium"
+            ],
+            "assembly": "PAV_r1.0",
+            "accession": "GCA_002207925.1",
+            "groups": [
+                "core"
+            ],
+            "common_name": null,
+            "display_name": "Prunus avium",
+            "strain": "Satonishiki",
+            "strain_collection": null,
+            "taxon_id": "42229"
+        },
+        {
+            "accession": "GCA_003086295.3",
+            "assembly": "arahy.Tifrunner.gnm2.J5K5",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "taxon_id": "3818",
+            "strain_collection": null,
+            "strain": null,
+            "display_name": "Arachis hypogaea",
+            "groups": [
+                "core"
+            ],
+            "common_name": "peanut",
+            "release": 113,
+            "name": "arachis_hypogaea"
+        },
+        {
+            "division": "EnsemblPlants",
+            "aliases": [
+                "sesamum indicum"
+            ],
+            "assembly": "S_indicum_v1.0",
+            "accession": "GCA_000512975.1",
+            "groups": [
+                "core"
+            ],
+            "common_name": null,
+            "display_name": "Sesamum indicum",
+            "strain": "Zhongzhi No. 13",
+            "strain_collection": null,
+            "taxon_id": "4182",
+            "release": 113,
+            "name": "sesamum_indicum"
+        },
+        {
+            "release": 113,
+            "name": "oryza_sativa_larhamugad",
+            "assembly": "Os125619RS1",
+            "accession": "GCA_009831355.1",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "taxon_id": "39946",
+            "strain_collection": null,
+            "strain": "Larha Mugad",
+            "common_name": "Indica rice",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Oryza sativa (Xian/Indica-2B var. Larha Mugad)"
+        },
+        {
+            "name": "oryza_sativa_pr106",
+            "release": 113,
+            "groups": [
+                "core"
+            ],
+            "common_name": "Indica rice",
+            "display_name": "Oryza sativa (Xian/Indica-1B2 var. PR106)",
+            "taxon_id": "39946",
+            "strain_collection": null,
+            "strain": "PR106",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "accession": "GCA_009831045.1",
+            "assembly": "Os127742RS1"
+        },
+        {
+            "groups": [
+                "core",
+                "otherfeatures",
+                "funcgen",
+                "variation"
+            ],
+            "display_name": "Oryza sativa Japonica Group",
+            "common_name": "Japanese rice",
+            "strain_collection": null,
+            "taxon_id": "39947",
+            "strain": "reference (Nipponbare)",
+            "aliases": [
+                "oryza_sativa_japonica_group",
+                "oryza sativa japonica (rice)",
+                "oryza sativa"
+            ],
+            "division": "EnsemblPlants",
+            "assembly": "IRGSP-1.0",
+            "accession": "GCA_001433935.1",
+            "name": "oryza_sativa",
+            "release": 113
+        },
+        {
+            "name": "triticum_urartu",
+            "release": 113,
+            "taxon_id": "4572",
+            "strain_collection": null,
+            "strain": "G1812 (PI428198)",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Triticum urartu",
+            "common_name": "red wild einkorn wheat",
+            "assembly": "IGDB",
+            "accession": "GCA_003073215.1",
+            "aliases": [
+                "triticum urartu",
+                "triticum urartu tumanian ex gandilyan"
+            ],
+            "division": "EnsemblPlants"
+        },
+        {
+            "aliases": [
+                "malus domestica",
+                "malus_domestica"
+            ],
+            "division": "EnsemblPlants",
+            "assembly": "ASM211411v1",
+            "accession": "GCA_002114115.1",
+            "groups": [
+                "core",
+                "variation"
+            ],
+            "common_name": null,
+            "display_name": "Malus domestica Golden",
+            "strain_collection": null,
+            "taxon_id": "3750",
+            "strain": "Golden Delicious",
+            "release": 113,
+            "name": "malus_domestica_golden"
+        },
+        {
+            "release": 113,
+            "name": "physcomitrium_patens",
+            "aliases": [
+                "physcomitrella_patens",
+                "physcomitrella patens"
+            ],
+            "division": "EnsemblPlants",
+            "accession": "GCA_000002425.2",
+            "assembly": "Phypa_V3",
+            "common_name": "moss",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Physcomitrium patens",
+            "strain_collection": null,
+            "taxon_id": "3218",
+            "strain": "Gransden 2004"
+        },
+        {
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "assembly": "CavTom2PMs-1.0",
+            "accession": "GCA_901000735.2",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Corylus avellana",
+            "common_name": "European hazelnut",
+            "taxon_id": "13451",
+            "strain_collection": null,
+            "strain": "Tombul",
+            "release": 113,
+            "name": "corylus_avellana"
+        },
+        {
+            "aliases": [
+                "phaseolus vulgaris l.",
+                "kidney bean",
+                "french bean",
+                "string bean",
+                "phaseolus vulgaris"
+            ],
+            "division": "EnsemblPlants",
+            "assembly": "PhaVulg1_0",
+            "accession": "GCA_000499845.1",
+            "display_name": "Phaseolus vulgaris",
+            "groups": [
+                "variation",
+                "funcgen",
+                "core"
+            ],
+            "common_name": "French bean",
+            "strain_collection": null,
+            "taxon_id": "3885",
+            "strain": "G19833",
+            "release": 113,
+            "name": "phaseolus_vulgaris"
+        },
+        {
+            "release": 113,
+            "name": "cucumis_sativus",
+            "assembly": "ASM407v2",
+            "accession": "GCA_000004075.2",
+            "aliases": [
+                "cucumis sativus",
+                "cucumis sativus l.",
+                "cucumbers",
+                "cucumis sativu",
+                "cucumber"
+            ],
+            "division": "EnsemblPlants",
+            "taxon_id": "3659",
+            "strain_collection": null,
+            "strain": "9930",
+            "common_name": "cucumbers",
+            "display_name": "Cucumis sativus",
+            "groups": [
+                "variation",
+                "core"
+            ]
+        },
+        {
+            "display_name": "Arabis alpina",
+            "groups": [
+                "core"
+            ],
+            "common_name": null,
+            "taxon_id": "50452",
+            "strain_collection": null,
+            "strain": null,
+            "aliases": [
+                "arabis alpina"
+            ],
+            "division": "EnsemblPlants",
+            "accession": "GCA_000733195.1",
+            "assembly": "A_alpina_V4",
+            "name": "arabis_alpina",
+            "release": 113
+        },
+        {
+            "release": 113,
+            "name": "vicia_faba",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "assembly": "Hedin2_genome_v1",
+            "accession": "GCA_948472305.1",
+            "groups": [
+                "core"
+            ],
+            "common_name": "Faba bean",
+            "display_name": "Vicia faba",
+            "strain_collection": null,
+            "taxon_id": "3906",
+            "strain": null
+        },
+        {
+            "common_name": "long-staminate rice",
+            "groups": [
+                "core",
+                "funcgen"
+            ],
+            "display_name": "Oryza longistaminata",
+            "strain": null,
+            "taxon_id": "4528",
+            "strain_collection": null,
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "accession": "GCA_000789195.1",
+            "assembly": "O_longistaminata_v1.0",
+            "name": "oryza_longistaminata",
+            "release": 113
+        },
+        {
+            "assembly": "EIv1.1",
+            "accession": "GCA_902810655.1",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "strain": "Claire",
+            "strain_collection": null,
+            "taxon_id": "4565",
+            "groups": [
+                "core"
+            ],
+            "common_name": "bread wheat",
+            "display_name": "Triticum aestivum Claire",
+            "release": 113,
+            "name": "triticum_aestivum_claire"
+        },
+        {
+            "assembly": "MPB_Lper_Kyuss_1697",
+            "accession": "GCA_019359855.1",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "taxon_id": "4522",
+            "strain_collection": null,
+            "strain": "reference",
+            "display_name": "Lolium perenne",
+            "groups": [
+                "core"
+            ],
+            "common_name": "perennial ryegrass",
+            "release": 113,
+            "name": "lolium_perenne"
+        },
+        {
+            "taxon_id": "4555",
+            "strain_collection": null,
+            "strain": "Yugu1",
+            "common_name": "foxtail millet",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Setaria italica",
+            "assembly": "Setaria_italica_v2.0",
+            "accession": "GCA_000263155.2",
+            "aliases": [
+                "setaria italica str. yugu1",
+                "setaria_italica_str_yugu1"
+            ],
+            "division": "EnsemblPlants",
+            "name": "setaria_italica",
+            "release": 113
+        },
+        {
+            "release": 113,
+            "name": "oryza_sativa_natelboro",
+            "accession": "GCA_009831335.1",
+            "assembly": "Os127652RS1",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "strain": "Natel Boro",
+            "strain_collection": null,
+            "taxon_id": "1736659",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Oryza sativa (circum-Aus2 var. Natel Boro)",
+            "common_name": "Aus rice"
+        },
+        {
+            "release": 113,
+            "name": "actinidia_chinensis",
+            "accession": "GCA_003024255.1",
+            "assembly": "Red5_PS1_1.69.0",
+            "aliases": [
+                "actinidia chinensis var. chinensis",
+                "actinidia_chinensis_var_chinensis"
+            ],
+            "division": "EnsemblPlants",
+            "strain_collection": null,
+            "taxon_id": "1590841",
+            "strain": "Red5",
+            "display_name": "Actinidia chinensis",
+            "common_name": null,
+            "groups": [
+                "core"
+            ]
+        },
+        {
+            "strain": null,
+            "strain_collection": null,
+            "taxon_id": "3483",
+            "common_name": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Cannabis sativa female",
+            "accession": "GCA_900626175.1",
+            "assembly": "cs10",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "cannabis sativa",
+                "cannabis_sativa"
+            ],
+            "name": "cannabis_sativa_female",
+            "release": 113
+        },
+        {
+            "release": 113,
+            "name": "olea_europaea",
+            "assembly": "OLEA9",
+            "accession": "GCA_902713445.1",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "strain_collection": null,
+            "taxon_id": "158383",
+            "strain": "Farga",
+            "common_name": "olive",
+            "display_name": "Olea europaea",
+            "groups": [
+                "core"
+            ]
+        },
+        {
+            "name": "triticum_aestivum_lancer",
+            "release": 113,
+            "strain": "Lancer",
+            "taxon_id": "4565",
+            "strain_collection": null,
+            "common_name": "bread wheat",
+            "display_name": "Triticum aestivum Lancer",
+            "groups": [
+                "otherfeatures",
+                "core",
+                "variation"
+            ],
+            "assembly": "PGSBv2.1",
+            "accession": "GCA_903993975.1",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ]
+        },
+        {
+            "name": "ostreococcus_lucimarinus",
+            "release": 113,
+            "strain_collection": null,
+            "taxon_id": "436017",
+            "strain": "CCE9901",
+            "common_name": "green algae",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Ostreococcus lucimarinus",
+            "assembly": "ASM9206v1",
+            "accession": "GCA_000092065.1",
+            "aliases": [
+                "ostreococcus lucimarinus cce9901"
+            ],
+            "division": "EnsemblPlants"
+        },
+        {
+            "release": 113,
+            "name": "triticum_aestivum_paragon",
+            "accession": "GCA_949126075.1",
+            "assembly": "GCA949126075v1",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "taxon_id": "4565",
+            "strain_collection": null,
+            "strain": "Paragon",
+            "display_name": "Triticum aestivum Paragon",
+            "common_name": "bread wheat",
+            "groups": [
+                "core"
+            ]
+        },
+        {
+            "taxon_id": "55577",
+            "strain_collection": null,
+            "strain": null,
+            "common_name": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Dioscorea rotundata",
+            "accession": "GCA_009730915.1",
+            "assembly": "TDr96_F1_v2_PseudoChromosome",
+            "aliases": [
+                "dioscorea rotundata"
+            ],
+            "division": "EnsemblPlants",
+            "name": "dioscorea_rotundata",
+            "release": 113
+        },
+        {
+            "assembly": "AzucenaRS1",
+            "accession": "GCA_009830595.1",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "strain": "Azucena",
+            "strain_collection": null,
+            "taxon_id": "1736656",
+            "common_name": "Japonica rice",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Oryza sativa (Geng/Japonica-trop1 var. Azucena)",
+            "release": 113,
+            "name": "oryza_sativa_azucena"
+        },
+        {
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "assembly": "BOL",
+            "accession": "GCA_000695525.1",
+            "common_name": "wild cabbage",
+            "display_name": "Brassica oleracea",
+            "groups": [
+                "core",
+                "funcgen"
+            ],
+            "strain": "TO1000",
+            "taxon_id": "109376",
+            "strain_collection": null,
+            "release": 113,
+            "name": "brassica_oleracea"
+        },
+        {
+            "name": "saccharum_spontaneum",
+            "release": 113,
+            "strain": "AP85-441",
+            "taxon_id": "62335",
+            "strain_collection": null,
+            "display_name": "Saccharum spontaneum",
+            "common_name": null,
+            "groups": [
+                "core"
+            ],
+            "assembly": "Sspon.HiC_chr_asm",
+            "accession": "GCA_003544955.1",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ]
+        },
+        {
+            "name": "triticum_aestivum_renan",
+            "release": 113,
+            "taxon_id": "4565",
+            "strain_collection": null,
+            "strain": "Renan",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Triticum aestivum Renan",
+            "common_name": "bread wheat",
+            "assembly": "Triticum_aestivum_Renan_v2.1",
+            "accession": "GCA_937894285.1",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants"
+        },
+        {
+            "name": "pistacia_vera",
+            "release": 113,
+            "common_name": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Pistacia vera",
+            "strain_collection": null,
+            "taxon_id": "55513",
+            "strain": "Batoury",
+            "aliases": [
+                "pistacia vera"
+            ],
+            "division": "EnsemblPlants",
+            "assembly": "PisVer_v2",
+            "accession": "GCA_008641045.1"
+        },
+        {
+            "assembly": "Sorghum_bicolor_NCBIv3",
+            "accession": "GCA_000003195.3",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "sorghum saccharatum",
+                "sorghum nervosum besser ex schult.",
+                "sorghum bicolor",
+                "sorghum nervosum",
+                "andropogon sorghum",
+                "sorghum",
+                "sorghum saccharatum (l.) moench",
+                "sorghum vulgare pers.",
+                "milo",
+                "sorghum bicolor (l.) moench",
+                "sorghum bicolor milo",
+                "sorghum bicolor subsp. bicolor",
+                "sorghum vulgare",
+                "broomcorn",
+                "andropogon sorghum (l.) brot."
+            ],
+            "strain": "BTx623",
+            "strain_collection": null,
+            "taxon_id": "4558",
+            "common_name": "sorghum",
+            "display_name": "Sorghum bicolor",
+            "groups": [
+                "core",
+                "variation"
+            ],
+            "release": 113,
+            "name": "sorghum_bicolor"
+        },
+        {
+            "division": "EnsemblPlants",
+            "aliases": [
+                "ipomoea triloba"
+            ],
+            "accession": "GCA_003576645.1",
+            "assembly": "ASM357664v1",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Ipomoea triloba",
+            "common_name": null,
+            "strain": "NCNSP0323",
+            "taxon_id": "35885",
+            "strain_collection": null,
+            "release": 113,
+            "name": "ipomoea_triloba"
+        },
+        {
+            "name": "triticum_aestivum_weebil",
+            "release": 113,
+            "strain": "Weebil",
+            "taxon_id": "4565",
+            "strain_collection": null,
+            "display_name": "Triticum aestivum Weebill",
+            "groups": [
+                "core"
+            ],
+            "common_name": "bread wheat",
+            "assembly": "WeebilV1",
+            "accession": "GCA_902810675.1",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ]
+        },
+        {
+            "aliases": [
+                "durum wheat"
+            ],
+            "division": "EnsemblPlants",
+            "accession": "GCA_900231445.1",
+            "assembly": "Svevo.v1",
+            "common_name": "durum wheat",
+            "display_name": "Triticum turgidum",
+            "groups": [
+                "core",
+                "otherfeatures",
+                "variation"
+            ],
+            "strain_collection": null,
+            "taxon_id": "4567",
+            "strain": "svevo",
+            "release": 113,
+            "name": "triticum_turgidum"
+        },
+        {
+            "division": "EnsemblPlants",
+            "aliases": [
+                "brachypodium distachyon",
+                "brachypodium distachyon str. bd21",
+                "brachypodium_distachyon_str_bd21"
+            ],
+            "assembly": "Brachypodium_distachyon_v3.0",
+            "accession": "GCA_000005505.4",
+            "groups": [
+                "variation",
+                "core"
+            ],
+            "common_name": "false brome",
+            "display_name": "Brachypodium distachyon",
+            "strain": "Bd21",
+            "strain_collection": null,
+            "taxon_id": "15368",
+            "release": 113,
+            "name": "brachypodium_distachyon"
+        },
+        {
+            "strain": "reference",
+            "strain_collection": null,
+            "taxon_id": "38873",
+            "common_name": "European ash",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Fraxinus excelsior",
+            "assembly": "BATG-0.5",
+            "accession": "GCA_900149125.1",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "name": "fraxinus_excelsior",
+            "release": 113
+        },
+        {
+            "assembly": "GPv1",
+            "accession": "GCA_902500625.1",
+            "aliases": [
+                "hordeum vulgare subsp. vulgare"
+            ],
+            "division": "EnsemblPlants",
+            "strain_collection": null,
+            "taxon_id": "112509",
+            "strain": "GoldenPromise",
+            "groups": [
+                "core"
+            ],
+            "common_name": "domesticated barley",
+            "display_name": "Hordeum vulgare GoldenPromise",
+            "release": 113,
+            "name": "hordeum_vulgare_goldenpromise"
+        },
+        {
+            "accession": "GCA_002162155.1",
+            "assembly": "WEWSeq_v.1.0",
+            "aliases": [
+                "wild emmer wheat"
+            ],
+            "division": "EnsemblPlants",
+            "strain_collection": null,
+            "taxon_id": "85692",
+            "strain": "Zavitan (Atlit2015)",
+            "common_name": "wild emmer wheat",
+            "groups": [
+                "funcgen",
+                "otherfeatures",
+                "core"
+            ],
+            "display_name": "Triticum dicoccoides",
+            "release": 113,
+            "name": "triticum_dicoccoides"
+        },
+        {
+            "release": 113,
+            "name": "avena_sativa_sang",
+            "assembly": "Asativa_sang.v1.1",
+            "accession": "GCA_910574605.1",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "strain": "sang",
+            "taxon_id": "4498",
+            "strain_collection": null,
+            "groups": [
+                "core",
+                "otherfeatures"
+            ],
+            "common_name": null,
+            "display_name": "Avena sativa Sang"
+        },
+        {
+            "release": 113,
+            "name": "chlamydomonas_reinhardtii",
+            "accession": "GCA_000002595.3",
+            "assembly": "Chlamydomonas_reinhardtii_v5.5",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "chlamydomonas_reinhardtii_str_cc_503_cw92_mt_",
+                "chlamydomonas reinhardtii str. cc-503 cw92 mt+"
+            ],
+            "strain": "CC-503 cw92 mt+",
+            "strain_collection": null,
+            "taxon_id": "3055",
+            "common_name": "chlamy",
+            "display_name": "Chlamydomonas reinhardtii",
+            "groups": [
+                "core"
+            ]
+        },
+        {
+            "assembly": "ASM465v1",
+            "accession": "GCA_000004655.2",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "oryza_sativa_indica_group",
+                "indica",
+                "oryza indica",
+                "oryza sativa indica",
+                "oryza sativa indica group",
+                "oryza_sativa_indica",
+                "oi"
+            ],
+            "strain": "93-11",
+            "taxon_id": "39946",
+            "strain_collection": null,
+            "common_name": "Indian rice",
+            "groups": [
+                "variation",
+                "funcgen",
+                "core"
+            ],
+            "display_name": "Oryza sativa Indica Group",
+            "release": 113,
+            "name": "oryza_indica"
+        },
+        {
+            "common_name": "Aromatic rice",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Oryza sativa (circum-Basmati var. ARC 10497)",
+            "taxon_id": "1736658",
+            "strain_collection": null,
+            "strain": "ARC 10497",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "accession": "GCA_009831255.1",
+            "assembly": "Os117425RS1",
+            "name": "oryza_sativa_arc",
+            "release": 113
+        },
+        {
+            "assembly": "ASM1870372v1",
+            "accession": "GCA_018703725.1",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "strain": "Sichuan Huangzi",
+            "taxon_id": "3707",
+            "strain_collection": null,
+            "display_name": "Brassica juncea",
+            "groups": [
+                "core"
+            ],
+            "common_name": "eudicots",
+            "release": 113,
+            "name": "brassica_juncea"
+        },
+        {
+            "name": "eutrema_salsugineum",
+            "release": 113,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Eutrema salsugineum",
+            "common_name": null,
+            "strain": null,
+            "taxon_id": "72664",
+            "strain_collection": null,
+            "division": "EnsemblPlants",
+            "aliases": [
+                "eutrema salsugineum"
+            ],
+            "assembly": "Eutsalg1_0",
+            "accession": "GCA_000478725.1"
+        },
+        {
+            "name": "oryza_rufipogon",
+            "release": 113,
+            "display_name": "Oryza rufipogon",
+            "common_name": "common wild rice",
+            "groups": [
+                "core",
+                "funcgen"
+            ],
+            "strain": "W1943",
+            "taxon_id": "4529",
+            "strain_collection": null,
+            "division": "EnsemblPlants",
+            "aliases": [
+                "oryza rufipogon"
+            ],
+            "assembly": "OR_W1943",
+            "accession": "GCA_000817225.1"
+        },
+        {
+            "release": 113,
+            "name": "oryza_sativa_ketannangka",
+            "accession": "GCA_009831275.1",
+            "assembly": "Os128077RS1",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "strain": "Ketan Nangka",
+            "taxon_id": "1736656",
+            "strain_collection": null,
+            "common_name": "Japonica rice",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Oryza sativa (Geng/Japonica-trop2 var. Ketan Nangka)"
+        },
+        {
+            "release": 113,
+            "name": "triticum_timopheevii",
+            "accession": "GCA_963921465.1",
+            "assembly": "WRC_timopheevii_genome_with_organelles",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "strain": null,
+            "strain_collection": null,
+            "taxon_id": "4570",
+            "common_name": "Sanduri wheat",
+            "display_name": "Triticum timopheevii",
+            "groups": [
+                "core"
+            ]
+        },
+        {
+            "release": 113,
+            "name": "triticum_aestivum_jagger",
+            "aliases": [
+
+            ],
+            "division": "EnsemblPlants",
+            "accession": "GCA_903993795.1",
+            "assembly": "PGSBv2.1",
+            "display_name": "Triticum aestivum Jagger",
+            "common_name": "bread wheat",
+            "groups": [
+                "otherfeatures",
+                "core",
+                "variation"
+            ],
+            "strain_collection": null,
+            "taxon_id": "4565",
+            "strain": "Jagger"
+        },
+        {
+            "strain": "Cadenza",
+            "strain_collection": null,
+            "taxon_id": "4565",
+            "common_name": "bread wheat",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Triticum aestivum Cadenza",
+            "accession": "GCA_902810645.1",
+            "assembly": "EIv1.1",
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "name": "triticum_aestivum_cadenza",
+            "release": 113
+        },
+        {
+            "division": "EnsemblPlants",
+            "aliases": [
+
+            ],
+            "assembly": "arahy.Tifrunner.gnm2.J5K5",
+            "accession": "GCA_003086295.3",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Arachis hypogaea Tifrunner",
+            "common_name": "Peanut",
+            "strain": null,
+            "strain_collection": null,
+            "taxon_id": "3818",
+            "release": 113,
+            "name": "arachis_hypogaea_tifrunner"
+        },
+        {
+            "division": "EnsemblPlants",
+            "aliases": [
+                "eucalyptus grandis str. brasuz1",
+                "eucalyptus_grandis_str_brasuz1"
+            ],
+            "accession": "GCA_000612305.1",
+            "assembly": "Egrandis1_0",
+            "common_name": null,
+            "display_name": "Eucalyptus grandis",
+            "groups": [
+                "core"
+            ],
+            "strain": "BRASUZ1",
+            "taxon_id": "71139",
+            "strain_collection": null,
+            "release": 113,
+            "name": "eucalyptus_grandis"
+        },
+        {
+            "release": 113,
+            "name": "selaginella_moellendorffii",
+            "assembly": "v1.0",
+            "accession": "GCA_000143415.1",
+            "division": "EnsemblPlants",
+            "aliases": [
+                "selaginella moellendorfii",
+                "selaginella moellendorffii hieron.",
+                "selaginella moellendorffii"
+            ],
+            "strain": null,
+            "taxon_id": "88036",
+            "strain_collection": null,
+            "common_name": "spikemoss",
+            "display_name": "Selaginella moellendorffii",
+            "groups": [
+                "core"
+            ]
+        }
+    ]
+}

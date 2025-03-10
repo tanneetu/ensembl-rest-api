@@ -1,0 +1,4305 @@
+{
+    "species": [
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "strigomonas_culicis_gca_000442495",
+            "accession": "GCA_000442495.1",
+            "strain": null,
+            "display_name": "Strigomonas culicis (GCA_000442495.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "28005",
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "Strigomonas_culicis_Genome"
+        },
+        {
+            "name": "plasmodium_falciparum_camp_malaysia_gca_000521115",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113,
+            "strain_collection": null,
+            "assembly": "Plas_falc_Malayan_Camp_V1",
+            "division": "EnsemblProtists",
+            "strain": null,
+            "taxon_id": "5835",
+            "display_name": "Plasmodium falciparum CAMP/Malaysia (GCA_000521115.1)",
+            "groups": [
+                "core"
+            ],
+            "accession": "GCA_000521115.1"
+        },
+        {
+            "division": "EnsemblProtists",
+            "assembly": "ASM160185v1",
+            "strain_collection": null,
+            "accession": "GCA_001601855.1",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium reichenowi (GCA_001601855.1)",
+            "taxon_id": "5854",
+            "aliases": [
+
+            ],
+            "name": "plasmodium_reichenowi_gca_001601855",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "5691",
+            "display_name": "Trypanosoma brucei",
+            "accession": "GCA_000209005.1",
+            "assembly": "TryBru_Apr2005_chr11",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "trypanosoma_brucei",
+            "aliases": [
+                "t_brucei_brucei",
+                "trypanosoma (trypanozoon) brucei brucei",
+                "trypanosoma brucei"
+            ]
+        },
+        {
+            "accession": "GCA_001483015.1",
+            "taxon_id": "4790",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Phytophthora nicotianae (GCA_001483015.1)",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ASM148301v1",
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "phytophthora_nicotianae_gca_001483015"
+        },
+        {
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "PV_Mauritania_I_V1",
+            "accession": "GCA_000320665.2",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium vivax Mauritania I (GCA_000320665.2)",
+            "taxon_id": "1035515",
+            "aliases": [
+
+            ],
+            "name": "plasmodium_vivax_mauritania_i_gca_000320665",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "strain_collection": null,
+            "assembly": "GNI3",
+            "division": "EnsemblProtists",
+            "taxon_id": "110365",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Gregarina niphandrodes (GCA_000223845.4)",
+            "strain": null,
+            "accession": "GCA_000223845.4",
+            "name": "gregarina_niphandrodes_gca_000223845",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "hammondia_hammondi_gca_000258005",
+            "accession": "GCA_000258005.2",
+            "strain": null,
+            "display_name": "Hammondia hammondi str. H.H.34 (GCA_000258005.2)",
+            "taxon_id": "99158",
+            "groups": [
+                "core"
+            ],
+            "division": "EnsemblProtists",
+            "assembly": "HHA1_v02",
+            "strain_collection": null
+        },
+        {
+            "division": "EnsemblProtists",
+            "assembly": "V1.0",
+            "strain_collection": null,
+            "accession": "GCA_000002865.1",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "431895",
+            "display_name": "Monosiga brevicollis MX1 (GCA_000002865.1)",
+            "aliases": [
+
+            ],
+            "name": "monosiga_brevicollis_mx1_gca_000002865",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "plasmodium_ovale_curtisi_gca_900088555",
+            "accession": "GCA_900088555.1",
+            "strain": null,
+            "display_name": "Plasmodium ovale curtisi (GCA_900088555.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "864141",
+            "division": "EnsemblProtists",
+            "assembly": "Poc1",
+            "strain_collection": null
+        },
+        {
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "869250",
+            "display_name": "Theileria orientalis strain Shintoku (GCA_000740895.1)",
+            "strain": null,
+            "accession": "GCA_000740895.1",
+            "strain_collection": null,
+            "assembly": "ASM74089v1",
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "theileria_orientalis_strain_shintoku_gca_000740895",
+            "aliases": [
+
+            ]
+        },
+        {
+            "strain_collection": null,
+            "assembly": "V1.0",
+            "division": "EnsemblProtists",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Naegleria gruberi str. NEG-M (GCA_000004985.1)",
+            "taxon_id": "5762",
+            "accession": "GCA_000004985.1",
+            "name": "naegleria_gruberi_gca_000004985",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "division": "EnsemblProtists",
+            "assembly": "EHA_ku27_v1",
+            "strain_collection": null,
+            "accession": "GCA_000338855.1",
+            "display_name": "Entamoeba histolytica KU27 (GCA_000338855.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "885311",
+            "strain": null,
+            "aliases": [
+
+            ],
+            "name": "entamoeba_histolytica_ku27_gca_000338855",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "strain_collection": null,
+            "assembly": "Plas_falc_NF4_V1",
+            "division": "EnsemblProtists",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium falciparum NF54 (GCA_000401695.2)",
+            "taxon_id": "5843",
+            "accession": "GCA_000401695.2",
+            "name": "plasmodium_falciparum_nf54_gca_000401695",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "aphanomyces_invadans_gca_003546525",
+            "accession": "GCA_003546525.1",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Aphanomyces invadans (GCA_003546525.1)",
+            "taxon_id": "157072",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "assembly": "inv_NJM0002",
+            "strain_collection": null
+        },
+        {
+            "accession": "GCA_003546545.1",
+            "taxon_id": "112090",
+            "display_name": "Aphanomyces astaci (GCA_003546545.1)",
+            "groups": [
+                "core"
+            ],
+            "strain": null,
+            "division": "EnsemblProtists",
+            "assembly": "astaci_Si",
+            "strain_collection": null,
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "aphanomyces_astaci_gca_003546545"
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "theileria_orientalis_gca_003072535",
+            "accession": "GCA_003072535.1",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Theileria orientalis str. Goon Nure (GCA_003072535.1)",
+            "taxon_id": "68886",
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ASM307253v1"
+        },
+        {
+            "accession": "GCA_000338675.2",
+            "taxon_id": "1074873",
+            "display_name": "Toxoplasma gondii COUG (GCA_000338675.2)",
+            "groups": [
+                "core"
+            ],
+            "strain": null,
+            "division": "EnsemblProtists",
+            "assembly": "TGCOUG_v2",
+            "strain_collection": null,
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "toxoplasma_gondii_coug_gca_000338675"
+        },
+        {
+            "strain": null,
+            "taxon_id": "943118",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Toxoplasma gondii MAS (GCA_000224865.2)",
+            "accession": "GCA_000224865.2",
+            "assembly": "TGMAS1_v2",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "toxoplasma_gondii_mas_gca_000224865",
+            "aliases": [
+
+            ]
+        },
+        {
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "Bbes1.0",
+            "accession": "GCA_002563875.1",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "94643",
+            "display_name": "Besnoitia besnoiti str. Bb-Ger1 (GCA_002563875.1)",
+            "aliases": [
+
+            ],
+            "name": "besnoitia_besnoiti_gca_002563875",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "strain": null,
+            "taxon_id": "5693",
+            "display_name": "Trypanosoma cruzi str. CL Brener (GCA_000209065.1)",
+            "groups": [
+                "core"
+            ],
+            "accession": "GCA_000209065.1",
+            "assembly": "ASM20906v1",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "trypanosoma_cruzi_gca_000209065",
+            "aliases": [
+
+            ]
+        },
+        {
+            "strain": null,
+            "taxon_id": "85056",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Trypanosoma cruzi marinkellei (GCA_000300495.1)",
+            "accession": "GCA_000300495.1",
+            "assembly": "ASM30049v1",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "trypanosoma_cruzi_marinkellei_gca_000300495",
+            "aliases": [
+
+            ]
+        },
+        {
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "AKH_PRJEB1535_v1",
+            "accession": "GCA_000582765.1",
+            "strain": null,
+            "display_name": "Phytomonas sp. isolate EM1 (GCA_000582765.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "479712",
+            "aliases": [
+
+            ],
+            "name": "phytomonas_sp_isolate_em1_gca_000582765",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "strain_collection": null,
+            "assembly": "PGABG02",
+            "division": "EnsemblProtists",
+            "taxon_id": "720590",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium sp. DRC-Itaito (GCA_900240055.1)",
+            "strain": null,
+            "accession": "GCA_900240055.1",
+            "name": "plasmodium_sp_drc_itaito_gca_900240055",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "name": "plasmodium_inui_san_antonio_1_gca_000524495",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113,
+            "assembly": "Plas_inui_San_Antonio_1_V1",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium inui San Antonio 1 (GCA_000524495.1)",
+            "taxon_id": "1237626",
+            "accession": "GCA_000524495.1"
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "eimeria_maxima_gca_000499605",
+            "aliases": [
+
+            ],
+            "display_name": "Eimeria maxima str. Weybridge (GCA_000499605.1)",
+            "taxon_id": "5804",
+            "groups": [
+                "core"
+            ],
+            "strain": null,
+            "accession": "GCA_000499605.1",
+            "assembly": "EMW001",
+            "strain_collection": null,
+            "division": "EnsemblProtists"
+        },
+        {
+            "division": "EnsemblProtists",
+            "assembly": "EHA_CA_v1",
+            "strain_collection": null,
+            "accession": "GCA_000365475.1",
+            "strain": null,
+            "display_name": "Entamoeba histolytica HM-1:IMSS-A (GCA_000365475.1)",
+            "taxon_id": "885318",
+            "groups": [
+                "core"
+            ],
+            "aliases": [
+
+            ],
+            "name": "entamoeba_histolytica_hm_1_imss_a_gca_000365475",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "plasmodium_yoelii_17x_gca_000505035",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "Plas_yoel_17X_V2",
+            "accession": "GCA_000505035.1",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "1323249",
+            "display_name": "Plasmodium yoelii 17X (GCA_000505035.1)",
+            "strain": null
+        },
+        {
+            "name": "hyaloperonospora_arabidopsidis",
+            "aliases": [
+                "hyaloperonospora arabidopsidis",
+                "hyaloperonospora arabidopsidis emoy2",
+                "hyaloperonospora parasitica",
+                "peronospora parasitica"
+            ],
+            "common_name": null,
+            "release": 113,
+            "strain_collection": null,
+            "assembly": "HyaAraEmoy2_2.0",
+            "division": "EnsemblProtists",
+            "strain": "Emoy2",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Hyaloperonospora arabidopsidis",
+            "taxon_id": "559515",
+            "accession": "GCA_000173235.2"
+        },
+        {
+            "aliases": [
+                "phytophthora infestans"
+            ],
+            "name": "phytophthora_infestans",
+            "release": 113,
+            "common_name": "potato late blight agent",
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ASM14294v1",
+            "accession": "GCA_000142945.1",
+            "groups": [
+                "core",
+                "variation",
+                "otherfeatures"
+            ],
+            "taxon_id": "403677",
+            "display_name": "Phytophthora infestans",
+            "strain": null
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "plasmodium_ovale_wallikeri_gca_900088545",
+            "accession": "GCA_900088545.1",
+            "display_name": "Plasmodium ovale wallikeri (GCA_900088545.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "864142",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "Pow2"
+        },
+        {
+            "groups": [
+                "core"
+            ],
+            "display_name": "Toxoplasma gondii CAST (GCA_000256705.2)",
+            "taxon_id": "943122",
+            "strain": null,
+            "accession": "GCA_000256705.2",
+            "assembly": "TGCAST_v2",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "toxoplasma_gondii_gca_000256705",
+            "aliases": [
+
+            ]
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "perkinsus_marinus_atcc_50983_gca_000006405",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "assembly": "JCVI_PMG_1.0",
+            "strain_collection": null,
+            "accession": "GCA_000006405.1",
+            "taxon_id": "423536",
+            "display_name": "Perkinsus marinus ATCC 50983 str. PmCV4CB5 2B3 D4 (GCA_000006405.1)",
+            "groups": [
+                "core"
+            ],
+            "strain": null
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "trypanosoma_cruzi_gca_003177105",
+            "aliases": [
+
+            ],
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "5693",
+            "display_name": "Trypanosoma cruzi str. Dm28c (GCA_003177105.1)",
+            "strain": null,
+            "accession": "GCA_003177105.1",
+            "strain_collection": null,
+            "assembly": "ASM317710v1",
+            "division": "EnsemblProtists"
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "plasmodium_ovale_curtisi_gca_900088565",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "assembly": "Poc2",
+            "strain_collection": null,
+            "accession": "GCA_900088565.1",
+            "display_name": "Plasmodium ovale curtisi (GCA_900088565.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "864141",
+            "strain": null
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "perkinsela_sp_ccap_1560_4_gca_001235845",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "assembly": "ASM123584v1",
+            "strain_collection": null,
+            "accession": "GCA_001235845.1",
+            "taxon_id": "1314962",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Perkinsela sp. CCAP 1560/4 (GCA_001235845.1)",
+            "strain": null
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "plasmodium_chabaudi_adami_gca_900095565",
+            "accession": "GCA_900095565.1",
+            "strain": null,
+            "taxon_id": "5826",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium chabaudi adami (GCA_900095565.1)",
+            "division": "EnsemblProtists",
+            "assembly": "PchDK",
+            "strain_collection": null
+        },
+        {
+            "accession": "GCA_000003085.2",
+            "taxon_id": "73239",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium yoelii yoelii str. 17XNL (GCA_000003085.2)",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ASM308v2",
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "plasmodium_yoelii_yoelii_gca_000003085"
+        },
+        {
+            "assembly": "T.cruzi.Dm28c_v01",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "display_name": "Trypanosoma cruzi Dm28c (GCA_000496795.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "1416333",
+            "strain": null,
+            "accession": "GCA_000496795.1",
+            "name": "trypanosoma_cruzi_dm28c_gca_000496795",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "assembly": "astaci_D2",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Aphanomyces astaci (GCA_003546585.1)",
+            "taxon_id": "112090",
+            "strain": null,
+            "accession": "GCA_003546585.1",
+            "name": "aphanomyces_astaci_gca_003546585",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "taxon_id": "37360",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodiophora brassicae (GCA_001049375.1)",
+            "strain": null,
+            "accession": "GCA_001049375.1",
+            "assembly": "pbe3.h15",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "plasmodiophora_brassicae_gca_001049375",
+            "aliases": [
+
+            ]
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "achlya_hypogyna_gca_002081595",
+            "accession": "GCA_002081595.1",
+            "strain": null,
+            "taxon_id": "1202772",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Achlya hypogyna str. ATCC 48635 (GCA_002081595.1)",
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ACH_lane_v1"
+        },
+        {
+            "accession": "GCA_001606155.1",
+            "display_name": "Tieghemostelium lacteum str. TK (GCA_001606155.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "361077",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "assembly": "ASM160615v1",
+            "strain_collection": null,
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "tieghemostelium_lacteum_gca_001606155"
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "phytophthora_nicotianae_gca_001482985",
+            "accession": "GCA_001482985.1",
+            "taxon_id": "4790",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Phytophthora nicotianae (GCA_001482985.1)",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ASM148298v1"
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "phytophthora_kernoviae_gca_001712645",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "assembly": "PkChile7v2.0",
+            "strain_collection": null,
+            "accession": "GCA_001712645.2",
+            "display_name": "Phytophthora kernoviae (GCA_001712645.2)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "325452",
+            "strain": null
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "toxoplasma_gondii_tgcatprc2_gca_000256725",
+            "aliases": [
+
+            ],
+            "strain": null,
+            "taxon_id": "1130821",
+            "display_name": "Toxoplasma gondii TgCatPRC2 (GCA_000256725.2)",
+            "groups": [
+                "core"
+            ],
+            "accession": "GCA_000256725.2",
+            "assembly": "TGCATPRC2_v2",
+            "strain_collection": null,
+            "division": "EnsemblProtists"
+        },
+        {
+            "assembly": "Plas_falc_Vietnam_Oak-Knoll_FVO_V1",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "1036723",
+            "display_name": "Plasmodium falciparum Vietnam Oak-Knoll (FVO) (GCA_000521015.1)",
+            "accession": "GCA_000521015.1",
+            "name": "plasmodium_falciparum_vietnam_oak_knoll_fvo__gca_000521015",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "plasmodium_berghei_gca_900095585",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "PbSP11RLL",
+            "accession": "GCA_900095585.1",
+            "taxon_id": "5821",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium berghei (GCA_900095585.1)",
+            "strain": null
+        },
+        {
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "1317065",
+            "display_name": "Phytophthora parasitica",
+            "strain": "P1569",
+            "accession": "GCA_000365505.1",
+            "assembly": "Phyt_para_P1569_V1",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "phytophthora_parasitica",
+            "aliases": [
+
+            ]
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "cystoisospora_suis_gca_002600585",
+            "accession": "GCA_002600585.1",
+            "strain": null,
+            "display_name": "Cystoisospora suis str. Wien I (GCA_002600585.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "483139",
+            "division": "EnsemblProtists",
+            "assembly": "ASM260058v1",
+            "strain_collection": null
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "giardia_intestinalis_atcc_50581_gca_000182405",
+            "accession": "GCA_000182405.1",
+            "strain": null,
+            "taxon_id": "598745",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Giardia intestinalis ATCC 50581 str. GS/M H7 (GCA_000182405.1)",
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ASM18240v1"
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "saprolegnia_diclina_vs20_gca_000281045",
+            "aliases": [
+
+            ],
+            "groups": [
+                "core"
+            ],
+            "display_name": "Saprolegnia diclina VS20 (GCA_000281045.1)",
+            "taxon_id": "1156394",
+            "strain": null,
+            "accession": "GCA_000281045.1",
+            "strain_collection": null,
+            "assembly": "Sap_diclina_VS20_V1",
+            "division": "EnsemblProtists"
+        },
+        {
+            "name": "thraustotheca_clavata_gca_002081575",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113,
+            "strain_collection": null,
+            "assembly": "Thrcla_v1",
+            "division": "EnsemblProtists",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Thraustotheca clavata str. ATCC 34112 (GCA_002081575.1)",
+            "taxon_id": "74557",
+            "accession": "GCA_002081575.1"
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+                "pythium ultimum daom br144",
+                "pythium ultimum"
+            ],
+            "name": "pythium_ultimum",
+            "accession": "GCA_000143045.1",
+            "strain": null,
+            "taxon_id": "431595",
+            "groups": [
+                "core",
+                "otherfeatures"
+            ],
+            "display_name": "Pythium ultimum",
+            "division": "EnsemblProtists",
+            "assembly": "pug",
+            "strain_collection": null
+        },
+        {
+            "accession": "GCA_002831795.1",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium falciparum NF54 (GCA_002831795.1)",
+            "taxon_id": "5843",
+            "division": "EnsemblProtists",
+            "assembly": "ASM283179v1",
+            "strain_collection": null,
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "plasmodium_falciparum_nf54_gca_002831795"
+        },
+        {
+            "display_name": "Plasmodium falciparum UGT5.1 (GCA_000401715.2)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "1237627",
+            "strain": null,
+            "accession": "GCA_000401715.2",
+            "assembly": "Plas_falc_5_1_V1",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "plasmodium_falciparum_ugt5_1_gca_000401715",
+            "aliases": [
+
+            ]
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "babesia_bovis_gca_000165395",
+            "aliases": [
+
+            ],
+            "strain": null,
+            "taxon_id": "5865",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Babesia bovis str. T2Bo (GCA_000165395.1)",
+            "accession": "GCA_000165395.1",
+            "assembly": "ASM16539v1",
+            "strain_collection": null,
+            "division": "EnsemblProtists"
+        },
+        {
+            "aliases": [
+                "entamoeba histolytica hm-1:imss",
+                "entamoeba histolytica"
+            ],
+            "name": "entamoeba_histolytica",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "JCVI-ESG2-1.0",
+            "accession": "GCA_000208925.2",
+            "strain": "HM-1:IMSS",
+            "taxon_id": "294381",
+            "display_name": "Entamoeba histolytica",
+            "groups": [
+                "core"
+            ]
+        },
+        {
+            "assembly": "astaci_KB13",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "112090",
+            "display_name": "Aphanomyces astaci (GCA_003666305.1)",
+            "strain": null,
+            "accession": "GCA_003666305.1",
+            "name": "aphanomyces_astaci_gca_003666305",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "taxon_id": "325452",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Phytophthora kernoviae (GCA_001707905.2)",
+            "strain": null,
+            "accession": "GCA_001707905.2",
+            "strain_collection": null,
+            "assembly": "PkChile2v2.0",
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "phytophthora_kernoviae_gca_001707905",
+            "aliases": [
+
+            ]
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "babesia_bigemina_gca_000981445",
+            "accession": "GCA_000981445.1",
+            "strain": null,
+            "display_name": "Babesia bigemina str. Bond (GCA_000981445.1)",
+            "taxon_id": "5866",
+            "groups": [
+                "core"
+            ],
+            "division": "EnsemblProtists",
+            "assembly": "Bbig001",
+            "strain_collection": null
+        },
+        {
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "DFas_2.0",
+            "accession": "GCA_000203815.1",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "261658",
+            "display_name": "Cavenderia fasciculata str. SH3 (GCA_000203815.1)",
+            "aliases": [
+
+            ],
+            "name": "cavenderia_fasciculata_gca_000203815",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "theileria_parva_gca_000165365",
+            "aliases": [
+
+            ],
+            "display_name": "Theileria parva str. Muguga (GCA_000165365.1)",
+            "taxon_id": "5875",
+            "groups": [
+                "core"
+            ],
+            "strain": null,
+            "accession": "GCA_000165365.1",
+            "strain_collection": null,
+            "assembly": "ASM16536v1",
+            "division": "EnsemblProtists"
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "babesia_ovata_gca_002897235",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "assembly": "Bovata_7.1",
+            "strain_collection": null,
+            "accession": "GCA_002897235.1",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Babesia ovata str. Miyake (GCA_002897235.1)",
+            "taxon_id": "189622"
+        },
+        {
+            "accession": "GCA_002140095.1",
+            "strain": null,
+            "display_name": "Plasmodium knowlesi str. Malayan Strain Pk1 (A+) (GCA_002140095.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "5850",
+            "division": "EnsemblProtists",
+            "assembly": "PKNOHv1",
+            "strain_collection": null,
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "plasmodium_knowlesi_gca_002140095"
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "toxoplasma_gondii_fou_gca_000224905",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "assembly": "TGFOU1v02",
+            "strain_collection": null,
+            "accession": "GCA_000224905.2",
+            "display_name": "Toxoplasma gondii FOU (GCA_000224905.2)",
+            "taxon_id": "943167",
+            "groups": [
+                "core"
+            ],
+            "strain": null
+        },
+        {
+            "accession": "GCA_003719155.1",
+            "taxon_id": "5693",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Trypanosoma cruzi (GCA_003719155.1)",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ASM371915v1",
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "trypanosoma_cruzi_gca_003719155"
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "plasmodium_falciparum_igh_cr14_gca_000186055",
+            "aliases": [
+
+            ],
+            "strain": null,
+            "taxon_id": "580059",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium falciparum IGH-CR14 (GCA_000186055.2)",
+            "accession": "GCA_000186055.2",
+            "strain_collection": null,
+            "assembly": "ASM18605v2",
+            "division": "EnsemblProtists"
+        },
+        {
+            "division": "EnsemblProtists",
+            "assembly": "ASM49871v1",
+            "strain_collection": null,
+            "accession": "GCA_000498715.1",
+            "taxon_id": "5741",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Giardia intestinalis str. DH (GCA_000498715.1)",
+            "strain": null,
+            "aliases": [
+
+            ],
+            "name": "giardia_intestinalis_gca_000498715",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "aliases": [
+                "malaria parasite p. vivax",
+                "plasmodium vivax str. salvador i",
+                "plasmodium vivax"
+            ],
+            "name": "plasmodium_vivax",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ASM241v2",
+            "accession": "GCA_000002415.2",
+            "strain": "Salvador I",
+            "display_name": "Plasmodium vivax",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "5855"
+        },
+        {
+            "name": "phytophthora_parasitica_gca_000509485",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113,
+            "assembly": "Phyt_para_CJ05E6_V1",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "display_name": "Phytophthora parasitica str. CJ05E6 (GCA_000509485.1)",
+            "taxon_id": "4792",
+            "groups": [
+                "core"
+            ],
+            "strain": null,
+            "accession": "GCA_000509485.1"
+        },
+        {
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Phytophthora palmivora var. palmivora str. sbr112.9 (GCA_002911725.1)",
+            "taxon_id": "611791",
+            "accession": "GCA_002911725.1",
+            "assembly": "ASM291172v1",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "phytophthora_palmivora_var_palmivora_gca_002911725",
+            "aliases": [
+
+            ]
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "plasmodium_vinckei_vinckei_gca_000709005",
+            "accession": "GCA_000709005.1",
+            "strain": null,
+            "display_name": "Plasmodium vinckei vinckei (GCA_000709005.1)",
+            "taxon_id": "54757",
+            "groups": [
+                "core"
+            ],
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "Plas_vinc_vinckei_V1"
+        },
+        {
+            "name": "trypanosoma_rangeli_gca_003719475",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113,
+            "strain_collection": null,
+            "assembly": "ASM371947v1",
+            "division": "EnsemblProtists",
+            "strain": null,
+            "display_name": "Trypanosoma rangeli (GCA_003719475.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "5698",
+            "accession": "GCA_003719475.1"
+        },
+        {
+            "display_name": "Phytophthora parasitica str. IAC_01/95 (GCA_000509525.1)",
+            "taxon_id": "4792",
+            "groups": [
+                "core"
+            ],
+            "strain": null,
+            "accession": "GCA_000509525.1",
+            "strain_collection": null,
+            "assembly": "Phyt_para_IAC_01_95_V1",
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "phytophthora_parasitica_gca_000509525",
+            "aliases": [
+
+            ]
+        },
+        {
+            "division": "EnsemblProtists",
+            "assembly": "Phyt_para_P10297_V1",
+            "strain_collection": null,
+            "accession": "GCA_000367145.1",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "1317064",
+            "display_name": "Phytophthora parasitica P10297 (GCA_000367145.1)",
+            "strain": null,
+            "aliases": [
+
+            ],
+            "name": "phytophthora_parasitica_p10297_gca_000367145",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "PADLG01",
+            "accession": "GCA_900097015.1",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium sp. gorilla clade G2 (GCA_900097015.1)",
+            "taxon_id": "880535",
+            "aliases": [
+
+            ],
+            "name": "plasmodium_sp_gorilla_clade_g2_gca_900097015",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "plasmodium_reichenowi_gca_900097025",
+            "aliases": [
+
+            ],
+            "taxon_id": "5854",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium reichenowi (GCA_900097025.1)",
+            "strain": null,
+            "accession": "GCA_900097025.1",
+            "strain_collection": null,
+            "assembly": "PRG01",
+            "division": "EnsemblProtists"
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "toxoplasma_gondii_gt1_gca_000149715",
+            "accession": "GCA_000149715.2",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Toxoplasma gondii GT1 (GCA_000149715.2)",
+            "taxon_id": "507601",
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "TGGT1"
+        },
+        {
+            "accession": "GCA_000006355.1",
+            "strain": "H",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium knowlesi",
+            "taxon_id": "5851",
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ASM635v1",
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+                "plasmodium knowlesi strain h",
+                "plasmodium knowlesi strain h str. h strain",
+                "plasmodium knowlesi (strain h)",
+                "plasmodium knowlesi malayan h",
+                "plasmodium knowlesi h",
+                "plasmodium_knowlesi_strain_h"
+            ],
+            "name": "plasmodium_knowlesi"
+        },
+        {
+            "accession": "GCA_000165345.1",
+            "taxon_id": "353152",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Cryptosporidium parvum Iowa II (GCA_000165345.1)",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ASM16534v1",
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "cryptosporidium_parvum_iowa_ii_gca_000165345"
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+                "paramecium aurelia syngen 4",
+                "paramecium tetraurelia",
+                "42403"
+            ],
+            "name": "paramecium_tetraurelia",
+            "accession": "GCA_000165425.1",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Paramecium tetraurelia",
+            "taxon_id": "5888",
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ASM16542v1"
+        },
+        {
+            "accession": "GCA_000498735.1",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "5741",
+            "display_name": "Giardia intestinalis str. GS (GCA_000498735.1)",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ASM49873v1",
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "giardia_intestinalis_gca_000498735"
+        },
+        {
+            "accession": "GCA_000524515.1",
+            "strain": null,
+            "taxon_id": "138298",
+            "display_name": "Plasmodium vinckei petteri str. CR (GCA_000524515.1)",
+            "groups": [
+                "core"
+            ],
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "Plas_vinc_pett_CR_V1",
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "plasmodium_vinckei_petteri_gca_000524515"
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "trypanosoma_theileri_gca_002087225",
+            "accession": "GCA_002087225.1",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "67003",
+            "display_name": "Trypanosoma theileri (GCA_002087225.1)",
+            "division": "EnsemblProtists",
+            "assembly": "Tth_v3",
+            "strain_collection": null
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "reticulomyxa_filosa_gca_000512085",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "assembly": "Reti_assembly1.0",
+            "strain_collection": null,
+            "accession": "GCA_000512085.1",
+            "strain": null,
+            "taxon_id": "46433",
+            "display_name": "Reticulomyxa filosa (GCA_000512085.1)",
+            "groups": [
+                "core"
+            ]
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "oxytricha_trifallax_gca_000711775",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "Oxytricha_MIC_v2.0",
+            "accession": "GCA_000711775.1",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Oxytricha trifallax str. JRB310 (GCA_000711775.1)",
+            "taxon_id": "1172189",
+            "strain": null
+        },
+        {
+            "assembly": "ASM307254v1",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "strain": null,
+            "taxon_id": "68886",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Theileria orientalis str. Fish Creek (GCA_003072545.1)",
+            "accession": "GCA_003072545.1",
+            "name": "theileria_orientalis_gca_003072545",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "strain_collection": null,
+            "assembly": "TGARI_v2",
+            "division": "EnsemblProtists",
+            "taxon_id": "1074872",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Toxoplasma gondii ARI (GCA_000250965.2)",
+            "strain": null,
+            "accession": "GCA_000250965.2",
+            "name": "toxoplasma_gondii_ari_gca_000250965",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "groups": [
+                "core"
+            ],
+            "display_name": "Toxoplasma gondii TgCATBr9 (GCA_000224825.2)",
+            "taxon_id": "943120",
+            "strain": null,
+            "accession": "GCA_000224825.2",
+            "assembly": "TGCATBR9_v2",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "toxoplasma_gondii_tgcatbr9_gca_000224825",
+            "aliases": [
+
+            ]
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "plasmodium_falciparum_nf135_5_c10_gca_000521075",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "Plas_falc_NF135_5_C10_V1",
+            "accession": "GCA_000521075.1",
+            "taxon_id": "1036726",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium falciparum NF135/5.C10 (GCA_000521075.1)",
+            "strain": null
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "aphanomyces_invadans_gca_000520115",
+            "aliases": [
+
+            ],
+            "strain": null,
+            "display_name": "Aphanomyces invadans str. NJM9701 (GCA_000520115.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "157072",
+            "accession": "GCA_000520115.1",
+            "assembly": "Apha_inva_NJM9701_V1",
+            "strain_collection": null,
+            "division": "EnsemblProtists"
+        },
+        {
+            "division": "EnsemblProtists",
+            "assembly": "EBH001",
+            "strain_collection": null,
+            "accession": "GCA_000499725.1",
+            "strain": null,
+            "display_name": "Eimeria brunetti (GCA_000499725.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "51314",
+            "aliases": [
+
+            ],
+            "name": "eimeria_brunetti_gca_000499725",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "division": "EnsemblProtists",
+            "assembly": "PV_Brazil_I_V1",
+            "strain_collection": null,
+            "accession": "GCA_000320645.2",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium vivax Brazil I (GCA_000320645.2)",
+            "taxon_id": "1033975",
+            "aliases": [
+
+            ],
+            "name": "plasmodium_vivax_brazil_i_gca_000320645",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "assembly": "PbNK65E",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "5821",
+            "display_name": "Plasmodium berghei (GCA_900088445.1)",
+            "accession": "GCA_900088445.1",
+            "name": "plasmodium_berghei_gca_900088445",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "name": "leishmania_donovani_gca_000227135",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113,
+            "strain_collection": null,
+            "assembly": "ASM22713v2",
+            "division": "EnsemblProtists",
+            "display_name": "Leishmania donovani str. BPK282A1 (GCA_000227135.2)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "5661",
+            "strain": null,
+            "accession": "GCA_000227135.2"
+        },
+        {
+            "assembly": "CryMelUKMEL1-1.0",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "taxon_id": "93969",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Cryptosporidium meleagridis str. UKMEL1 (GCA_001593445.1)",
+            "strain": null,
+            "accession": "GCA_001593445.1",
+            "name": "cryptosporidium_meleagridis_gca_001593445",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "eimeria_mitis_gca_000499745",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "EMH001",
+            "accession": "GCA_000499745.1",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "44415",
+            "display_name": "Eimeria mitis (GCA_000499745.1)"
+        },
+        {
+            "name": "aphanomyces_astaci_gca_003546565",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113,
+            "assembly": "astaci_KV",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "strain": null,
+            "display_name": "Aphanomyces astaci (GCA_003546565.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "112090",
+            "accession": "GCA_003546565.1"
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "leptomonas_pyrrhocoris_gca_001293395",
+            "aliases": [
+
+            ],
+            "taxon_id": "157538",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Leptomonas pyrrhocoris str. H10 (GCA_001293395.1)",
+            "strain": null,
+            "accession": "GCA_001293395.1",
+            "assembly": "ASM129339v1",
+            "strain_collection": null,
+            "division": "EnsemblProtists"
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "aphanomyces_astaci_gca_000520075",
+            "accession": "GCA_000520075.1",
+            "strain": null,
+            "display_name": "Aphanomyces astaci str. APO3 (GCA_000520075.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "112090",
+            "division": "EnsemblProtists",
+            "assembly": "Apha_asta_APO3_V1",
+            "strain_collection": null
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "fragilariopsis_cylindrus_ccmp1102_gca_001750085",
+            "accession": "GCA_001750085.1",
+            "strain": null,
+            "taxon_id": "635003",
+            "display_name": "Fragilariopsis cylindrus CCMP1102 (GCA_001750085.1)",
+            "groups": [
+                "core"
+            ],
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "Fracy1"
+        },
+        {
+            "strain": null,
+            "display_name": "Phytophthora parasitica str. CHvinca01 (GCA_000509505.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "4792",
+            "accession": "GCA_000509505.1",
+            "strain_collection": null,
+            "assembly": "Phyt_para_CHvinca01_V1",
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "phytophthora_parasitica_gca_000509505",
+            "aliases": [
+
+            ]
+        },
+        {
+            "assembly": "PbSP11A",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium berghei (GCA_900095635.1)",
+            "taxon_id": "5821",
+            "accession": "GCA_900095635.1",
+            "name": "plasmodium_berghei_gca_900095635",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "salpingoeca_rosetta_gca_000188695",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "assembly": "Proterospongia_sp_ATCC50818",
+            "strain_collection": null,
+            "accession": "GCA_000188695.1",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Salpingoeca rosetta str. ATCC 50818 (GCA_000188695.1)",
+            "taxon_id": "946362",
+            "strain": null
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+                "plasmodium_berghei_anka"
+            ],
+            "name": "plasmodium_berghei",
+            "accession": "GCA_900002375.1",
+            "display_name": "Plasmodium berghei",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "5823",
+            "strain": "ANKA",
+            "division": "EnsemblProtists",
+            "assembly": "PBANKA01",
+            "strain_collection": null
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "emiliania_huxleyi",
+            "aliases": [
+                "emiliania huxleyi ccmp1516",
+                "emiliania huxleyi ccmp2090"
+            ],
+            "strain": "CCMP1516",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Emiliania huxleyi",
+            "taxon_id": "280463",
+            "accession": "GCA_000372725.1",
+            "assembly": "Emiliana_huxleyi_CCMP1516_main_genome_assembly_v1.0",
+            "strain_collection": null,
+            "division": "EnsemblProtists"
+        },
+        {
+            "assembly": "TheTra_May2010",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "taxon_id": "461836",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Thecamonas trahens ATCC 50062 (GCA_000142905.1)",
+            "strain": null,
+            "accession": "GCA_000142905.1",
+            "name": "thecamonas_trahens_atcc_50062_gca_000142905",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "division": "EnsemblProtists",
+            "assembly": "EAH001",
+            "strain_collection": null,
+            "accession": "GCA_000499425.1",
+            "taxon_id": "5801",
+            "display_name": "Eimeria acervulina (GCA_000499425.1)",
+            "groups": [
+                "core"
+            ],
+            "strain": null,
+            "aliases": [
+
+            ],
+            "name": "eimeria_acervulina_gca_000499425",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "accession": "GCA_001602025.1",
+            "taxon_id": "647221",
+            "display_name": "Plasmodium gaboni (GCA_001602025.1)",
+            "groups": [
+                "core"
+            ],
+            "strain": null,
+            "division": "EnsemblProtists",
+            "assembly": "ASM160202v1",
+            "strain_collection": null,
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "plasmodium_gaboni_gca_001602025"
+        },
+        {
+            "accession": "GCA_000186025.2",
+            "strain": null,
+            "taxon_id": "580058",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium falciparum RAJ116 (GCA_000186025.2)",
+            "division": "EnsemblProtists",
+            "assembly": "ASM18602v2",
+            "strain_collection": null,
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "plasmodium_falciparum_raj116_gca_000186025"
+        },
+        {
+            "name": "plasmodium_vivax_india_vii_gca_000320625",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113,
+            "assembly": "PV_India_VII_V2",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium vivax India VII (GCA_000320625.2)",
+            "taxon_id": "1077284",
+            "strain": null,
+            "accession": "GCA_000320625.2"
+        },
+        {
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Cryptosporidium muris RN66 (GCA_000006515.1)",
+            "taxon_id": "441375",
+            "accession": "GCA_000006515.1",
+            "strain_collection": null,
+            "assembly": "JCVI-cmg-v1.0",
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "cryptosporidium_muris_rn66_gca_000006515",
+            "aliases": [
+
+            ]
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "giardia_intestinalis_assemblage_b_gca_001543975",
+            "aliases": [
+
+            ],
+            "groups": [
+                "core"
+            ],
+            "display_name": "Giardia intestinalis assemblage B str. BAH15c1 (GCA_001543975.1)",
+            "taxon_id": "1394984",
+            "strain": null,
+            "accession": "GCA_001543975.1",
+            "strain_collection": null,
+            "assembly": "G_duodenalis_AssB_BAH15c1",
+            "division": "EnsemblProtists"
+        },
+        {
+            "division": "EnsemblProtists",
+            "assembly": "ASM15095v2_bd",
+            "strain_collection": null,
+            "accession": "GCA_000150955.2",
+            "strain": null,
+            "groups": [
+                "variation",
+                "otherfeatures",
+                "core"
+            ],
+            "taxon_id": "556484",
+            "display_name": "Phaeodactylum tricornutum",
+            "aliases": [
+                "phaeodactylum tricornutum ccap 1055/1",
+                "phaeodactylum tricornutum"
+            ],
+            "name": "phaeodactylum_tricornutum",
+            "release": 113,
+            "common_name": "Phaeodactylum tricornutum"
+        },
+        {
+            "assembly": "ASM186535v1",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "strain": null,
+            "display_name": "Cryptosporidium andersoni (GCA_001865355.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "117008",
+            "accession": "GCA_001865355.1",
+            "name": "cryptosporidium_andersoni_gca_001865355",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "kipferlia_bialata_gca_003568945",
+            "accession": "GCA_003568945.1",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Kipferlia bialata (GCA_003568945.1)",
+            "taxon_id": "797122",
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "KIPB_1.0"
+        },
+        {
+            "accession": "GCA_000387445.2",
+            "strain": "DAOM BR444",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "1223555",
+            "display_name": "Pythium aphanidermatum",
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "pag1_scaffolds_v1",
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+                "pythium aphanidermatum daom br444"
+            ],
+            "name": "pythium_aphanidermatum"
+        },
+        {
+            "accession": "GCA_000497125.1",
+            "display_name": "Spironucleus salmonicida (GCA_000497125.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "348837",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "assembly": "SSK3.0",
+            "strain_collection": null,
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "spironucleus_salmonicida_gca_000497125"
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "plasmodium_chabaudi",
+            "aliases": [
+                "plasmodium chabaudi chabaudi str. as"
+            ],
+            "display_name": "Plasmodium chabaudi",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "31271",
+            "strain": "AS",
+            "accession": "GCA_900002335.1",
+            "strain_collection": null,
+            "assembly": "PCHAS01",
+            "division": "EnsemblProtists"
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "pythium_iwayamai",
+            "aliases": [
+                "pythium iwayamai daom br242034"
+            ],
+            "strain": "DAOM BR242034",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "1223558",
+            "display_name": "Pythium iwayamai",
+            "accession": "GCA_000387465.2",
+            "assembly": "piw_scaffolds_v1",
+            "strain_collection": null,
+            "division": "EnsemblProtists"
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "plasmodium_fragile_gca_000956335",
+            "accession": "GCA_000956335.1",
+            "display_name": "Plasmodium fragile str. multiple (GCA_000956335.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "5857",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "assembly": "Plas_frag_nilgiri_V1",
+            "strain_collection": null
+        },
+        {
+            "accession": "GCA_000442575.2",
+            "display_name": "Angomonas deanei (GCA_000442575.2)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "59799",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "Angomonas_deanei_Genome",
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "angomonas_deanei_gca_000442575"
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "cyclospora_cayetanensis_gca_000769155",
+            "aliases": [
+
+            ],
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "88456",
+            "display_name": "Cyclospora cayetanensis str. CHN_HEN01 (GCA_000769155.2)",
+            "strain": null,
+            "accession": "GCA_000769155.2",
+            "assembly": "ASM76915v2",
+            "strain_collection": null,
+            "division": "EnsemblProtists"
+        },
+        {
+            "taxon_id": "29920",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Phytophthora cactorum str. 10300 (GCA_003287315.1)",
+            "strain": null,
+            "accession": "GCA_003287315.1",
+            "strain_collection": null,
+            "assembly": "Pcac_10300_v1",
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "phytophthora_cactorum_gca_003287315",
+            "aliases": [
+
+            ]
+        },
+        {
+            "division": "EnsemblProtists",
+            "assembly": "ASM219758v2",
+            "strain_collection": null,
+            "accession": "GCA_002197585.2",
+            "strain": null,
+            "taxon_id": "112090",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Aphanomyces astaci (GCA_002197585.2)",
+            "aliases": [
+
+            ],
+            "name": "aphanomyces_astaci_gca_002197585",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "strain_collection": null,
+            "assembly": "PcynB_1.0",
+            "division": "EnsemblProtists",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium cynomolgi strain B (GCA_000321355.1)",
+            "taxon_id": "1120755",
+            "strain": null,
+            "accession": "GCA_000321355.1",
+            "name": "plasmodium_cynomolgi_strain_b_gca_000321355",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "TGP89A_v02",
+            "accession": "GCA_000224885.2",
+            "strain": null,
+            "taxon_id": "943119",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Toxoplasma gondii p89 (GCA_000224885.2)",
+            "aliases": [
+
+            ],
+            "name": "toxoplasma_gondii_p89_gca_000224885",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "plasmodium_falciparum_santa_lucia_gca_000150455",
+            "aliases": [
+
+            ],
+            "display_name": "Plasmodium falciparum Santa Lucia (GCA_000150455.3)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "478859",
+            "strain": null,
+            "accession": "GCA_000150455.3",
+            "assembly": "Plas_falc_Santa_Lucia_Salvador_I_V1",
+            "strain_collection": null,
+            "division": "EnsemblProtists"
+        },
+        {
+            "name": "phytophthora_parasitica_p1976_gca_000365525",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113,
+            "strain_collection": null,
+            "assembly": "Phyt_para_P1976_V1",
+            "division": "EnsemblProtists",
+            "strain": null,
+            "display_name": "Phytophthora parasitica P1976 (GCA_000365525.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "1317066",
+            "accession": "GCA_000365525.1"
+        },
+        {
+            "strain_collection": null,
+            "assembly": "Phyt_para_CJ02B3_V1",
+            "division": "EnsemblProtists",
+            "taxon_id": "4792",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Phytophthora parasitica str. CJ02B3 (GCA_000509465.1)",
+            "strain": null,
+            "accession": "GCA_000509465.1",
+            "name": "phytophthora_parasitica_gca_000509465",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "plasmodium_falciparum_malips096_e11_gca_000521035",
+            "accession": "GCA_000521035.1",
+            "display_name": "Plasmodium falciparum MaliPS096_E11 (GCA_000521035.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "1036727",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "assembly": "Plas_falc_MaliPS096_E11_V1",
+            "strain_collection": null
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+                "pythium arrhenomanes atcc 12531"
+            ],
+            "name": "pythium_arrhenomanes",
+            "accession": "GCA_000387505.2",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Pythium arrhenomanes",
+            "taxon_id": "1223556",
+            "strain": "ATCC 12531",
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "par_scaffolds_v1"
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "aphanomyces_astaci_gca_003546825",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "Da",
+            "accession": "GCA_003546825.1",
+            "strain": null,
+            "display_name": "Aphanomyces astaci (GCA_003546825.1)",
+            "taxon_id": "112090",
+            "groups": [
+                "core"
+            ]
+        },
+        {
+            "aliases": [
+                "giardia lamblia atcc 50803",
+                "giardia intestinalis atcc 50803"
+            ],
+            "name": "giardia_lamblia",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "assembly": "GL2",
+            "strain_collection": null,
+            "accession": "GCA_000002435.1",
+            "strain": "ATCC 50803",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "184922",
+            "display_name": "Giardia lamblia"
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "phytophthora_parasitica_inra_310_gca_000247585",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "PP_INRA-310_V2",
+            "accession": "GCA_000247585.2",
+            "taxon_id": "761204",
+            "display_name": "Phytophthora parasitica INRA-310 (GCA_000247585.2)",
+            "groups": [
+                "core"
+            ],
+            "strain": null
+        },
+        {
+            "name": "plasmodium_vivax_north_korean_gca_000320685",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113,
+            "strain_collection": null,
+            "assembly": "PV_N_Korean_V1",
+            "division": "EnsemblProtists",
+            "taxon_id": "1035514",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium vivax North Korean (GCA_000320685.2)",
+            "strain": null,
+            "accession": "GCA_000320685.2"
+        },
+        {
+            "strain_collection": null,
+            "assembly": "PRELSG",
+            "division": "EnsemblProtists",
+            "strain": null,
+            "taxon_id": "85471",
+            "display_name": "Plasmodium relictum (GCA_900005765.1)",
+            "groups": [
+                "core"
+            ],
+            "accession": "GCA_900005765.1",
+            "name": "plasmodium_relictum_gca_900005765",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "strain_collection": null,
+            "assembly": "ENA1",
+            "division": "EnsemblProtists",
+            "strain": "Nc14",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Albugo laibachii",
+            "taxon_id": "890382",
+            "accession": null,
+            "name": "albugo_laibachii",
+            "aliases": [
+                "albugo laibachii",
+                "albugo laibachii nc14"
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "division": "EnsemblProtists",
+            "assembly": "JCVI_EDISG_1.0",
+            "strain_collection": null,
+            "accession": "GCA_000209125.2",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "370354",
+            "display_name": "Entamoeba dispar SAW760 (GCA_000209125.2)",
+            "strain": null,
+            "aliases": [
+
+            ],
+            "name": "entamoeba_dispar_saw760_gca_000209125",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "plasmodium_falciparum",
+            "aliases": [
+                "plasmodium_falciparum_3d7",
+                "plasmodium falciparum 3d7"
+            ],
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium falciparum 3D7",
+            "taxon_id": "36329",
+            "strain": null,
+            "accession": "GCA_000002765.2",
+            "assembly": "ASM276v2",
+            "strain_collection": null,
+            "division": "EnsemblProtists"
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "entamoeba_histolytica_hm_1_imss_b_gca_000344925",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "EHA_CB_v1",
+            "accession": "GCA_000344925.1",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Entamoeba histolytica HM-1:IMSS-B str. HM3:IMSS-B (GCA_000344925.1)",
+            "taxon_id": "885319"
+        },
+        {
+            "division": "EnsemblProtists",
+            "assembly": "PowCR01",
+            "strain_collection": null,
+            "accession": "GCA_900090025.2",
+            "strain": null,
+            "taxon_id": "36330",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium ovale (GCA_900090025.2)",
+            "aliases": [
+
+            ],
+            "name": "plasmodium_ovale_gca_900090025",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "accession": "GCA_900090045.1",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium malariae (GCA_900090045.1)",
+            "taxon_id": "5858",
+            "division": "EnsemblProtists",
+            "assembly": "PmUG01",
+            "strain_collection": null,
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "plasmodium_malariae_gca_900090045"
+        },
+        {
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "MPF4_v1.0",
+            "accession": "GCA_000318465.1",
+            "strain": "MPF4",
+            "display_name": "Phytophthora lateralis",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "1254522",
+            "aliases": [
+                "phytophthora lateralis mpf4"
+            ],
+            "name": "phytophthora_lateralis",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "leishmania_infantum_gca_900500625",
+            "accession": "GCA_900500625.1",
+            "taxon_id": "5671",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Leishmania infantum (GCA_900500625.1)",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "assembly": "LINF",
+            "strain_collection": null
+        },
+        {
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "Stylonychia_lemnae_asm_v1.0",
+            "accession": "GCA_000751175.1",
+            "taxon_id": "5949",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Stylonychia lemnae str. 130c (GCA_000751175.1)",
+            "strain": null,
+            "aliases": [
+
+            ],
+            "name": "stylonychia_lemnae_gca_000751175",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "accession": "GCA_001939145.1",
+            "display_name": "Symbiodinium microadriaticum str. CCMP2467 (GCA_001939145.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "2951",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "assembly": "ASM193914v1",
+            "strain_collection": null,
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "symbiodinium_microadriaticum_gca_001939145"
+        },
+        {
+            "assembly": "ASM14979v1",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "strain": null,
+            "display_name": "Plasmodium falciparum Dd2 (GCA_000149795.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "57267",
+            "accession": "GCA_000149795.1",
+            "name": "plasmodium_falciparum_dd2_gca_000149795",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "strain": null,
+            "taxon_id": "5821",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium berghei (GCA_900044335.1)",
+            "accession": "GCA_900044335.1",
+            "strain_collection": null,
+            "assembly": "PbK173",
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "plasmodium_berghei_gca_900044335",
+            "aliases": [
+
+            ]
+        },
+        {
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "v1.0",
+            "accession": "GCA_000190715.1",
+            "strain": null,
+            "taxon_id": "5786",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Dictyostelium purpureum str. QSDP1 (GCA_000190715.1)",
+            "aliases": [
+
+            ],
+            "name": "dictyostelium_purpureum_gca_000190715",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "accession": "GCA_000149665.2",
+            "strain": null,
+            "display_name": "Plasmodium falciparum HB3 (GCA_000149665.2)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "137071",
+            "division": "EnsemblProtists",
+            "assembly": "ASM14966v2",
+            "strain_collection": null,
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "plasmodium_falciparum_hb3_gca_000149665"
+        },
+        {
+            "strain": null,
+            "display_name": "Saprolegnia parasitica CBS 223.65 (GCA_000151545.2)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "695850",
+            "accession": "GCA_000151545.2",
+            "assembly": "ASM15154v2",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "saprolegnia_parasitica_cbs_223_65_gca_000151545",
+            "aliases": [
+
+            ]
+        },
+        {
+            "assembly": "Acastellanii.strNEFF_v1",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "display_name": "Acanthamoeba castellanii str. Neff (GCA_000313135.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "1257118",
+            "strain": null,
+            "accession": "GCA_000313135.1",
+            "name": "acanthamoeba_castellanii_str_neff_gca_000313135",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "division": "EnsemblProtists",
+            "assembly": "Pow1",
+            "strain_collection": null,
+            "accession": "GCA_900088485.1",
+            "strain": null,
+            "display_name": "Plasmodium ovale wallikeri (GCA_900088485.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "864142",
+            "aliases": [
+
+            ],
+            "name": "plasmodium_ovale_wallikeri_gca_900088485",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "accession": "GCA_003543875.1",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Trypanosoma brucei equiperdum str. IVM-t1 (GCA_003543875.1)",
+            "taxon_id": "630700",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ASM354387v1",
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "trypanosoma_brucei_equiperdum_gca_003543875"
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "leptomonas_seymouri_gca_001299535",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ASM129953v1",
+            "accession": "GCA_001299535.1",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Leptomonas seymouri str. ATCC 30220 (GCA_001299535.1)",
+            "taxon_id": "5684"
+        },
+        {
+            "strain_collection": null,
+            "assembly": "astaci_SA",
+            "division": "EnsemblProtists",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "112090",
+            "display_name": "Aphanomyces astaci (GCA_003546625.1)",
+            "strain": null,
+            "accession": "GCA_003546625.1",
+            "name": "aphanomyces_astaci_gca_003546625",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "toxoplasma_gondii_rub_gca_000224805",
+            "aliases": [
+
+            ],
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "935652",
+            "display_name": "Toxoplasma gondii RUB (GCA_000224805.2)",
+            "accession": "GCA_000224805.2",
+            "assembly": "TGRUB_v2",
+            "strain_collection": null,
+            "division": "EnsemblProtists"
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "plasmodium_yoelii_gca_900002385",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "assembly": "PY17X01",
+            "strain_collection": null,
+            "accession": "GCA_900002385.1",
+            "taxon_id": "5861",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium yoelii str. 17X (GCA_900002385.1)",
+            "strain": null
+        },
+        {
+            "accession": "GCA_000325525.2",
+            "display_name": "Toxoplasma gondii GAB2-2007-GAL-DOM2 (GCA_000325525.2)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "1130820",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "assembly": "TGGABGALDOM2_v2.1",
+            "strain_collection": null,
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "toxoplasma_gondii_gab2_2007_gal_dom2_gca_000325525"
+        },
+        {
+            "accession": "GCA_001839685.1",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "1144522",
+            "display_name": "Tritrichomonas foetus str. K (GCA_001839685.1)",
+            "division": "EnsemblProtists",
+            "assembly": "ASM183968v1",
+            "strain_collection": null,
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "tritrichomonas_foetus_gca_001839685"
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "nannochloropsis_gaditana_gca_000569095",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "assembly": "NagaB31_1.0",
+            "strain_collection": null,
+            "accession": "GCA_000569095.1",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "72520",
+            "display_name": "Nannochloropsis gaditana str. B-31 (GCA_000569095.1)"
+        },
+        {
+            "name": "pseudocohnilembus_persalinus_gca_001447515",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113,
+            "assembly": "ASM144751v1",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "taxon_id": "266149",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Pseudocohnilembus persalinus (GCA_001447515.1)",
+            "strain": null,
+            "accession": "GCA_001447515.1"
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "toxoplasma_gondii_vand_gca_000224845",
+            "aliases": [
+
+            ],
+            "display_name": "Toxoplasma gondii VAND (GCA_000224845.2)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "933077",
+            "strain": null,
+            "accession": "GCA_000224845.2",
+            "assembly": "TGVAND_v2",
+            "strain_collection": null,
+            "division": "EnsemblProtists"
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "giardia_lamblia_p15_gca_000182665",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ASM18266v1",
+            "accession": "GCA_000182665.1",
+            "taxon_id": "658858",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Giardia lamblia P15 (GCA_000182665.1)",
+            "strain": null
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "nothophytophthora_sp_chile5_gca_001712635",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "PfChile5v2.0",
+            "accession": "GCA_001712635.2",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Nothophytophthora sp. Chile5 (GCA_001712635.2)",
+            "taxon_id": "2483409",
+            "strain": null
+        },
+        {
+            "name": "thalassiosira_pseudonana",
+            "aliases": [
+                "thalassiosira pseudonana strain ccmp1335",
+                "thalassiosira_pseudonana_ccmp1335",
+                "thalassiosira pseudonana ccmp1335"
+            ],
+            "common_name": null,
+            "release": 113,
+            "strain_collection": null,
+            "assembly": "ASM14940v2",
+            "division": "EnsemblProtists",
+            "strain": "CCMP1335",
+            "display_name": "Thalassiosira pseudonana",
+            "groups": [
+                "core",
+                "otherfeatures"
+            ],
+            "taxon_id": "296543",
+            "accession": "GCA_000149405.2"
+        },
+        {
+            "name": "entamoeba_histolytica_hm_3_imss_gca_000346345",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113,
+            "strain_collection": null,
+            "assembly": "EHA.strHM3_v1",
+            "division": "EnsemblProtists",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "885315",
+            "display_name": "Entamoeba histolytica HM-3:IMSS (GCA_000346345.1)",
+            "strain": null,
+            "accession": "GCA_000346345.1"
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "leishmania_panamensis_gca_000755165",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ASM75516v1",
+            "accession": "GCA_000755165.1",
+            "strain": null,
+            "display_name": "Leishmania panamensis str. MHOM/PA/94/PSC-1 (GCA_000755165.1)",
+            "taxon_id": "5679",
+            "groups": [
+                "core"
+            ]
+        },
+        {
+            "accession": "GCA_900660405.1",
+            "display_name": "Pseudo-nitzschia multistriata",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "183589",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "assembly": "ASM90066040v1",
+            "strain_collection": null,
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+                "pseudo-nitzschia multistriata"
+            ],
+            "name": "pseudonitzschia_multistriata"
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "hondaea_fermentalgiana_gca_002897355",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "assembly": "Aurantiochytrium_FCC1311_v1",
+            "strain_collection": null,
+            "accession": "GCA_002897355.1",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "2315210",
+            "display_name": "Hondaea fermentalgiana (GCA_002897355.1)",
+            "strain": null
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "plasmodium_malariae_gca_900088575",
+            "accession": "GCA_900088575.1",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium malariae (GCA_900088575.1)",
+            "taxon_id": "5858",
+            "division": "EnsemblProtists",
+            "assembly": "Pmal",
+            "strain_collection": null
+        },
+        {
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "JCVI-IMG1-V.1",
+            "accession": "GCA_000220395.1",
+            "strain": null,
+            "taxon_id": "5932",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Ichthyophthirius multifiliis str. G5 (GCA_000220395.1)",
+            "aliases": [
+
+            ],
+            "name": "ichthyophthirius_multifiliis_gca_000220395",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ASM19445v1",
+            "accession": "GCA_000194455.1",
+            "display_name": "Cryptomonas paramecium str. CCAP977/2A (GCA_000194455.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "2898",
+            "strain": null,
+            "aliases": [
+
+            ],
+            "name": "cryptomonas_paramecium_gca_000194455",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "tetrahymena_thermophila",
+            "aliases": [
+                "tetrahymena thermophila",
+                "tetrahymena thermophila sb210"
+            ],
+            "strain": "SB210",
+            "taxon_id": "312017",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Tetrahymena thermophila",
+            "accession": "GCA_000189635.1",
+            "strain_collection": null,
+            "assembly": "JCVI-TTA1-2.2",
+            "division": "EnsemblProtists"
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "fonticula_alba_gca_000388065",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "assembly": "Font_alba_ATCC_38817_V2",
+            "strain_collection": null,
+            "accession": "GCA_000388065.2",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "691883",
+            "display_name": "Fonticula alba str. ATCC 38817 (GCA_000388065.2)"
+        },
+        {
+            "name": "trypanosoma_cruzi_gca_003719455",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113,
+            "strain_collection": null,
+            "assembly": "ASM371945v1",
+            "division": "EnsemblProtists",
+            "strain": null,
+            "taxon_id": "5693",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Trypanosoma cruzi (GCA_003719455.1)",
+            "accession": "GCA_003719455.1"
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "plasmodium_sp_drc_itaito_gca_900257145",
+            "accession": "GCA_900257145.1",
+            "strain": null,
+            "display_name": "Plasmodium sp. DRC-Itaito (GCA_900257145.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "720590",
+            "division": "EnsemblProtists",
+            "assembly": "Plasmodium_billcollinsi",
+            "strain_collection": null
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "aphanomyces_astaci_gca_003546785",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "assembly": "astaci_457",
+            "strain_collection": null,
+            "accession": "GCA_003546785.1",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Aphanomyces astaci (GCA_003546785.1)",
+            "taxon_id": "112090"
+        },
+        {
+            "assembly": "PYYM01",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium yoelii str. YM (GCA_900002395.1)",
+            "taxon_id": "5861",
+            "accession": "GCA_900002395.1",
+            "name": "plasmodium_yoelii_gca_900002395",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "strain_collection": null,
+            "assembly": "ASM15166v1",
+            "division": "EnsemblProtists",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "12968",
+            "display_name": "Blastocystis hominis str. Singapore isolate B (sub-type 7) (GCA_000151665.1)",
+            "strain": null,
+            "accession": "GCA_000151665.1",
+            "name": "blastocystis_hominis_gca_000151665",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "assembly": "pve_scaffolds_v1",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "strain": "DAOM BR484",
+            "display_name": "Pythium vexans",
+            "taxon_id": "1223560",
+            "groups": [
+                "core"
+            ],
+            "accession": "GCA_000387545.2",
+            "name": "pythium_vexans",
+            "aliases": [
+                "pythium vexans daom br484"
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "thalassiosira_oceanica_gca_000296195",
+            "accession": "GCA_000296195.2",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "159749",
+            "display_name": "Thalassiosira oceanica str. CCMP1005 (GCA_000296195.2)",
+            "division": "EnsemblProtists",
+            "assembly": "ThaOc_1.0",
+            "strain_collection": null
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "phytophthora_kernoviae_gca_001712705",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "PkChile6v2.0",
+            "accession": "GCA_001712705.2",
+            "display_name": "Phytophthora kernoviae (GCA_001712705.2)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "325452",
+            "strain": null
+        },
+        {
+            "name": "plasmodium_falciparum_7g8_gca_000150435",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113,
+            "assembly": "Plas_falc_7G8_V1",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "taxon_id": "57266",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium falciparum 7G8 (GCA_000150435.3)",
+            "strain": null,
+            "accession": "GCA_000150435.3"
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "plasmodium_chabaudi_chabaudi_gca_900095605",
+            "aliases": [
+
+            ],
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium chabaudi chabaudi (GCA_900095605.1)",
+            "taxon_id": "31271",
+            "strain": null,
+            "accession": "GCA_900095605.1",
+            "assembly": "PchCB",
+            "strain_collection": null,
+            "division": "EnsemblProtists"
+        },
+        {
+            "name": "toxoplasma_gondii_veg_gca_000150015",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113,
+            "assembly": "TGVEG",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "432359",
+            "display_name": "Toxoplasma gondii VEG (GCA_000150015.2)",
+            "strain": null,
+            "accession": "GCA_000150015.2"
+        },
+        {
+            "display_name": "Bigelowiella natans",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "753081",
+            "strain": "CCMP2755",
+            "accession": "GCA_000320545.1",
+            "strain_collection": null,
+            "assembly": "Bigna1",
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "bigelowiella_natans",
+            "aliases": [
+                "bigelowiella natans ccmp2755"
+            ]
+        },
+        {
+            "name": "oxytricha_trifallax_gca_000295675_gca_000295675",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113,
+            "assembly": "oxytricha_asm_v1.1",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Oxytricha trifallax str. JRB310 (GCA_000295675.1)",
+            "taxon_id": "1172189",
+            "strain": null,
+            "accession": "GCA_000295675.1"
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "trypanosoma_rangeli_sc58_gca_000492115",
+            "aliases": [
+
+            ],
+            "groups": [
+                "core"
+            ],
+            "display_name": "Trypanosoma rangeli SC58 (GCA_000492115.1)",
+            "taxon_id": "429131",
+            "strain": null,
+            "accession": "GCA_000492115.1",
+            "assembly": "T_rangeli_SC58v1",
+            "strain_collection": null,
+            "division": "EnsemblProtists"
+        },
+        {
+            "assembly": "PkChile4v2.0",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "display_name": "Phytophthora kernoviae (GCA_001712715.2)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "325452",
+            "strain": null,
+            "accession": "GCA_001712715.2",
+            "name": "phytophthora_kernoviae_gca_001712715",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "name": "stentor_coeruleus_gca_001970955",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113,
+            "strain_collection": null,
+            "assembly": "ASM197095v1",
+            "division": "EnsemblProtists",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "5963",
+            "display_name": "Stentor coeruleus (GCA_001970955.1)",
+            "strain": null,
+            "accession": "GCA_001970955.1"
+        },
+        {
+            "division": "EnsemblProtists",
+            "assembly": "PvP01",
+            "strain_collection": null,
+            "accession": "GCA_900093555.1",
+            "display_name": "Plasmodium vivax (GCA_900093555.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "5855",
+            "strain": null,
+            "aliases": [
+
+            ],
+            "name": "plasmodium_vivax_gca_900093555",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "accession": "GCA_000006565.2",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Toxoplasma gondii ME49",
+            "taxon_id": "508771",
+            "division": "EnsemblProtists",
+            "assembly": "TGA4",
+            "strain_collection": null,
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "toxoplasma_gondii"
+        },
+        {
+            "strain": null,
+            "taxon_id": "595528",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Capsaspora owczarzaki ATCC 30864 (GCA_000151315.2)",
+            "accession": "GCA_000151315.2",
+            "strain_collection": null,
+            "assembly": "C_owczarzaki_V2",
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "capsaspora_owczarzaki_atcc_30864_gca_000151315",
+            "aliases": [
+
+            ]
+        },
+        {
+            "strain": null,
+            "taxon_id": "1093141",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Nannochloropsis gaditana CCMP526 (GCA_000240725.1)",
+            "accession": "GCA_000240725.1",
+            "assembly": "ASM24072v1",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "nannochloropsis_gaditana_ccmp526_gca_000240725",
+            "aliases": [
+
+            ]
+        },
+        {
+            "assembly": "AKI_PRJEB1539_v1",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "strain": null,
+            "display_name": "Phytomonas sp. isolate Hart1 (GCA_000982615.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "223615",
+            "accession": "GCA_000982615.1",
+            "name": "phytomonas_sp_isolate_hart1_gca_000982615",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "accession": "GCA_000365545.1",
+            "taxon_id": "1317063",
+            "display_name": "Phytophthora parasitica CJ01A1 (GCA_000365545.1)",
+            "groups": [
+                "core"
+            ],
+            "strain": null,
+            "division": "EnsemblProtists",
+            "assembly": "Phyt_para_CJ01A1_V1",
+            "strain_collection": null,
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "phytophthora_parasitica_cj01a1_gca_000365545"
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "plasmodium_falciparum_palo_alto_uganda_gca_000521095",
+            "accession": "GCA_000521095.1",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "57270",
+            "display_name": "Plasmodium falciparum Palo Alto/Uganda (GCA_000521095.1)",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "assembly": "Plas_falc_Uganda_Palo-Alto_FUP_H_V1",
+            "strain_collection": null
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "plasmodium_gonderi_gca_002157705",
+            "aliases": [
+
+            ],
+            "strain": null,
+            "display_name": "Plasmodium gonderi (GCA_002157705.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "77519",
+            "accession": "GCA_002157705.1",
+            "strain_collection": null,
+            "assembly": "Pgonderi_assembly01",
+            "division": "EnsemblProtists"
+        },
+        {
+            "name": "entamoeba_invadens_ip1_gca_000330505",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113,
+            "strain_collection": null,
+            "assembly": "EIA2_v2",
+            "division": "EnsemblProtists",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Entamoeba invadens IP1 (GCA_000330505.1)",
+            "taxon_id": "370355",
+            "strain": null,
+            "accession": "GCA_000330505.1"
+        },
+        {
+            "taxon_id": "857276",
+            "display_name": "Cryptosporidium ubiquitum (GCA_001865345.1)",
+            "groups": [
+                "core"
+            ],
+            "strain": null,
+            "accession": "GCA_001865345.1",
+            "assembly": "ASM186534v1",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "cryptosporidium_ubiquitum_gca_001865345",
+            "aliases": [
+
+            ]
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "dictyostelium_discoideum",
+            "aliases": [
+                "dictyostelium discoideum ax4",
+                "dictyostelium discoideum strain ax4",
+                "dictyostelium_discoideum_ax4"
+            ],
+            "strain": "AX4",
+            "display_name": "Dictyostelium discoideum",
+            "groups": [
+                "otherfeatures",
+                "core"
+            ],
+            "taxon_id": "352472",
+            "accession": "GCA_000004695.1",
+            "assembly": "dicty_2.7",
+            "strain_collection": null,
+            "division": "EnsemblProtists"
+        },
+        {
+            "accession": "GCA_000002725.2",
+            "display_name": "Leishmania major",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "347515",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ASM272v2",
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+                "leishmania_major_strain_friedlin",
+                "leishmania major strain friedlin"
+            ],
+            "name": "leishmania_major"
+        },
+        {
+            "accession": "GCA_000342415.1",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "1537102",
+            "display_name": "Theileria equi strain WA (GCA_000342415.1)",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "assembly": "JCVI-bewag-v1.1",
+            "strain_collection": null,
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "theileria_equi_strain_wa_gca_000342415"
+        },
+        {
+            "release": 113,
+            "common_name": "Sudden oak death agent",
+            "aliases": [
+                "phytophthora ramorum"
+            ],
+            "name": "phytophthora_ramorum",
+            "accession": "GCA_000149735.1",
+            "strain": null,
+            "display_name": "Phytophthora ramorum",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "164328",
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ASM14973v1"
+        },
+        {
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "Peff_R14",
+            "accession": "GCA_003704535.1",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Peronospora effusa (GCA_003704535.1)",
+            "taxon_id": "542832",
+            "strain": null,
+            "aliases": [
+
+            ],
+            "name": "peronospora_effusa_gca_003704535",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "trypanosoma_cruzi_gca_003177095",
+            "aliases": [
+
+            ],
+            "groups": [
+                "core"
+            ],
+            "display_name": "Trypanosoma cruzi str. TCC (GCA_003177095.1)",
+            "taxon_id": "5693",
+            "strain": null,
+            "accession": "GCA_003177095.1",
+            "assembly": "TCC_diploid_1.0",
+            "strain_collection": null,
+            "division": "EnsemblProtists"
+        },
+        {
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ASM221536v1",
+            "accession": "GCA_002215365.1",
+            "strain": null,
+            "display_name": "Phytophthora megakarya str. zdho120 (GCA_002215365.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "4795",
+            "aliases": [
+
+            ],
+            "name": "phytophthora_megakarya_gca_002215365",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "strain": null,
+            "taxon_id": "112090",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Aphanomyces astaci (GCA_003546765.1)",
+            "accession": "GCA_003546765.1",
+            "assembly": "astaci_SV",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "aphanomyces_astaci_gca_003546765",
+            "aliases": [
+
+            ]
+        },
+        {
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "babesia_sp_xinjiang_gca_002095265",
+            "accession": "GCA_002095265.1",
+            "display_name": "Babesia sp. Xinjiang (GCA_002095265.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "462227",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "assembly": "B_xinjiang1.0",
+            "strain_collection": null
+        },
+        {
+            "accession": "GCA_000521055.1",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "1036725",
+            "display_name": "Plasmodium falciparum Tanzania (2000708) (GCA_000521055.1)",
+            "strain": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "Plas_falc_02000708_V1",
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "plasmodium_falciparum_tanzania_2000708__gca_000521055"
+        },
+        {
+            "display_name": "Plasmodium knowlesi strain H (GCA_900004885.2)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "5851",
+            "strain": null,
+            "accession": "GCA_900004885.2",
+            "assembly": "PKNA1-C.2",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "plasmodium_knowlesi_strain_h_gca_900004885",
+            "aliases": [
+
+            ]
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "plasmodium_coatneyi_gca_001680005",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "assembly": "ASM168000v1",
+            "strain_collection": null,
+            "accession": "GCA_001680005.1",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "208452",
+            "display_name": "Plasmodium coatneyi (GCA_001680005.1)",
+            "strain": null
+        },
+        {
+            "strain": "DAOM BR486",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Pythium irregulare",
+            "taxon_id": "1223557",
+            "accession": "GCA_000387425.2",
+            "assembly": "pir_scaffolds_v1",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "pythium_irregulare",
+            "aliases": [
+                "pythium irregulare daom br486"
+            ]
+        },
+        {
+            "strain_collection": null,
+            "assembly": "Ehistolytica_2016",
+            "division": "EnsemblProtists",
+            "taxon_id": "5759",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Entamoeba histolytica str. HM1:IMSS clone 6 (GCA_001662325.1)",
+            "strain": null,
+            "accession": "GCA_001662325.1",
+            "name": "entamoeba_histolytica_gca_001662325",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "name": "eimeria_praecox_gca_000499445",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113,
+            "strain_collection": null,
+            "assembly": "EPH001",
+            "division": "EnsemblProtists",
+            "strain": null,
+            "taxon_id": "51316",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Eimeria praecox (GCA_000499445.1)",
+            "accession": "GCA_000499445.1"
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "plasmodium_gallinaceum_gca_900005855",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "PGAL8A",
+            "accession": "GCA_900005855.1",
+            "display_name": "Plasmodium gallinaceum (GCA_900005855.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "5849",
+            "strain": null
+        },
+        {
+            "division": "EnsemblProtists",
+            "assembly": "Guith1",
+            "strain_collection": null,
+            "accession": "GCA_000315625.1",
+            "display_name": "Guillardia theta CCMP2712",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "905079",
+            "strain": "CCMP2712",
+            "aliases": [
+                "guillardia theta ccmp2712"
+            ],
+            "name": "guillardia_theta",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "strain": null,
+            "taxon_id": "542832",
+            "display_name": "Peronospora effusa (GCA_003843895.1)",
+            "groups": [
+                "core"
+            ],
+            "accession": "GCA_003843895.1",
+            "assembly": "ASM384389v1",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "peronospora_effusa_gca_003843895",
+            "aliases": [
+
+            ]
+        },
+        {
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Plasmodium falciparum FCH/4 (GCA_000521155.1)",
+            "taxon_id": "1036724",
+            "accession": "GCA_000521155.1",
+            "assembly": "Plas_falc_FCH_4_V2",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "plasmodium_falciparum_fch_4_gca_000521155",
+            "aliases": [
+
+            ]
+        },
+        {
+            "groups": [
+                "core"
+            ],
+            "display_name": "Trypanosoma conorhini (GCA_003719485.1)",
+            "taxon_id": "83891",
+            "strain": null,
+            "accession": "GCA_003719485.1",
+            "strain_collection": null,
+            "assembly": "ASM371948v1",
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "trypanosoma_conorhini_gca_003719485",
+            "aliases": [
+
+            ]
+        },
+        {
+            "accession": "GCA_001186125.1",
+            "taxon_id": "667725",
+            "display_name": "Sphaeroforma arctica JP610 (GCA_001186125.1)",
+            "groups": [
+                "core"
+            ],
+            "strain": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "Spha_arctica_JP610_V1",
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "sphaeroforma_arctica_jp610_gca_001186125"
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "entamoeba_nuttalli_p19_gca_000257125",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ENU1_v1",
+            "accession": "GCA_000257125.1",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "1076696",
+            "display_name": "Entamoeba nuttalli P19 (GCA_000257125.1)"
+        },
+        {
+            "accession": "GCA_000149755.2",
+            "display_name": "Phytophthora sojae",
+            "groups": [
+                "core",
+                "otherfeatures"
+            ],
+            "taxon_id": "67593",
+            "strain": "P6497",
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "P_sojae_V3_0",
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+                "phytophthora sojae"
+            ],
+            "name": "phytophthora_sojae"
+        },
+        {
+            "taxon_id": "1195612",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Chroomonas mesostigmatica CCMP1168 (GCA_000286095.1)",
+            "strain": null,
+            "accession": "GCA_000286095.1",
+            "assembly": "ASM28609v1",
+            "strain_collection": null,
+            "division": "EnsemblProtists",
+            "common_name": null,
+            "release": 113,
+            "name": "chroomonas_mesostigmatica_ccmp1168_gca_000286095",
+            "aliases": [
+
+            ]
+        },
+        {
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "PhyKer238_432v1",
+            "accession": "GCA_000333075.1",
+            "strain": "00238/432",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "1284355",
+            "display_name": "Phytophthora kernoviae",
+            "aliases": [
+                "phytophthora kernoviae 00238/432"
+            ],
+            "name": "phytophthora_kernoviae",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "strain_collection": null,
+            "assembly": "ASM31002v1",
+            "division": "EnsemblProtists",
+            "strain": null,
+            "taxon_id": "2880",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Ectocarpus siliculosus str. Ec 32 (CCAP 1310/04) (GCA_000310025.1)",
+            "accession": "GCA_000310025.1",
+            "name": "ectocarpus_siliculosus_gca_000310025",
+            "aliases": [
+
+            ],
+            "common_name": null,
+            "release": 113
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "plasmopara_halstedii_gca_900000015",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "Plasmopara_halstedii_genome",
+            "accession": "GCA_900000015.1",
+            "display_name": "Plasmopara halstedii (GCA_900000015.1)",
+            "taxon_id": "4781",
+            "groups": [
+                "core"
+            ],
+            "strain": null
+        },
+        {
+            "common_name": null,
+            "release": 113,
+            "name": "eimeria_tenella_gca_000499545",
+            "aliases": [
+
+            ],
+            "groups": [
+                "core"
+            ],
+            "display_name": "Eimeria tenella str. Houghton (GCA_000499545.1)",
+            "taxon_id": "5802",
+            "strain": null,
+            "accession": "GCA_000499545.1",
+            "assembly": "ETH001",
+            "strain_collection": null,
+            "division": "EnsemblProtists"
+        },
+        {
+            "division": "EnsemblProtists",
+            "assembly": "astaci_YX",
+            "strain_collection": null,
+            "accession": "GCA_003546605.1",
+            "groups": [
+                "core"
+            ],
+            "display_name": "Aphanomyces astaci (GCA_003546605.1)",
+            "taxon_id": "112090",
+            "strain": null,
+            "aliases": [
+
+            ],
+            "name": "aphanomyces_astaci_gca_003546605",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "division": "EnsemblProtists",
+            "assembly": "v_1.0",
+            "strain_collection": null,
+            "accession": "GCA_000186865.1",
+            "taxon_id": "44056",
+            "display_name": "Aureococcus anophagefferens (GCA_000186865.1)",
+            "groups": [
+                "core"
+            ],
+            "strain": null,
+            "aliases": [
+
+            ],
+            "name": "aureococcus_anophagefferens_gca_000186865",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "accession": "GCA_001457755.2",
+            "strain": null,
+            "groups": [
+                "core"
+            ],
+            "display_name": "Trypanosoma equiperdum (GCA_001457755.2)",
+            "taxon_id": "5694",
+            "division": "EnsemblProtists",
+            "assembly": "Trypanosoma_equiperdum_OVI_V2",
+            "strain_collection": null,
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "trypanosoma_equiperdum_gca_001457755"
+        },
+        {
+            "division": "EnsemblProtists",
+            "assembly": "ASM307252v1",
+            "strain_collection": null,
+            "accession": "GCA_003072525.1",
+            "taxon_id": "68886",
+            "display_name": "Theileria orientalis str. Robertson (GCA_003072525.1)",
+            "groups": [
+                "core"
+            ],
+            "strain": null,
+            "aliases": [
+
+            ],
+            "name": "theileria_orientalis_gca_003072525",
+            "release": 113,
+            "common_name": null
+        },
+        {
+            "aliases": [
+
+            ],
+            "name": "planoprotostelium_fungivorum_gca_003024175",
+            "release": 113,
+            "common_name": null,
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "ASM302417v1",
+            "accession": "GCA_003024175.1",
+            "display_name": "Planoprotostelium fungivorum str. Jena (GCA_003024175.1)",
+            "taxon_id": "1890364",
+            "groups": [
+                "core"
+            ],
+            "strain": null
+        },
+        {
+            "accession": "GCA_003546805.1",
+            "strain": null,
+            "display_name": "Aphanomyces astaci (GCA_003546805.1)",
+            "groups": [
+                "core"
+            ],
+            "taxon_id": "112090",
+            "division": "EnsemblProtists",
+            "strain_collection": null,
+            "assembly": "astaci_197901",
+            "release": 113,
+            "common_name": null,
+            "aliases": [
+
+            ],
+            "name": "aphanomyces_astaci_gca_003546805"
+        }
+    ]
+}
