@@ -195,6 +195,7 @@ get_info_karyotype_band <- function(species) {
 
   raw_bands_data <- raw_assembly_species_data$top_level_region$bands
 
+  # Combine all list elements (each representing a small data frame) into a single data frame
   bands_data <- do.call(rbind, raw_bands_data)
 
   # Fixed order of the columns
@@ -243,6 +244,37 @@ info_karyotype_band <- function(species) {
 
   return(result_data)
 
+}
+
+get_crossref_id <- function(id, external_db){
+
+  all_ids_data <- lapply(id, xref_id, external_db=external_db)
+  #named_data <- setNames(all_ids_data, id)
+
+  final_data <- do.call(rbind, all_ids_data)
+  return(final_data)
+}
+
+crossref_id <- function(id, external_db){
+
+  if(missing(id) || length(id) == 0 ){
+    stop("ID is missing! Please provide a valid id.")
+  }
+
+  if(missing(external_db) || length(external_db) == 0){
+    stop("External database name is missing! Please provide an external database name.")
+  }
+
+  path<- rappdirs::user_cache_dir(appname = "EnsemblRestApiCache")
+  bfc<- BiocFileCache(path, ask = FALSE)
+
+  endpoint <- "/xrefs/id/"
+
+  hash<- create_hash(endpoint, id = id, external_db = external_db, extra_func =1)
+
+  result_data <- fetch_data_with_cache(hash, get_crossref_id, id = id, external_db = external_db)
+
+  return(result_data)
 }
 
 

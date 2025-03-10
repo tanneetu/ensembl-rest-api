@@ -41,9 +41,9 @@ post_archive_id <-function(id = NULL){
 #'
 #' #Example for multiple IDs
 #' archive_id(id = c("ENSG00000157764","ENSG00000248378"))
-archive_id <- function(id = NULL){
+archive_id <- function(id ){
 
-  if (is.null(id) || length(id) == 0 || all(id == "")) {
+  if (missing(id) || length(id) == 0 || all(id == "")) {
     stop("ID is missing! Please provide a valid ID.")
   }
 

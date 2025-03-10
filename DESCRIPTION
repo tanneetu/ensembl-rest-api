@@ -14,5 +14,6 @@ Imports: httr2, jsonlite, rappdirs, lubridate, BiocFileCache, digest,
           Biostrings, stringdist
 Suggests: 
     httptest2,
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    mockery
 Config/testthat/edition: 3
