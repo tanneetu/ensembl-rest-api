@@ -64,6 +64,28 @@ query_string_optional_params <- function(optional_params) {
   return(query_string)
 }
 
+api_error_message <- function(resp){
+
+  status_code <- resp_status(resp)
+
+  if (status_code == 429) {
+
+    retry_after <- as.numeric(resp_headers(resp)[["Retry-After"]])
+
+    message <- paste("Rate limit exceeded! Please wait", retry_after, " seconds before making another request.")
+
+  } else if (status_code != 200){
+
+    #message <- resp_body_string(resp)
+
+    message <- paste(resp_body_string(resp), "error for 400")
+
+  }
+
+  return(message)
+}
+
+
 #' @title Perform a POST Request to an API
 #'
 #' @description
@@ -82,13 +104,14 @@ post_request <- function(url, body) {
     stop("Request body exceeds the maximum allowed size of 1000 elements. Please reduce the input size")
   }
 
-  print(body)
-
   req <- request(url) |>
     req_headers("Accept" = "application/json") |>
     req_body_json(body, auto_unbox = FALSE)
 
-  resp <- req |> req_perform()
+  resp <- req |>
+    req_perform()
+
+  print(resp)
 
   content <- resp_body_json(resp, auto_unbox = FALSE)  # Parse response
 
@@ -111,27 +134,44 @@ post_request <- function(url, body) {
 #' @keywords internal
 get_request <-function(url){
 
-  req <- request(url) |>
-    req_headers("Accept" = "application/json")
+  # Define a function to check for transient errors
+  check_transient_error <- function(resp) {
+    resp_status(resp) %in% c(429, 500, 503)
+  }
 
-  # Suppress the error and continue to execute
+  # req <- request(url) |>
+  #   req_headers("Accept" = "application/json") |>
+  #   req_retry(is_transient = check_transient_error, max_tries = 3) |>
+  #   req_error(is_error = \(resp) FALSE) # Suppress errors
+
+  #Suppress the error and continue to execute
+  req <- request(url) |>
+    req_headers("Accept" = "application/json") |>
+    req_error(is_error = \(resp) FALSE, body = api_error_message)
+
   resp <- req |>
-    req_error(is_error = \(resp) FALSE) |>
     req_perform()
 
-  #print(resp)
+  #is_error = \(resp) FALSE
+  print(resp)
+
+  print(resp_headers(resp))
+  #print(resp_header(resp, "X-RateLimit-Limit"))
+  #print(resp_header(resp, "Retry-After"))
 
   status_code <- resp_status(resp)
 
-  if (status_code != 200) {
-    return(list(error_code = status_code, message = resp_body_string(resp)))
-  }
+  # if (status_code != 200){
+  #
+  #      return(list(error_code = status_code, message = resp_body_string(resp)))
+  #
+  # }
 
   content <- resp_body_json(resp, auto_unbox = FALSE) # Parse response
 
   result<- fromJSON(toJSON(content, auto_unbox = TRUE)) # Convert JSON
 
-  return(list(error_code = NULL, result = result))
+  return(list(error_code = status_code, result = result))
 
   #"https://rest.ensembl.org/lookup/symbol/homo_sapiens/BRCA2?"
 }
