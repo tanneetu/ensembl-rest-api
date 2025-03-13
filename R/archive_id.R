@@ -8,7 +8,7 @@
 #' @return A data frame containing the archive details from Ensembl REST API.
 #'
 #' @keywords internal
-post_archive_id <-function(id = NULL){
+post_archive_id <-function(id){
 
   endpoint <- "/archive/id/"
   url <- build_url(endpoint)
@@ -41,7 +41,7 @@ post_archive_id <-function(id = NULL){
 #'
 #' #Example for multiple IDs
 #' archive_id(id = c("ENSG00000157764","ENSG00000248378"))
-archive_id <- function(id ){
+archive_id <- function(id){
 
   if (missing(id) || length(id) == 0 || all(id == "")) {
     stop("ID is missing! Please provide a valid ID.")

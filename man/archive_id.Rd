@@ -4,7 +4,7 @@
 \alias{archive_id}
 \title{Retrieve the latest version for a set of identifiers}
 \usage{
-archive_id(id = NULL)
+archive_id(id)
 }
 \arguments{
 \item{id}{A character vector representing one or more Ensembl stable ID to be queried.}

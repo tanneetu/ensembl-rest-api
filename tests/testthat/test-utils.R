@@ -30,5 +30,22 @@ with_mock_api({
 })
 
 
+test_that("get_request() handles rate limit responses", {
+
+  testthat::skip_if_offline()
+  response <- get_request("https://httpstat.us/429")
+
+  expect_equal(response$error_code, 429)
+
+  # The message is generated from the req_retry function, not from the response
+  expect_message(
+    get_request("https://httpstat.us/429"),
+    "Rate limit exceeded!"
+  )
+
+})
+
+
+
 
 

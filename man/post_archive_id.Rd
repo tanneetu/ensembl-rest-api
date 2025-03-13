@@ -4,7 +4,7 @@
 \alias{post_archive_id}
 \title{Retrieve the latest version for a set of identifiers}
 \usage{
-post_archive_id(id = NULL)
+post_archive_id(id)
 }
 \arguments{
 \item{id}{A character vector representing one or more Ensembl stable ID to be queried.}

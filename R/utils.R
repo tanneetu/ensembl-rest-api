@@ -64,27 +64,6 @@ query_string_optional_params <- function(optional_params) {
   return(query_string)
 }
 
-api_error_message <- function(resp){
-
-  status_code <- resp_status(resp)
-
-  if (status_code == 429) {
-
-    retry_after <- as.numeric(resp_headers(resp)[["Retry-After"]])
-
-    message <- paste("Rate limit exceeded! Please wait", retry_after, " seconds before making another request.")
-
-  } else if (status_code != 200){
-
-    #message <- resp_body_string(resp)
-
-    message <- paste(resp_body_string(resp), "error for 400")
-
-  }
-
-  return(message)
-}
-
 
 #' @title Perform a POST Request to an API
 #'
@@ -108,8 +87,7 @@ post_request <- function(url, body) {
     req_headers("Accept" = "application/json") |>
     req_body_json(body, auto_unbox = FALSE)
 
-  resp <- req |>
-    req_perform()
+  resp <- req |> req_perform()
 
   print(resp)
 
@@ -119,6 +97,7 @@ post_request <- function(url, body) {
 
   return(result)
 }
+
 
 #' @title Perform a GET Request to an API
 #'
@@ -134,44 +113,46 @@ post_request <- function(url, body) {
 #' @keywords internal
 get_request <-function(url){
 
-  # Define a function to check for transient errors
-  check_transient_error <- function(resp) {
-    resp_status(resp) %in% c(429, 500, 503)
+  # Define a function to check for transient error
+  ensembl_is_transient <- function(resp) {
+    resp_status(resp) == 429
   }
 
-  # req <- request(url) |>
-  #   req_headers("Accept" = "application/json") |>
-  #   req_retry(is_transient = check_transient_error, max_tries = 3) |>
-  #   req_error(is_error = \(resp) FALSE) # Suppress errors
+  # Define a function to show message manipulating the after argument
+  ensembl_after <- function(resp){
 
-  #Suppress the error and continue to execute
+    waiting_time <- as.numeric(resp_header(resp, "Retry-After"))
+
+    message("Rate limit exceeded! Please wait before making more requests.")
+
+    return(waiting_time)
+  }
+
   req <- request(url) |>
     req_headers("Accept" = "application/json") |>
-    req_error(is_error = \(resp) FALSE, body = api_error_message)
+    req_retry(max_tries = 2, is_transient = ensembl_is_transient, after = ensembl_after) |> # Handle rate limit
+    req_error(is_error = \(resp) FALSE) # Suppress errors
 
-  resp <- req |>
-    req_perform()
+  resp <- req |> req_perform()
 
-  #is_error = \(resp) FALSE
   print(resp)
 
-  print(resp_headers(resp))
-  #print(resp_header(resp, "X-RateLimit-Limit"))
+  #print(resp_headers(resp))
   #print(resp_header(resp, "Retry-After"))
 
   status_code <- resp_status(resp)
 
-  # if (status_code != 200){
-  #
-  #      return(list(error_code = status_code, message = resp_body_string(resp)))
-  #
-  # }
+  if (status_code != 200){
+
+       return(list(error_code = status_code, message = resp_body_string(resp)))
+
+  }
 
   content <- resp_body_json(resp, auto_unbox = FALSE) # Parse response
 
   result<- fromJSON(toJSON(content, auto_unbox = TRUE)) # Convert JSON
 
-  return(list(error_code = status_code, result = result))
+  return(list(error_code = NULL, result = result))
 
   #"https://rest.ensembl.org/lookup/symbol/homo_sapiens/BRCA2?"
 }
